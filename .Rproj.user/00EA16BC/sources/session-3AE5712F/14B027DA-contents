@@ -1,0 +1,8 @@
+rm(list = ls(
+  
+))
+
+
+test <- arrow::read_parquet("Z:/GPRD_GOLD/Ali/2022_biobank/full_ukbiobank.parquet")
+
+glimpse(test)
