@@ -1,0 +1,6 @@
+ICD10code,ICD10description
+L20,Atopic dermatitis
+L20.0,Besnier's prurigo
+L20.8,Other atopic dermatitis
+L20.9,"Atopic dermatitis, unspecified"
+L30.9,Dermatitis NOS

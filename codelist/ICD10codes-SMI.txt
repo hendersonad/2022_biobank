@@ -1,0 +1,49 @@
+code,alt_code,description
+F20,F20,Schizophrenia
+F20.0,F200,Paranoid schizophrenia
+F20.1,F201,Hebephrenic schizophrenia
+F20.2,F202,Catatonic schizophrenia
+F20.3,F203,Undifferentiated schizophrenia
+F20.4,F204,Post-schizophrenic depression
+F20.5,F205,Residual schizophrenia
+F20.6,F206,Simple schizophrenia
+F20.8,F208,Other schizophrenia
+F20.9,F209,"Schizophrenia, unspecified"
+F21,F21X,Schizotypal disorder
+F22,F22,Persistent delusional disorders
+F22.0,F220,Delusional disorder
+F22.8,F228,Other persistent delusional disorders
+F22.9,F229,"Persistent delusional disorder, unspecified"
+F23,F23,Acute and transient psychotic disorders
+F23.0,F230,Acute polymorphic psychotic disorder without symptoms of schizophrenia
+F23.1,F231,Acute polymorphic psychotic disorder with symptoms of schizophrenia
+F23.2,F232,Acute schizophrenia-like psychotic disorder
+F23.3,F233,Other acute predominantly delusional psychotic disorders
+F23.8,F238,Other acute and transient psychotic disorders
+F23.9,F239,"Acute and transient psychotic disorder, unspecified"
+F24,F24X,Induced delusional disorder
+F25,F25,Schizoaffective disorders
+F25.0,F250,"Schizoaffective disorder, manic type"
+F25.1,F251,"Schizoaffective disorder, depressive type"
+F25.2,F252,"Schizoaffective disorder, mixed type"
+F25.8,F258,Other schizoaffective disorders
+F25.9,F259,"Schizoaffective disorder, unspecified"
+F28,F28X,Other nonorganic psychotic disorders
+F29,F29X,Unspecified nonorganic psychosis
+F30,F30,Manic episode
+F30.0,F300,Hypomania
+F30.1,F301,Mania without psychotic symptoms
+F30.2,F302,Mania with psychotic symptoms
+F30.8,F308,Other manic episodes
+F30.9,F309,"Manic episode, unspecified"
+F31,F31,Bipolar affective disorder
+F31.0,F310,"Bipolar affective disorder, current episode hypomanic"
+F31.1,F311,"Bipolar affective disorder, current episode manic without psychotic symptoms"
+F31.2,F312,"Bipolar affective disorder, current episode manic with psychotic symptoms"
+F31.3,F313,"Bipolar affective disorder, current episode mild or moderate depression"
+F31.4,F314,"Bipolar affective disorder, current episode severe depression without psychotic symptoms"
+F31.5,F315,"Bipolar affective disorder, current episode severe depression with psychotic symptoms"
+F31.6,F316,"Bipolar affective disorder, current episode mixed"
+F31.7,F317,"Bipolar affective disorder, currently in remission"
+F31.8,F318,Other bipolar affective disorders
+F31.9,F319,"Bipolar affective disorder, unspecified"

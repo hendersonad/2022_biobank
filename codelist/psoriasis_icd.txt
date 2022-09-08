@@ -1,0 +1,9 @@
+icd,description
+l40.0,psoriasis vulgaris
+l40.1,generalised pustular psoriasis
+l40.2,acrodermatitis continua
+l40.3,pustulosis palmaris et plantaris
+l40.4,guttate psoriasis
+l40.5,arthropathic psoriasis
+l40.8,other psoriasis
+l40.9,"psoriasis, unspecified"
