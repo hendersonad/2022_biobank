@@ -5,7 +5,6 @@ library(lubridate)
 library(glue)
 library(irr)
 library(skimr)
-library(summarytools)
 library(cowplot)
 library(gt)
 library(gtsummary)
@@ -208,9 +207,12 @@ twoXtwo(baseline_assessment_cohort, "eczema", "insomnia")
 twoXtwo(baseline_assessment_cohort, "eczema", "insomnia_touchscreen")
 twoXtwo(baseline_assessment_cohort, "allergic_touchscreen", "insomnia_touchscreen")
 
+twoXtwo(baseline_assessment_cohort, "age_cat", "alcohol")
+twoXtwo(baseline_assessment_cohort, "age_cat", "alcohol_touchscreen")
+
 twoXtwo(baseline_assessment_cohort, "eczema", "smoking")
-twoXtwo(baseline_assessment_cohort, "eczema", "allergic_touchscreen")
-twoXtwo(baseline_assessment_cohort, "hayfever_allergicrhinitis", "allergic_touchscreen")
+twoXtwo(baseline_assessment_cohort, "eczema", "allergic_touchscreen") # !!!! WHAT? there are 3,000 with an eczema diagnosis at interview who did not tick the touchscreen questiojn - maybe misread it? 
+twoXtwo(baseline_assessment_cohort, "hayfever_allergicrhinitis", "allergic_touchscreen") 
 
 baseline_assessment_cohort %>% 
   group_by(eczema) %>% 
@@ -292,7 +294,21 @@ baseline_assessment_cohort %>%
 
 # treatments --------------------------------------------------------------
 trt <- ukb %>% 
-  select(f.eid, starts_with("f.20003.0"))
+  select(f.eid, starts_with("f.20003.0")) %>% 
+  pivot_longer(cols = c(starts_with("f.20003.0")), 
+               names_to = c("instance", "array"),
+               names_pattern = "f.20003.(.).(.*)")
+ukb_insomnia <- read_csv(here::here("codelist/ukb_insomnia.csv"))
+trt_insomnia <- trt %>% 
+  filter(value %in% ukb_insomnia$coding)
+sleep_test <- baseline_assessment_cohort %>% 
+  left_join(trt_insomnia, by = "f.eid")
+sleep_test$sleep_test <- as.numeric(!is.na(sleep_test$value))
+
+twoXtwo(sleep_test, "eczema", "sleep_test")
+
+# composite exposure and outcome  -----------------------------------------
+
 
 
 # build temp table 1  -----------------------------------------------------
