@@ -1,3 +1,8 @@
+codelist/mappingfile/
+temp_store/
+*gp_clinical.txt
+*gp_scripts.txt
+
 .Rproj.user*
 .Rhistory
 .RData
