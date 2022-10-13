@@ -26,41 +26,6 @@ psoriasis_codelist$ICD10codealternative <- str_to_upper(str_remove_all(psoriasis
 smi_codelist <- read.delim(here::here("codelist/ICD10codes-SMI.txt"), sep = ",")
   names(smi_codelist)[2] <- "ICD10codealternative"
 
-# 2x2 table function ------------------------------------------------------
-twoXtwo <- function(df, exp, out){
-  df1 <- df %>% 
-    ungroup() %>% 
-    dplyr::select(exp = {{ exp }}, out = {{ out }})
-  tab <- table(df1$exp, df1$out, useNA = "ifany")
-  tab_p <- prop.table(tab,1) %>% 
-    as.data.frame.matrix() %>% 
-    janitor::clean_names() %>% 
-    rename_if(is.numeric, ~paste0(., "_pc")) %>% 
-    mutate_if(is.numeric, ~signif(.*100, 3))
-  tab_tib <- tab %>% 
-    as.data.frame.matrix() %>% 
-    janitor::clean_names()
-  
-  no_outcomes <- select(df, {{ out }}) %>% pull() %>% unique() %>% length()
-  
-  gt0 <- tibble(
-    exposure = eval(exp),
-    val = rownames(tab)) %>% 
-    bind_cols(tab_tib) %>% 
-    bind_cols(tab_p) %>% 
-    gt() %>% 
-    fmt_number(where(is.numeric), use_seps = T, drop_trailing_zeros = T) %>% 
-    cols_align(columns = 3:(3+no_outcomes-1), align = "right")
-  for(ii in 1:no_outcomes){
-    if(ii == 1){gt1 <- gt0}
-    gttemp <- get(paste0("gt", ii)) %>% 
-      cols_merge(columns = c((2+ii),(2+ii+no_outcomes)), pattern = "{1} ({2}%)") 
-    assign(x = paste0("gt", ii+1), gttemp)
-  }
-  get(paste0("gt", no_outcomes+1)) %>% 
-    tab_spanner(columns = 3:(no_outcomes+2), label = eval(out))
-}
-
 # descriptive data --------------------------------------------------------
 ukb_descriptive <- ukb %>% 
   select(f.eid, 
@@ -201,7 +166,7 @@ baseline_assessment_cohort <- as_tibble(ukb_descriptive) %>%
   left_join(socsupport_visits, by = "f.eid")  %>% 
   left_join(healthrating, by = "f.eid") 
 
-rm(eczema,psoriasis,anxiety,depression,smi,asthma,psoarth,hayfever,allergic_touch,bmi,mod_exercise,vig_exercise,met_score,alcohol,alcohol_touch,insomnia,insomnia_touch,sleep_duration,smoking,socsupport_activity,socsupport_visits)
+#rm(eczema,psoriasis,anxiety,depression,smi,asthma,psoarth,hayfever,allergic_touch,bmi,mod_exercise,vig_exercise,met_score,alcohol,alcohol_touch,insomnia,insomnia_touch,sleep_duration,smoking,socsupport_activity,socsupport_visits)
 
 twoXtwo(baseline_assessment_cohort, "eczema", "insomnia")
 twoXtwo(baseline_assessment_cohort, "eczema", "insomnia_touchscreen")
@@ -279,8 +244,6 @@ hes_smi <- get_hes_baseline(codelist = smi_codelist, diagnosis = "hes_smi")
 
 
 baseline_assessment_cohort <- baseline_assessment_cohort %>% 
-  select(-hes_anxiety, -hes_depression, -hes_eczema, -hes_psoriasis, -hes_smi,
-         -age_hes_anxiety, -age_hes_depression, -age_hes_eczema, -age_hes_psoriasis, -age_hes_smi) %>% 
   left_join(hes_anxiety, by = "f.eid") %>% 
   left_join(hes_depression, by = "f.eid") %>% 
   left_join(hes_eczema, by = "f.eid") %>% 
@@ -310,6 +273,14 @@ twoXtwo(sleep_test, "eczema", "sleep_test")
 # composite exposure and outcome  -----------------------------------------
 
 
+
+
+
+
+
+
+# save baseline_assessment_cohort -----------------------------------------
+arrow::write_parquet(baseline_assessment_cohort, sink = paste0(datapath, "cohort_data/ukb_baseline.parquet"))
 
 # build temp table 1  -----------------------------------------------------
 table1_ecz <- baseline_assessment_cohort %>%
