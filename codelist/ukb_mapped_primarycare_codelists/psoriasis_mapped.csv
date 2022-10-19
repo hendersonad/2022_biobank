@@ -1,0 +1,60 @@
+medcode,readcode,desc,chapter,readv2_code,readv2_desc,termv2_desc,termv2_order,termv2_type,readv3_code,termv3_code,termv3_type,termv3_desc,is_assured
+3437,14F2.00,h/o: psoriasis,1,14F2.,H/O: psoriasis,h/o: psoriasis,00,P,14F2.,Ya05V,P,h/o: psoriasis,1
+3733,M16..00,psoriasis and similar disorders,M,M16..,Psoriasis and similar disorders,psoriasis and similar disorders,00,P,M16..,Y50HH,P,psoriasis and similar disorders,1
+3733,M16..00,psoriasis and similar disorders,NA,M16..,Psoriasis and similar disorders,psoriasis and similar disorders,00,P,X506a,Y50Hf,P,unstable psoriasis,0
+3733,M16..00,psoriasis and similar disorders,NA,M16..,Psoriasis and similar disorders,psoriasis and similar disorders,00,P,X506c,Y50Hi,P,psoriasis-eczema overlap condition,0
+3733,M16..00,psoriasis and similar disorders,NA,M16..,Psoriasis and similar disorders,psoriasis and similar disorders,00,P,X506d,Y50Hk,P,eczematised psoriasis,0
+3733,M16..00,psoriasis and similar disorders,NA,M16..,Psoriasis and similar disorders,psoriasis and similar disorders,00,P,X506k,Y50Hv,P,koebner psoriasis,0
+3733,M16..00,psoriasis and similar disorders,NA,M16..,Psoriasis and similar disorders,psoriasis and similar disorders,00,P,X506Y,Y50HO,P,psoriasis,1
+3733,M16..00,psoriasis and similar disorders,NA,M16..,Psoriasis and similar disorders,psoriasis and similar disorders,00,P,X506Z,Y50He,P,flexural psoriasis,0
+3733,M16..00,psoriasis and similar disorders,NA,M16..,Psoriasis and similar disorders,psoriasis and similar disorders,00,P,XE1CQ,YE0tv,P,(psoriasis nos) or (guttate psoriasis) or (parapsoriasis),0
+476,M160.00,psoriatic arthropathy,M,M160.,Psoriatic arthropathy,psoriatic arthropathy,00,P,M160.,Y70Eo,S,psoriatic arthropathy,1
+476,M160.00,psoriatic arthropathy,NA,M160.,Psoriatic arthropathy,psoriatic arthropathy,00,P,X701w,Y70ES,P,juvenile psoriatic arthritis without psoriasis,0
+96880,M160.11,psoriatic arthritis,NA,M160.,Psoriatic arthropathy,psoriatic arthritis,11,S,M160.,Y70En,P,psoriatic arthritis,1
+96880,M160.11,psoriatic arthritis,NA,M160.,Psoriatic arthropathy,psoriatic arthritis,11,S,X701u,Y70EQ,P,juvenile psoriatic arthritis,0
+96880,M160.11,psoriatic arthritis,NA,M160.,Psoriatic arthropathy,psoriatic arthritis,11,S,X7028,Y70Ey,P,psoriatic dactylitis,0
+26368,M160000,psoriasis spondylitica,M,M1600,Psoriasis spondylitica,psoriasis spondylitica,00,P,M1600,Y70Es,P,psoriatic arthritis with spine involvement,0
+32149,M160100,distal interphalangeal psoriatic arthropathy,M,M1601,Distal interphalangeal psoriatic arthropathy,distal interphalangeal psoriatic arthropathy,00,P,X7026,YMAqA,S,distal interphalangeal psoriatic arthropathy,1
+21503,M160200,arthritis mutilans,M,M1602,Arthritis mutilans,arthritis mutilans,00,P,X7027,Y70Ex,S,arthritis mutilans,1
+12500,M160z00,psoriatic arthropathy nos,M,M160z,Psoriatic arthropathy NOS,psoriatic arthropathy nos,00,P,M160z,Y70Er,P,psoriatic arthropathy nos,1
+22501,M161.00,other psoriasis,M,M161.,Other psoriasis,other psoriasis,00,P,M161.,Y50HP,P,other psoriasis,1
+162,M161000,psoriasis unspecified,M,M1610,Psoriasis unspecified,psoriasis unspecified,00,P,M1610,Y50HQ,P,psoriasis unspecified,1
+21104,M161100,psoriasis annularis,M,M1611,Psoriasis annularis,psoriasis annularis,00,P,M1611,Y50IN,P,psoriasis annularis,1
+30272,M161200,psoriasis circinata,M,M1612,Psoriasis circinata,psoriasis circinata,00,P,M1612,Y50IO,P,psoriasis circinata,1
+42008,M161300,psoriasis diffusa,M,M1613,Psoriasis diffusa,psoriasis diffusa,00,P,M1613,Y50HR,P,psoriasis diffusa,1
+18755,M161400,psoriasis discoidea,M,M1614,Psoriasis discoidea,psoriasis discoidea,00,P,M1614,Y50Ha,S,discoid psoriasis,0
+21633,M161500,psoriasis geographica,M,M1615,Psoriasis geographica,psoriasis geographica,00,P,M1615,Y50HS,P,psoriasis geographica,1
+3193,M161600,guttate psoriasis,M,M1616,Guttate psoriasis,guttate psoriasis,00,P,M1616,Y50Hd,P,guttate psoriasis,1
+65839,M161700,psoriasis gyrata,M,M1617,Psoriasis gyrata,psoriasis gyrata,00,P,M1617,Y50HT,P,psoriasis gyrata,1
+48257,M161800,psoriasis inveterata,M,M1618,Psoriasis inveterata,psoriasis inveterata,00,P,M1618,Y50HU,P,psoriasis inveterata,1
+60169,M161900,psoriasis ostracea,M,M1619,Psoriasis ostracea,psoriasis ostracea,00,P,M1619,Y50Hl,P,rupioid psoriasis,0
+8014,M161A00,psoriasis palmaris,M,M161A,Psoriasis palmaris,psoriasis palmaris,00,P,M161A,Y50I6,P,psoriasis palmaris,1
+2945,M161B00,psoriasis plantaris,M,M161B,Psoriasis plantaris,psoriasis plantaris,00,P,M161B,Y50I7,P,psoriasis plantaris,1
+24136,M161C00,psoriasis punctata,M,M161C,Psoriasis punctata,psoriasis punctata,00,P,M161C,Y50HV,P,psoriasis punctata,1
+4231,M161D00,pustular psoriasis,M,M161D,Pustular psoriasis,pustular psoriasis,00,P,M161D,Y50Hw,P,pustular psoriasis,1
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506l,Y50Hx,P,localised pustular psoriasis,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506m,Y50Hy,P,palmoplantar pustular psoriasis,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506n,Y50I8,P,acropustulosis,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506o,Y50ID,P,lapiere type of psoriasis,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506p,Y50IE,P,generalised pustular psoriasis,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506q,Y50IG,P,acute generalised pustular psoriasis,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506r,Y50II,P,generalised pustular psoriasis of pregnancy,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506s,Y50IJ,P,pustular psoriasis in children,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506t,Y50IK,P,juvenile pustular psoriasis,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506u,Y50IL,P,infantile pustular psoriasis,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,X506v,Y50IM,P,circinate and annular pustular psoriasis,0
+4231,M161D00,pustular psoriasis,NA,M161D,Pustular psoriasis,pustular psoriasis,00,P,XaYOx,Y50Hw,P,pustular psoriasis,1
+20222,M161E00,psoriasis universalis,M,M161E,Psoriasis universalis,psoriasis universalis,00,P,M161E,Y50HW,P,psoriasis universalis,1
+30210,M161F00,psoriasis vulgaris,M,M161F,Psoriasis vulgaris,psoriasis vulgaris,00,P,XaNXt,Y50HX,P,psoriasis vulgaris,1
+30210,M161F00,psoriasis vulgaris,NA,M161F,Psoriasis vulgaris,psoriasis vulgaris,00,P,M161F,Yaqa8,P,psoriasis vulgaris & (chronic large plaque psoriasis),0
+93511,M161F11,chronic large plaque psoriasis,NA,M161F,Psoriasis vulgaris,chronic large plaque psoriasis,11,S,XaNXa,YaqZp,P,chronic large plaque psoriasis,1
+17094,M161H00,erythrodermic psoriasis,M,M161H,Erythrodermic psoriasis,erythrodermic psoriasis,00,P,X506b,Y50Hg,P,erythrodermic psoriasis,1
+107494,M161J00,flexural psoriasis,M,M161J,Flexural psoriasis,flexural psoriasis,00,P,X506Z,Y50He,P,flexural psoriasis,1
+172,M161z00,psoriasis nos,M,M161z,Psoriasis NOS,psoriasis nos,00,P,M161z,Y50HY,P,psoriasis nos,1
+105229,M166.00,palmoplantar pustular psoriasis,M,M166.,Palmoplantar pustular psoriasis,palmoplantar pustular psoriasis,00,P,X506m,Y50Hy,P,palmoplantar pustular psoriasis,1
+41149,M16y.00,other psoriasis and similar disorders,M,M16y.,Other psoriasis and similar disorders,other psoriasis and similar disorders,00,P,M16y.,Y50HI,P,other psoriasis and similar disorders,1
+11761,M16y000,scalp psoriasis,M,M16y0,Scalp psoriasis,scalp psoriasis,00,P,X506i,Y50Ht,P,scalp psoriasis,1
+30975,M16z.00,psoriasis and similar disorders nos,M,M16z.,Psoriasis and similar disorders NOS,psoriasis and similar disorders nos,00,P,M16z.,Y50HJ,P,psoriasis and similar disorders nos,1
+66711,Myu3000,[x]other psoriasis,M,Myu30,[X]Other psoriasis,[x]other psoriasis,00,P,Myu30,YMALP,P,[x]other psoriasis,1
+28456,N045200,juvenile arthritis in psoriasis,N,N0452,Juvenile arthritis in psoriasis,juvenile arthritis in psoriasis,00,P,X701v,YMAq6,S,juvenile arthritis in psoriasis,1
+59107,Nyu1300,[x]other psoriatic arthropathies,N,Nyu13,[X]Other psoriatic arthropathies,[x]other psoriatic arthropathies,00,P,Nyu13,YMAMW,P,[x]other psoriatic arthropathies,1

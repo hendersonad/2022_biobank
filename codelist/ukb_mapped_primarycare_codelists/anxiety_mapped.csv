@@ -1,0 +1,98 @@
+medcode,readcode,desc,chapter,readv2_code,readv2_desc,termv2_desc,termv2_order,termv2_type,readv3_code,termv3_code,termv3_type,termv3_desc,is_assured
+131,1B13.00,anxiousness,1,1B13.,Anxiousness,anxiousness,00,P,XE0rb,YM1eG,S,anxiousness,1
+131,1B13.00,anxiousness,NA,1B13.,Anxiousness,anxiousness,00,P,Xa3Vj,Ya5rp,P,panic,0
+131,1B13.00,anxiousness,NA,1B13.,Anxiousness,anxiousness,00,P,Xa7kB,YaV9s,P,anxiety attack,0
+5902,1B13.11,anxiousness - symptom,NA,1B13.,Anxiousness,anxiousness - symptom,11,S,1B13.,YE0fr,P,anxiousness (& symptom),1
+5902,1B13.11,anxiousness - symptom,NA,1B13.,Anxiousness,anxiousness - symptom,11,S,XE0rb,Ya5sj,P,feeling anxious,0
+11890,1B1V.00,c/o - panic attack,1,1B1V.,C/O - panic attack,c/o - panic attack,00,P,XaIo7,YalNU,P,c/o - panic attack,1
+18494,1Ba0.00,obsessional thoughts,1,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762c,Y7D9i,P,obsessional thoughts,1
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762d,Y7D9j,P,obsessional thoughts of harm occurring to property,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762e,Y7D9k,P,obsessional thoughts of being robbed,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762f,Y7D9l,P,obsessional thoughts of fire,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762g,Y7D9m,P,obsessional thoughts of explosions,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762h,Y7D9p,P,obsessional thoughts of causing accidents,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762i,Y7D9q,P,obsessional thoughts of poisoning,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762j,Y7D9r,P,obsessional thoughts of giving others illness,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762k,Y7D9u,P,obsessional thoughts of contamination,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762l,Y7D9v,P,obsessional thoughts of disease,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762m,Y7D9w,P,obsessional thoughts of dirt,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762n,Y7D9x,P,obsessional thoughts of germs,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762o,Y7D9y,P,obsessional doubts,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762p,Y7D9z,P,obsessional thoughts of incompletion,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,X762q,Y7DA0,P,obsessional thoughts of throwing things away,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,XM001,Y7D9n,P,obsessional thoughts of causing harm to others,0
+18494,1Ba0.00,obsessional thoughts,NA,1Ba0.,Obsessional thoughts,obsessional thoughts,00,P,XM0At,Y7D9s,P,obsessional thoughts of causing harm to self,0
+22654,1P3..00,compulsive behaviour,1,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764L,Y7DCD,P,compulsive behaviour,1
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764M,Y7DCE,P,compulsive checking,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764N,Y7DCF,P,compulsive repeating,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764O,Y7DCG,P,compulsive washing,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764P,Y7DCH,P,compulsive handwashing,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764Q,Y7DCI,P,compulsive cleaning,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764R,Y7DCJ,P,compulsive hoarding,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764S,Y7DCL,P,compulsive counting,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764T,Y7DCM,P,compulsive tidying,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764U,Y7DCN,P,compulsive arrangement of objects,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,X764V,Y7DCO,P,inability to resist compulsive behaviours,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,Xa2kd,Ya4qe,P,compulsion expressed as ritual,0
+22654,1P3..00,compulsive behaviour,NA,1P3..,Compulsive behaviour,compulsive behaviour,00,P,Xa2kf,Ya4qj,P,compulsive touching,0
+13124,2258.00,o/e - anxious,2,2258.,O/E - anxious,o/e - anxious,00,P,2258.,YM01C,P,o/e - anxious,1
+8725,2259.00,o/e - nervous,2,2259.,O/E - nervous,o/e - nervous,00,P,2259.,YM01D,P,o/e - nervous,1
+19000,225J.00,o/e - panic attack,2,225J.,O/E - panic attack,o/e - panic attack,00,P,XaKVA,YannE,P,o/e - panic attack,1
+25213,28Z..00,nervous syst/mental state nos,2,28Z..,Nervous syst/mental state NOS,nervous syst/mental state nos,00,P,28Z..,YM0rV,P,nervous syst/mental state nos,1
+108107,8CAZ000,patient given advice about management of anxiety,8,8CAZ0,Patient given advice about management of anxiety,patient given advice about management of anxiety,00,P,Xab9G,Yawxg,P,patient given advice about management of anxiety,1
+9125,8G94.00,anxiety management training,8,8G94.,Anxiety management training,anxiety management training,00,P,Ub0qs,YMD7r,P,anxiety management training,1
+28925,8HHp.00,referral for guided self-help for anxiety,8,8HHp.,Referral for guided self-help for anxiety,referral for guided self-help for anxiety,00,P,XaL0q,Yao6e,P,referral for guided self-help for anxiety,1
+114506,8IH5300,referral for guided self-help for anxiety declined,8,8IH53,Referral for guided self-help for anxiety declined,referral for guided self-help for anxiety declined,00,P,XaboM,YaxaP,P,referral for guided self-help for anxiety declined,1
+636,E200.00,anxiety states,E,E200.,Anxiety states,anxiety states,00,P,E200.,Y01Gq,S,anxiety state,1
+636,E200.00,anxiety states,NA,E200.,Anxiety states,anxiety states,00,P,X00Sc,Y01Gt,P,anxiety hysteria,0
+636,E200.00,anxiety states,NA,E200.,Anxiety states,anxiety states,00,P,XaMFU,YapP5,P,paruresis,0
+6939,E200000,anxiety state unspecified,E,E2000,Anxiety state unspecified,anxiety state unspecified,00,P,E2000,Y01Gb,P,anxiety state unspecified,1
+4069,E200100,panic disorder,E,E2001,Panic disorder,panic disorder,00,P,XE1Y7,Y01Gc,P,panic disorder,1
+4069,E200100,panic disorder,NA,E2001,Panic disorder,panic disorder,00,P,E2001,YE1A7,P,(panic disorder) or (panic attack),1
+4069,E200100,panic disorder,NA,E2001,Panic disorder,panic disorder,00,P,X00Sa,Y01Gi,P,non-situational panic attack,0
+4069,E200100,panic disorder,NA,E2001,Panic disorder,panic disorder,00,P,X00SZ,Y01Gh,P,situational panic attack,0
+462,E200111,panic attack,NA,E2001,Panic disorder,panic attack,11,S,Ua1qS,YMGBI,P,panic attack,1
+4659,E200200,generalised anxiety disorder,E,E2002,Generalised anxiety disorder,generalised anxiety disorder,00,P,E2002,Y01Gl,P,generalised anxiety disorder,1
+655,E200300,anxiety with depression,E,E2003,Anxiety with depression,anxiety with depression,00,P,X00Sb,Y01Gr,P,mixed anxiety and depressive disorder,0
+1758,E200400,chronic anxiety,E,E2004,Chronic anxiety,chronic anxiety,00,P,E2004,YaYAu,P,chronic anxiety,1
+4634,E200500,recurrent anxiety,E,E2005,Recurrent anxiety,recurrent anxiety,00,P,E2005,YaYAv,P,recurrent anxiety,1
+4534,E200z00,anxiety state nos,E,E200z,Anxiety state NOS,anxiety state nos,00,P,E200z,Y01Ga,P,anxiety state nos,1
+9944,E202.12,phobic anxiety,E,E202.,Phobic disorders,phobic anxiety,12,S,XE1YA,Ya5am,P,phobic anxiety disorder,1
+9944,E202.12,phobic anxiety,NA,E202.,Phobic disorders,phobic anxiety,12,S,E202.,Y01GB,S,phobic anxiety,1
+3076,E202100,agoraphobia with panic attacks,E,E2021,Agoraphobia with panic attacks,agoraphobia with panic attacks,00,P,E2021,Y01GL,P,agoraphobia with panic attacks,1
+12838,E202200,agoraphobia without mention of panic attacks,E,E2022,Agoraphobia without mention of panic attacks,agoraphobia without mention of panic attacks,00,P,E2022,Y01GK,P,agoraphobia without mention of panic attacks,1
+3208,E203.00,obsessive-compulsive disorders,E,E203.,Obsessive-compulsive disorders,obsessive-compulsive disorders,00,P,E203.,Y01Gu,P,obsessive-compulsive disorder,1
+5678,E203000,compulsive neurosis,E,E2030,Compulsive neurosis,compulsive neurosis,00,P,E2030,Y01Gv,P,compulsive neurosis,1
+2030,E203100,obsessional neurosis,E,E2031,Obsessional neurosis,obsessional neurosis,00,P,E2031,Y01Gx,P,obsessional neurosis,1
+15566,E203z00,obsessive-compulsive disorder nos,E,E203z,Obsessive-compulsive disorder NOS,obsessive-compulsive disorder nos,00,P,E203z,Y01Gz,P,obsessive-compulsive disorder nos,1
+20881,E214.00,compulsive personality disorders,E,E214.,Compulsive personality disorders,compulsive personality disorders,00,P,E214z,Y01KV,P,compulsive personality disorder nos,1
+20881,E214.00,compulsive personality disorders,NA,E214.,Compulsive personality disorders,compulsive personality disorders,00,P,E214.,YE1AI,P,(compulsive personality disorders) or (anancastic personality),0
+1293,E214100,obsessional personality,E,E2141,Obsessional personality,obsessional personality,00,P,XE1YH,YMH0q,S,obsessional personality,1
+34456,E214z00,compulsive personality disorder nos,E,E214z,Compulsive personality disorder NOS,compulsive personality disorder nos,00,P,E214z,Y01KV,P,compulsive personality disorder nos,1
+23808,Eu4..00,"[x]neurotic, stress - related and somoform disorders",E,Eu4..,"[X]Neurotic, stress - related and somoform disorders","[x]neurotic, stress - related and somoform disorders",00,P,Eu4..,YadaR,P,"[x]neurotic, stress-related and somatoform disorders",1
+9386,Eu40.00,[x]phobic anxiety disorders,E,Eu40.,[X]Phobic anxiety disorders,[x]phobic anxiety disorders,00,P,Eu40.,YMB4R,P,[x]phobic anxiety disorders,1
+9386,Eu40.00,[x]phobic anxiety disorders,NA,Eu40.,[X]Phobic anxiety disorders,[x]phobic anxiety disorders,00,P,Eu04.,YMBwq,S,"[x]acute / subacute confusional state, nonalcoholic",0
+2571,Eu40000,[x]agoraphobia,E,Eu400,[X]Agoraphobia,[x]agoraphobia,00,P,X00SV,Y01GI,P,agoraphobia,1
+2571,Eu40000,[x]agoraphobia,NA,Eu400,[X]Agoraphobia,[x]agoraphobia,00,P,Eu400,YE1Br,P,[x] agoraphobia (& [without history of panic disorder] or [with panic disorder]),1
+27685,Eu40y00,[x]other phobic anxiety disorders,E,Eu40y,[X]Other phobic anxiety disorders,[x]other phobic anxiety disorders,00,P,Eu40y,YMB4V,P,[x]other phobic anxiety disorders,1
+34064,Eu40z00,"[x]phobic anxiety disorder, unspecified",E,Eu40z,"[X]Phobic anxiety disorder, unspecified","[x]phobic anxiety disorder, unspecified",00,P,Eu40z,YMB4W,P,"[x]phobic anxiety disorder, unspecified",1
+5385,Eu41.00,[x]other anxiety disorders,E,Eu41.,[X]Other anxiety disorders,[x]other anxiety disorders,00,P,Eu41.,YMB4X,P,[x]other anxiety disorders,1
+8205,Eu41000,[x]panic disorder [episodic paroxysmal anxiety],E,Eu410,[X]Panic disorder [episodic paroxysmal anxiety],[x]panic disorder [episodic paroxysmal anxiety],00,P,Eu410,YMB4Y,P,[x]panic disorder [episodic paroxysmal anxiety],1
+10344,Eu41100,[x]generalized anxiety disorder,E,Eu411,[X]Generalized anxiety disorder,[x]generalized anxiety disorder,00,P,E2002,Y01Gl,P,generalised anxiety disorder,1
+11913,Eu41200,[x]mixed anxiety and depressive disorder,E,Eu412,[X]Mixed anxiety and depressive disorder,[x]mixed anxiety and depressive disorder,00,P,X00Sb,Y01Gr,P,mixed anxiety and depressive disorder,1
+11913,Eu41200,[x]mixed anxiety and depressive disorder,NA,Eu412,[X]Mixed anxiety and depressive disorder,[x]mixed anxiety and depressive disorder,00,P,Eu412,YE1yv,P,[x]mixed anxiety and depressive disorder (& mild anxiety depression),1
+44321,Eu41300,[x]other mixed anxiety disorders,E,Eu413,[X]Other mixed anxiety disorders,[x]other mixed anxiety disorders,00,P,Eu413,YMB4b,P,[x]other mixed anxiety disorders,1
+24066,Eu41y00,[x]other specified anxiety disorders,E,Eu41y,[X]Other specified anxiety disorders,[x]other specified anxiety disorders,00,P,XE1Zj,YMB4c,P,[x]other specified anxiety disorders,1
+24066,Eu41y00,[x]other specified anxiety disorders,NA,Eu41y,[X]Other specified anxiety disorders,[x]other specified anxiety disorders,00,P,Eu41y,YE1Bt,P,[x] anxiety disorders: [other specified] or [anxiety hysteria],0
+23838,Eu41z00,"[x]anxiety disorder, unspecified",E,Eu41z,"[X]Anxiety disorder, unspecified","[x]anxiety disorder, unspecified",00,P,Eu41z,YMB4d,P,"[x]anxiety disorder, unspecified",1
+5304,Eu42.00,[x]obsessive - compulsive disorder,E,Eu42.,[X]Obsessive - compulsive disorder,[x]obsessive - compulsive disorder,00,P,E203.,Y01Gu,P,obsessive-compulsive disorder,1
+20634,Eu42000,[x]predominantly obsessional thoughts or ruminations,E,Eu420,[X]Predominantly obsessional thoughts or ruminations,[x]predominantly obsessional thoughts or ruminations,00,P,Eu420,YMB4f,P,[x]predominantly obsessional thoughts or ruminations,1
+22019,Eu42100,[x]predominantly compulsive acts [obsessional rituals],E,Eu421,[X]Predominantly compulsive acts [obsessional rituals],[x]predominantly compulsive acts [obsessional rituals],00,P,Eu421,YMB4g,P,[x]predominantly compulsive acts [obsessional rituals],1
+18399,Eu42200,[x]mixed obsessional thoughts and acts,E,Eu422,[X]Mixed obsessional thoughts and acts,[x]mixed obsessional thoughts and acts,00,P,Eu422,YMB4h,P,[x]mixed obsessional thoughts and acts,1
+38809,Eu42y00,[x]other obsessive-compulsive disorders,E,Eu42y,[X]Other obsessive-compulsive disorders,[x]other obsessive-compulsive disorders,00,P,Eu42y,YMB4i,P,[x]other obsessive-compulsive disorders,1
+22721,Eu42z00,"[x]obsessive-compulsive disorder, unspecified",E,Eu42z,"[X]Obsessive-compulsive disorder, unspecified","[x]obsessive-compulsive disorder, unspecified",00,P,Eu42z,YMB4j,P,"[x]obsessive-compulsive disorder, unspecified",1
+21431,Eu46z11,[X]neurosis nos,E,Eu46z,"[X]Neurotic disorder, unspecified",[x]neurosis nos,11,S,Eu46z,YMB5D,P,"[x]neurotic disorder, unspecified",0
+17687,Eu51511,[x]dream anxiety disorder,E,Eu515,[X]Nightmares,[x]dream anxiety disorder,11,S,E2749,Y00SG,P,nightmares,0
+17687,Eu51511,[x]dream anxiety disorder,NA,Eu515,[X]Nightmares,[x]dream anxiety disorder,11,S,Eu515,YMINs,S,[x]dream anxiety disorder,0
+38100,Eu60511,[x]compulsive personality disorder,E,Eu605,[X]Anankastic personality disorder,[x]compulsive personality disorder,11,S,XE1YH,Y01KT,P,anankastic personality disorder,0
+8424,Eu60600,[x]anxious [avoidant] personality disorder,E,Eu606,[X]Anxious [avoidant] personality disorder,[x]anxious [avoidant] personality disorder,00,P,X00T7,Y01KW,P,anxious personality disorder,1

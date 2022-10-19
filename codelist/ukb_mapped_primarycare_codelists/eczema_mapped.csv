@@ -1,0 +1,41 @@
+medcode,readcode,desc,chapter,readv2_code,readv2_desc,termv2_desc,termv2_order,termv2_type,readv3_code,termv3_code,termv3_type,termv3_desc,is_assured
+13223,M11..00,Atopic dermatitis and related conditions,M,M11..,Atopic dermatitis and related conditions,atopic dermatitis and related conditions,00,P,M11..,Y50Ca,P,atopic dermatitis and related conditions,1
+1741,M111.00,Atopic dermatitis/eczema,M,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,M111.,Y50Co,P,atopic dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,M07z.,YMKBR,S,infected dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,M1...,Y50CU,S,dermatitis/dermatoses,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505d,Y50Dh,P,constitutional discoid hand eczema,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505e,Y50Di,P,constitutional fingertip eczema,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505f,Y50Dj,P,constitutional eczema of feet,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505K,Y50CT,P,eczema,1
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505l,Y50Du,P,psoriasiform eczema,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505M,Y50Cl,P,constitutional eczema,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505N,Y50Cu,P,atopic dermatitis of hands,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505O,Y50Cy,P,inverse pattern atopic dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505P,Y50Cz,P,discoid atopic dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505Q,Y50D0,P,erythrodermic atopic dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505R,Y50D2,P,follicular atopic dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505S,Y50D4,P,pruriginous atopic dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505T,Y50DA,P,photosensitive atopic dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505U,Y50DD,P,photoaggravated atopic dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505V,Y50DF,P,constitutional eczema of hands and feet,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505Y,Y50DV,P,discoid eczema of hands and feet,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X505Z,Y50DW,P,constitutional eczema of hands,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X506J,Y50GT,P,disseminated secondary eczema,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X506O,Y50Gp,P,papular eczema with elimination of papillary oedema,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,X506U,Y50H9,P,site-specific eczema,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,Xa1dl,Y50CW,P,unclassifiable eczema,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,Xa7lb,YaVC7,P,eczema of wrist,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,Xa7lZ,YaVC5,P,eczema of face,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,XaBml,YabBF,P,eczema of leg,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,XaBmm,YabBG,P,eczema of foot,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,XaBsL,Y50D6,P,chronic lichenified atopic dermatitis,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,XaINK,YakmM,P,dry eczema,0
+1741,M111.00,Atopic dermatitis/eczema,NA,M111.,Atopic dermatitis/eczema,atopic dermatitis/eczema,00,P,XE1C6,Ya6ZY,P,atopic eczema/dermatitis nos,1
+610,M112.00,Infantile eczema,M,M112.,Infantile eczema,infantile eczema,00,P,M112.,Y50Cs,P,infantile eczema,1
+1240,M113.00,Flexural eczema,M,M113.,Flexural eczema,flexural eczema,00,P,M113.,Y50Cx,S,flexural eczema,1
+5869,M114.00,Allergic (intrinsic) eczema,M,M114.,Allergic (intrinsic) eczema,allergic (intrinsic) eczema,00,P,M114.,Y50Cn,P,allergic (intrinsic) eczema,1
+38673,M115.00,Besnier's prurigo,M,M115.,Besnier's prurigo,besnier's prurigo,00,P,M115.,Y50D8,P,besnier's prurigo,1
+6180,M11z.00,Atopic dermatitis NOS,M,M11z.,Atopic dermatitis NOS,atopic dermatitis nos,00,P,M11z.,Y50Ct,P,atopic dermatitis nos,1
+230,M12z100,Eczema NOS,M,M12z1,Eczema NOS,eczema nos,00,P,XE1Av,Y50Cc,P,eczema nos,1
+230,M12z100,Eczema NOS,NA,M12z1,Eczema NOS,eczema nos,00,P,M12z1,YE0ss,P,eczema: [discoid] or [nos],1
+22764,Myu2200,[X]Exacerbation of eczema,M,Myu22,[X]Exacerbation of eczema,[x]exacerbation of eczema,00,P,XaINM,YakmO,P,exacerbation of eczema,1
