@@ -1,4 +1,4 @@
-  library(here)
+library(here)
 library(tidyverse)
 library(data.table)
 library(skimr)
@@ -24,14 +24,24 @@ if(file.exists(paste0(datapath, "primarycare_data/gp_clinical.parquet"))==FALSE)
 setDT(gp_clinical)
 
 # Save a list of unique IDs in gp_clinical so that I can subset UKBiobank data later to just those with linkage
-gp_clinical <- arrow::read_parquet(file = paste0(datapath, "primarycare_data/gp_clinical.parquet"))
-linked_ids <- unique(gp_clinical$eid)
-readr::write_delim(data.frame(f.eid = linked_ids), file = paste0(datapath, "cohort_data/linkage_ids.txt"))
-         
+if(file.exists(paste0(datapath, "cohort_data/linkage_ids.txt"))==FALSE){
+  gp_clinical <- arrow::read_parquet(file = paste0(datapath, "primarycare_data/gp_clinical.parquet"))
+  linked_ids <- unique(gp_clinical$eid)
+  readr::write_delim(data.frame(f.eid = linked_ids), file = paste0(datapath, "cohort_data/linkage_ids.txt"))
+}else{
+  f.eid <- readr::read_delim(paste0(datapath, "cohort_data/linkage_ids.txt"), delim = "\t")
+}
+
 # load mapped codelists  --------------------------------------------------
-eczema_mapped <- read_csv(here::here("codelist/eczema_mapped.csv"))
-eczema_mapped %>% filter(readv3_code == "X505K")
-fn_extract_medcodes <- function(data, read_2_list, read_3_list){
+eczema_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/eczema_mapped.csv"))
+psoriasis_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/psoriasis_mapped.csv"))
+anxiety_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/anxiety_mapped.csv"))
+depression_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/depression_mapped.csv"))
+
+fn_extract_medcodes <- function(data, codelist, outname = "null"){
+  read_3_list <- codelist %>% dplyr::select(readv3_code) %>% pull() %>% unique()
+  read_2_list <- codelist %>% dplyr::select(readv2_code) %>% pull() %>% unique()
+  
   #find medcodes (to get smaller DT) 
   gp_clinical_tpp <- data[read_3 %in% read_3_list]
   # select first obs by id 
@@ -41,59 +51,51 @@ fn_extract_medcodes <- function(data, read_2_list, read_3_list){
   gp_clinical_emisvis <- data[read_2 %in% read_2_list]
   gp_clinical_emisvis <- gp_clinical_emisvis[, .SD[1], by = eid]
   
-  return(gp_clinical_subset = rbind(gp_clinical_tpp, gp_clinical_emisvis))
+  data_tpp <- gp_clinical_tpp %>% 
+    left_join(codelist, by = c("read_3" = "readv3_code")) 
+  data_emisvis <- gp_clinical_emisvis %>% 
+    left_join(codelist, by = c("read_2" = "readv2_code")) 
+  data_full <- data_emisvis %>% 
+    bind_rows(data_tpp)
+  data_full <- data_full[, .SD[1], by = eid]
+  
+  data_full <- data_full %>% 
+    mutate(desc = ifelse(data_provider == 3, termv3_desc, readv2_desc)) %>% 
+    dplyr::select(f.eid = eid, data_provider, event_dt,read_2, read_3, medcode, desc) %>% 
+    mutate(event_dt = as.Date(event_dt, format = "%d/%m/%Y")) %>% 
+    mutate(data_gp = 1)
+  saveRDS(data_full, paste0(datapath, "primarycare_data/", outname, ".rds"))
+  data_full
 }
 
-eczema_extract <- fn_extract_medcodes(data = gp_clinical, read_2_list = unique(eczema_mapped$readv2_code), read_3_list = unique(eczema_mapped$readv3_code))
+eczema_extract <- fn_extract_medcodes(data = gp_clinical, codelist = eczema_mapped, outname = "eczema_extract")
+psoriasis_extract <- fn_extract_medcodes(data = gp_clinical, codelist = psoriasis_mapped, outname = "psoriasis_extract")
+anxiety_extract <- fn_extract_medcodes(data = gp_clinical, codelist = anxiety_mapped, outname = "anxiety_extract")
+depression_extract <- fn_extract_medcodes(data = gp_clinical, codelist = depression_mapped, outname = "depression_extract")
 
-eczema_tpp <- eczema_extract %>% 
-  filter(data_provider == 3) %>% 
-  left_join(eczema_mapped, by = c("read_3" = "readv3_code")) 
-eczema_emisvis <- eczema_extract %>% 
-  filter(data_provider != 3) %>% 
-  left_join(eczema_mapped, by = c("read_2" = "readv2_code"))  
-eczema_full <- eczema_emisvis %>% 
-  bind_rows(eczema_tpp)
-eczema_full <- eczema_full[, .SD[1], by = eid]
-eczema_full <- eczema_full %>% 
-  mutate(desc = ifelse(data_provider == 3, termv3_desc, readv2_desc)) %>% 
-  dplyr::select(f.eid = eid, data_provider, event_dt,read_2, read_3, medcode, desc) %>% 
-  mutate(event_dt = as.Date(event_dt, format = "%d/%m/%Y")) %>% 
-  mutate(eczema_gp = 1)
-saveRDS(eczema_full, "eczema_test.rds")
-
-# compare to UKB ----------------------------------------------------------
-included_ids <- gp_clinical$eid %>% unique()
-eczema_test <- eczema %>% 
-  filter(f.eid %in% included_ids) %>% 
-  full_join(eczema_primary_care, by = "f.eid")
-mismatch <- ukb_descriptive %>% 
-  filter(f.eid %in% included_ids) %>% 
-  mutate(dob = as.Date(paste(year(study_entry)-age_at_recruit, "07", "01", sep = "-"))) %>% 
-  left_join(eczema_test, by = "f.eid") %>% 
-  filter(eczema == 1 | !is.na(eczema_gp)) %>% 
-  mutate(age_eczema_gp = as.numeric((event_dt - dob)/365.25))
-
-ggplot(mismatch, aes(x = age_at_recruit , y = age_eczema_gp)) +
-  geom_point()
-
-# gp_clinical <- read_table(paste0(datapath, "gp_clinical.txt"))
-# saveRDS(gp_clinical, paste0(datapath, "gp_clinical.rds"))
-
-gp_clinical <- readRDS(paste0(datapath, "gp_clinical.rds"))
-gp_clinical_sample <- sample(gp_clinical$eid, size = 1e4, replace = F)
-
-gp_clinical_sampleset <- gp_clinical %>% filter(eid %in% gp_clinical_sample)
-#saveRDS(gp_clinical_sampleset, paste0(datapath, "gp_clinical_sample.rds"))
-gp_clinical_sampleset <- readRDS(paste0(datapath, "gp_clinical_sample.rds"))
-
-medcodes_eczema_dx <- read_csv(here::here("codelist/CPRDgold/medcodes-eczemadx.csv"))
-medcodes_psoriasis_dx <- read_csv(here::here("codelist/CPRDgold/medcodes-psoriasis.csv"))
-prodcodes_psoriasis_rx <- read_csv(here::here("codelist/CPRDgold/prodcodes-psoriasisrx.csv"))
+# table of code prevalence in data
+read2_tab <- eczema_extract %>% 
+  count(read_2, sort = T) %>% 
+  left_join(eczema_mapped, by = c("read_2" = "readv2_code")) %>% 
+  dplyr::select(read_2, n, readv2_desc) %>% 
+  distinct(read_2, n, .keep_all = T) %>% 
+  filter(!is.na(read_2)) %>% 
+  mutate(pc = signif((n/sum(n))*100, 2))
+read2_tab
+read3_tab <- eczema_extract %>% 
+  count(read_3, sort = T) %>% 
+  left_join(eczema_mapped, by = c("read_3" = "readv3_code")) %>% 
+  dplyr::select(read_3, n, termv3_desc) %>% 
+  distinct(read_3, n, .keep_all = T) %>% 
+  filter(!is.na(read_3)) %>% 
+  mutate(pc = signif((n/sum(n))*100, 2))
+read3_tab %>% 
+  bind_rows(read2_tab) %>% 
+  mutate(desc = ifelse(is.na(termv3_desc), readv2_desc, termv3_desc)) %>% 
+  dplyr::select(read_3, read_2, desc, n, pc) %>% 
+  write_csv(file = here::here("out/readCodes_eczema.csv"))
 
 
-medcodes_eczema_dx
-gp_clinical %>% glimpse()
-ad <- gp_clinical %>% 
-  filter(read_2 == "M111.")
-ad %>% filter(eid == 1957525)
+
+
+
