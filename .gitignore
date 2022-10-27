@@ -11,3 +11,4 @@ temp_store/
 .DS_Store
 .Rproj.user/shared/notebooks/paths
 *.pdf
+.Rproj.user
