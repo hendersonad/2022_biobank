@@ -11,8 +11,15 @@ library(gtsummary)
 
 dir.create(path = here::here("out"), showWarnings = F)
 dir.create(path = here::here("out/tables"), showWarnings = F)
-datapath <- "/Volumes/EHR Group/GPRD_GOLD/Ali/2022_biobank/"
-
+if (Sys.info()["user"] == "lsh1510922") {
+ if (Sys.info()["sysname"] == "Darwin") {
+   datapath <- "/Volumes/EHR Group/GPRD_GOLD/Ali/2022_biobank/"
+ }
+ if (Sys.info()["sysname"] == "Windows") {
+   datapath <- "Z:/GPRD_GOLD/Ali/2022_biobank/"
+ }
+}
+               
 # read in data and codelists ----------------------------------------------
 ukb <- read_rds(paste0(datapath, "ukb669156.rds"))
 my_ukb_key <- ukb_df_field("ukb669156", path = datapath)
