@@ -2,6 +2,7 @@
 #' 
 
 require("here")
+require("ggVennDiagram")
 source(here::here("file_paths.R"))
 source(here::here("functions/fn_twoXtwo.R"))
 
@@ -65,9 +66,25 @@ match_ukb_gp <- function(condition = "eczema"){
 }
 
 eczema_combine <- match_ukb_gp("eczema")
-  twoXtwo(eczema_combine, "eczema", "data_gp")
 psoriasis_combine <- match_ukb_gp("psoriasis")
 anxiety_combine <- match_ukb_gp("anxiety")
-  twoXtwo(anxiety_combine, "anxiety", "data_gp")
 depression_combine <- match_ukb_gp("depression")
-  twoXtwo(depression_combine, "depression", "data_gp")
+
+  
+analysis_fn <- function(dataset, interviewvar){
+  twoXtwo(dataset, interviewvar, "data_gp")
+  x = list(
+    dataset$f.eid[dataset[,interviewvar]==1],
+    dataset$f.eid[dataset$data_gp == 1]
+    )
+  
+  ggVennDiagram(x, category.names = c("Interview", "Linked GP data")) +
+    scale_color_brewer(palette = "Paired") +
+    labs(fill = interviewvar) +
+    theme(legend.position = "top")
+}
+p1 <- analysis_fn(eczema_combine, "eczema")
+p2 <- analysis_fn(psoriasis_combine, "psoriasis")
+p3 <- analysis_fn(anxiety_combine, "anxiety")
+p4 <- analysis_fn(depression_combine, "depression")
+cowplot::plot_grid(p1, p2, p3, p4)
