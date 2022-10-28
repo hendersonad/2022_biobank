@@ -19,16 +19,7 @@ medcode,readcode,desc,chapter,readv2_code,readv2_desc,termv2_desc,termv2_order,t
 49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,Ub0wu,YMDF8,P,gold 198 therapy,0
 49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,Xa8SI,Y75UZ,P,radiotherapy,1
 49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaDn2,YMDFA,P,radiolabelled antibody therapy,0
-49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNS5,YaqTM,P,radiotherapy to perineum,0
-49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNS6,YaqTN,P,radiotherapy to abdomen,0
-49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNS7,YaqTO,P,radiotherapy to neck,0
-49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNS8,YaqTP,P,radiotherapy to chest wall,0
-49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSA,YaqTR,P,radiotherapy to axilla,0
-49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSB,YaqTS,P,radiotherapy to breast,0
-49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSC,YaqTT,P,radiotherapy to head,0
-49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSD,YaqTU,P,radiotherapy to pelvis,0
 49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSR,YaqU1,P,radiotherapy by body site,0
-49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XC0gO,YM5TJ,P,radioactive iodine therapy,0
 18465,8631.00,Phototherapy,8,8631.,Phototherapy,phototherapy,00,P,8631.,Ya12f,P,light therapy,1
 18465,8631.00,Phototherapy,NA,8631.,Phototherapy,phototherapy,00,P,863..,YE0Z2,P,phototherapy &/or radiation therapy,0
 18465,8631.00,Phototherapy,NA,8631.,Phototherapy,phototherapy,00,P,Ua1MR,YMFhH,P,intermittent phototherapy,0
