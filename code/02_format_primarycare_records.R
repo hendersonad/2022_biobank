@@ -12,16 +12,18 @@ psoriasis_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelis
 anxiety_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/anxiety_mapped.csv"))
 depression_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/depression_mapped.csv"))
 
+eczema_medcodesRx_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/eczema_medcodesRx.csv"))
 
 ## Insert prodcodes_psoriasisRx codelist attempts )term search, mapped) 
-
+eczRx_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/prodcodes_eczemaRx_mapped.csv"))
+psoRx_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/prodcodes_psoriasisRx_mapped.csv"))
 
 # load primary care records -----------------------------------------------
 dir.create(paste0(datapath, "primarycare_data"), showWarnings = FALSE)
 if(file.exists(paste0(datapath, "primarycare_data/gp_clinical.parquet"))==FALSE){
   print("Need to download the files from UK Biobank. Then convert to Parquet because the text files are BIG")
-  #system(paste0("wget -nd -Ogp_clinical.txt https://biota.ndph.ox.ac.uk/tabserv.cgi?x=180721904008002d00985d6890ea037fWzQmaSN0PTE2NjU1NzgxMDUmcyNkPWdwX2NsaW5pY2FsJmkjYT03NDMxMSZpI3I9MTIyNTQzXQ=="))
-  #system(paste0("wget -nd -Ogp_scripts.txt https://biota.ndph.ox.ac.uk/tabserv.cgi?x=dc7e693b0c59cb634ec97fa1c6ca99a7WzQmaSN0PTE2NjU1OTM3ODEmcyNkPWdwX3NjcmlwdHMmaSNhPTc0MzExJmkjcj0xMjI1NDNd"))
+  system(paste0("wget -nd -Ogp_clinical.txt https://biota.ndph.ox.ac.uk/tabserv.cgi?x=180721904008002d00985d6890ea037fWzQmaSN0PTE2NjU1NzgxMDUmcyNkPWdwX2NsaW5pY2FsJmkjYT03NDMxMSZpI3I9MTIyNTQzXQ=="))
+  system(paste0("wget -nd -Ogp_scripts.txt https://biota.ndph.ox.ac.uk/tabserv.cgi?x=dc7e693b0c59cb634ec97fa1c6ca99a7WzQmaSN0PTE2NjU1OTM3ODEmcyNkPWdwX3NjcmlwdHMmaSNhPTc0MzExJmkjcj0xMjI1NDNd"))
   gp_clinical <- arrow::read_delim_arrow(here("gp_clinical.txt"), delim = "\t")
   gp_script <- arrow::read_delim_arrow(paste0(datapath, "gp_scripts.txt"), delim = "\t")
   arrow::write_parquet(gp_clinical, paste0(datapath, "primarycare_data/gp_clinical.parquet"))
@@ -45,17 +47,28 @@ if(file.exists(paste0(datapath, "cohort_data/linkage_ids.txt"))==FALSE){
 
 
 
-# extract prodcodes from gp_script  ---------------------------------------
+# extract Eczema prodcodes from gp_script  ---------------------------------------
+eczRx_mapped$cprd_name_search <- stringr::str_remove_all(eczRx_mapped$cprd_name, "[^[:alnum:]]")
+data$drug_text <- stringr::str_to_lower(stringr::str_remove_all(data$drug_name, "[^[:alnum:]]"))
 
-### try matching different versions of prodcode codelists here
+data_match <- data[drug_text %in% eczRx_mapped$cprd_name_search]
 
+data_2rows <- data_match[, .SD[c(1, 2)], by = eid] #get first two rows per patid
 
+data_out <- data_2rows %>% 
+  dplyr::select(f.eid = eid, data_provider, issue_date, read_2, bnf_code, dmd_code, drug_name) %>% 
+  filter(!is.na(issue_date)) %>% 
+  mutate(issue_date = as.Date(issue_date, format = "%d/%m/%Y")) %>% 
+  group_by(f.eid, issue_date) %>% 
+  mutate(prescription_gp = 1:n()) %>%
+  slice(1) %>% 
+  ungroup()
 
-
-
-
-
-
+data_out <- data_out %>% 
+  group_by(f.eid) %>% 
+  mutate(prescription_gp = 1:n()) %>%
+  ungroup()
+saveRDS(data_out, paste0(datapath, "primarycare_data/eczema_treatments_ukb.rds"))
 
 
 # extract medcodes/READ diagnoses -----------------------------------------
@@ -90,6 +103,7 @@ fn_extract_medcodes <- function(data, codelist, outname = "null"){
 }
 
 eczema_extract <- fn_extract_medcodes(data = gp_clinical, codelist = eczema_mapped, outname = "eczema_extract")
+eczema_medRx_extract <- fn_extract_medcodes(data = gp_clinical, codelist = eczema_medcodesRx_mapped, outname = "eczema_medcodesRx_extract")
 psoriasis_extract <- fn_extract_medcodes(data = gp_clinical, codelist = psoriasis_mapped, outname = "psoriasis_extract")
 anxiety_extract <- fn_extract_medcodes(data = gp_clinical, codelist = anxiety_mapped, outname = "anxiety_extract")
 depression_extract <- fn_extract_medcodes(data = gp_clinical, codelist = depression_mapped, outname = "depression_extract")
