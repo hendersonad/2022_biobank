@@ -41,12 +41,12 @@ run_comparison_regressions <- function(.x, .y){
   res2 <- broom::tidy(mod2, exponentiate = T, conf.int = T)
   res3 <- broom::tidy(mod3, exponentiate = T, conf.int = T)
   
-  results <- filter(res1, str_detect(term, eval(exposure))) %>% 
+  results <- filter(res1, str_detect(term, eval(.x))) %>% 
     bind_rows(
-      filter(res2, str_detect(term, eval(exposure)))
+      filter(res2, str_detect(term, eval(.x)))
     ) %>% 
     bind_rows(
-      filter(res3, str_detect(term, eval(exposure)))
+      filter(res3, str_detect(term, eval(.x)))
     ) 
   
   results$model <- factor(1:3, levels = 1:3, labels = c("UKB only", "Linked GP only", "Either data"))
