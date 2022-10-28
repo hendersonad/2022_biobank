@@ -69,5 +69,5 @@ mapping_prescription_codes <- function(cprd_filename, out_filename){
   write_csv(prescription_codelist_matched, here("codelist/ukb_mapped_primarycare_codelists", paste0(out_filename, ".csv")))
   prescription_codelist_matched
 }
-x <- mapping_prescription_codes("prodcodes_psoriasisRx", "prodcodes_psoriasisRx_mapped.csv")
-y <- mapping_prescription_codes("prodcodes_eczemaRx", "prodcodes_eczemaRx_mapped.csv")
+x <- mapping_prescription_codes("prodcodes_psoriasisRx", "prodcodes_psoriasisRx_mapped")
+y <- mapping_prescription_codes("prodcodes_eczemaRx", "prodcodes_eczemaRx_mapped")
