@@ -17,6 +17,7 @@ medcodes_eczema_rx <- read_csv(here::here("codelist/CPRDgold/medcodes-eczemarx.c
   janitor::clean_names() 
 medcodes_eczema_rx$desc <- medcodes_eczema_rx$readterm
 eczemaRx_exclude <- c("perineum", "abdomen", "neck", "chest wall", "axilla", "breast","head","pelvis","iodine")
+
 medcodes_psoriasis_dx <- read_csv(here::here("codelist/CPRDgold/medcodes-psoriasis.csv"))
 medcodes_psoriasis_dx$desc <- medcodes_psoriasis_dx$readterm
 
@@ -45,9 +46,8 @@ read_mapping_v3_to_v2 <- readxl::read_excel(here::here("codelist/mappingfile/all
   janitor::clean_names()
 read_mapping_v3_to_v2$readv2_amended <- paste0(read_mapping_v3_to_v2$readv2_code, read_mapping_v3_to_v2$termv2_order)
 
-
 # map readcodes to read CTV3 ----------------------------------------------
-map_readcodes <- function(original_list = medcodes_eczema_dx, filename = "eczema_mapped", exclude_words = ".*123"){
+map_readcodes <- function(original_list = medcodes_psoriasis_rx, filename = "eczema_mapped", exclude_words = ".*123"){
   ## check that medcode files have readcode as a variable (and it is called "readcode")
   if(!"readcode" %in% names(original_list)){stop("Original codelist does not have a readcode column (or it's not called readcode)")}
   if(!"desc" %in% names(original_list)){stop("No description column in original codelist (or it's not called 'desc')")}
@@ -100,7 +100,7 @@ map_readcodes <- function(original_list = medcodes_eczema_dx, filename = "eczema
       "Number of unique READ CTV3 codes after mapping: ", length(unique(mapped_codelist$readv3_code)))
 }
 map_readcodes(original_list = medcodes_eczema_dx, filename = "eczema_mapped", exclude_words = eczema_exclude)
-map_readcodes(original_list = medcodes_eczema_rx, filename = "eczema_medcodesRx")
+map_readcodes(original_list = medcodes_eczema_rx, filename = "eczema_medcodesRx", exclude_words = eczemaRx_exclude)
 map_readcodes(original_list = medcodes_psoriasis_dx, filename = "psoriasis_mapped")
 map_readcodes(original_list = medcodes_anxiety, filename = "anxiety_mapped")
 map_readcodes(original_list = medcodes_depression, filename = "depression_mapped")

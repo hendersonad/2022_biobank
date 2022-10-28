@@ -3,6 +3,8 @@ temp_store/
 *gp_clinical.txt
 *gp_scripts.txt
 
+*.xlsx
+
 .Rproj.user\*
 .Rproj.user*
 .Rhistory
