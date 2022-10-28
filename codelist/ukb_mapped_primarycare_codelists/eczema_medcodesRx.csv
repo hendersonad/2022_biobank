@@ -1,0 +1,45 @@
+medcode,readcode,desc,chapter,readv2_code,readv2_desc,termv2_desc,termv2_order,termv2_type,readv3_code,termv3_code,termv3_type,termv3_desc,is_assured
+73300,5922.00,Betatron photon therapy,5,5922.,Betatron photon therapy,betatron photon therapy,00,P,5922.,YB038,P,betatron photon therapy,1
+67048,727B100,Photodynamic therapy to subretinal lesion,7,727B1,Photodynamic therapy to subretinal lesion,photodynamic therapy to subretinal lesion,00,P,XaL4Q,YaoAK,P,photodynamic therapy to subretinal lesion,1
+98504,727B200,Photodynamic therapy to choroidal neovascular membrane,7,727B2,Photodynamic therapy to choroidal neovascular membrane,photodynamic therapy to choroidal neovascular membrane,00,P,XaQYj,Yat7c,P,photodynamic therapy to choroidal neovascular membrane,1
+97063,760C700,Fibreoptic endoscopic photodynamic therapy lesion oesophagus,7,760C7,Fibreoptic endoscopic photodynamic therapy of lesion of oesophagus,fibreoptic endoscopic photodynamic therapy of lesion of oesophagus,00,P,XaLd2,YaoiK,P,fibreoptic endoscopic photodynamic therapy of lesion of oesophagus,1
+84373,7G0D.00,Photodynamic therapy of skin,7,7G0D.,Photodynamic therapy of skin,photodynamic therapy of skin,00,P,XaMp0,Yapq1,P,photodynamic therapy of skin,1
+96073,7G0D000,Photodynamic therapy of skin of whole body,7,7G0D0,Photodynamic therapy of skin of whole body,photodynamic therapy of skin of whole body,00,P,XaMp1,Yapq2,P,photodynamic therapy of skin of whole body,1
+83490,7G0Dy00,Other specified photodynamic therapy of skin,7,7G0Dy,Other specified photodynamic therapy of skin,other specified photodynamic therapy of skin,00,P,XaMp2,Yapq3,P,other specified photodynamic therapy of skin,1
+94831,7G0Dz00,Photodynamic therapy of skin NOS,7,7G0Dz,Photodynamic therapy of skin NOS,photodynamic therapy of skin nos,00,P,XaMp3,Yapq4,P,photodynamic therapy of skin nos,1
+88202,7G0E.00,Phototherapy to skin,7,7G0E.,Phototherapy to skin,phototherapy to skin,00,P,XaMpO,YapqK,P,phototherapy to skin,1
+93602,7G0E200,Combined photochemotherapy and UVA light therapy to skin,7,7G0E2,Combined photochemotherapy and ultraviolet A light therapy to skin,combined photochemotherapy and ultraviolet a light therapy to skin,00,P,XaMp7,Yapq9,P,combined photochemotherapy and ultraviolet a light therapy to skin,1
+100865,7G0E300,Combined photochemotherapy and UVB light therapy to skin,7,7G0E3,Combined photochemotherapy and ultraviolet B light therapy to skin,combined photochemotherapy and ultraviolet b light therapy to skin,00,P,XaMp8,YapqA,P,combined photochemotherapy and ultraviolet b light therapy to skin,1
+93707,7G0Ez00,Phototherapy to skin NOS,7,7G0Ez,Phototherapy to skin NOS,phototherapy to skin nos,00,P,XaMpV,YapqR,P,phototherapy to skin nos,1
+89704,7M0B600,Photodynamic therapy of lesion of organ NOC,7,7M0B6,Photodynamic therapy of lesion of organ NOC,photodynamic therapy of lesion of organ noc,00,P,XaLyN,Yap5O,P,photodynamic therapy of lesion of organ noc,1
+49464,863..00,Phototherapy/radiation therapy,8,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XE0hU,Y75Ur,P,phototherapy/radiation therapy,1
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,Ub0wo,YMDEt,P,radionuclide therapy,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,Ub0wp,YMDEz,P,yttrium 90 therapy,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,Ub0wr,YMDF3,P,phosphorus 32 therapy,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,Ub0wu,YMDF8,P,gold 198 therapy,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,Xa8SI,Y75UZ,P,radiotherapy,1
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaDn2,YMDFA,P,radiolabelled antibody therapy,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNS5,YaqTM,P,radiotherapy to perineum,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNS6,YaqTN,P,radiotherapy to abdomen,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNS7,YaqTO,P,radiotherapy to neck,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNS8,YaqTP,P,radiotherapy to chest wall,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSA,YaqTR,P,radiotherapy to axilla,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSB,YaqTS,P,radiotherapy to breast,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSC,YaqTT,P,radiotherapy to head,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSD,YaqTU,P,radiotherapy to pelvis,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XaNSR,YaqU1,P,radiotherapy by body site,0
+49464,863..00,Phototherapy/radiation therapy,NA,863..,Phototherapy/radiation therapy,phototherapy/radiation therapy,00,P,XC0gO,YM5TJ,P,radioactive iodine therapy,0
+18465,8631.00,Phototherapy,8,8631.,Phototherapy,phototherapy,00,P,8631.,Ya12f,P,light therapy,1
+18465,8631.00,Phototherapy,NA,8631.,Phototherapy,phototherapy,00,P,863..,YE0Z2,P,phototherapy &/or radiation therapy,0
+18465,8631.00,Phototherapy,NA,8631.,Phototherapy,phototherapy,00,P,Ua1MR,YMFhH,P,intermittent phototherapy,0
+18465,8631.00,Phototherapy,NA,8631.,Phototherapy,phototherapy,00,P,Ua1MS,YSCIA,P,goeckerman photochemotherapy treatment,0
+18465,8631.00,Phototherapy,NA,8631.,Phototherapy,phototherapy,00,P,Ua1MU,YMFhK,P,photochemotherapy,0
+18465,8631.00,Phototherapy,NA,8631.,Phototherapy,phototherapy,00,P,XE0jr,YE0aZ,P,phototherapy (& nec),0
+18465,8631.00,Phototherapy,NA,8631.,Phototherapy,phototherapy,00,P,XM17y,YMHZG,P,phototherapy - nec,0
+5092,8632.11,PUVA phototherapy,8,8632.,Ultraviolet light therapy,puva phototherapy,11,S,Ub1QN,Y75Uk,S,puva phototherapy,1
+5092,8632.11,PUVA phototherapy,NA,8632.,Ultraviolet light therapy,puva phototherapy,11,S,8632.,Y75Uk,S,puva phototherapy,1
+5092,8632.11,PUVA phototherapy,NA,8632.,Ultraviolet light therapy,puva phototherapy,11,S,XE0jt,Y75Uk,S,puva phototherapy,1
+45349,8632.15,Ultraviolet light phototherapy,NA,8632.,Ultraviolet light therapy,ultraviolet light phototherapy,15,S,XE0hV,Y75Up,S,ultraviolet light phototherapy,1
+63352,8638.00,Photodynamic therapy,8,8638.,Photodynamic therapy,photodynamic therapy,00,P,X79wd,YM3Cn,P,photodynamic therapy,1
+48690,863Z.00,Radiation/phototherapy NOS,8,863Z.,Radiation/phototherapy NOS,radiation/phototherapy nos,00,P,863Z.,Y75Ui,P,radiation/phototherapy nos,1
+72225,SN02.00,Phototherapy complication,S,SN02.,Phototherapy complication,phototherapy complication,00,P,SN02.,Y0077,P,phototherapy complication,1
