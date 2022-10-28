@@ -5,18 +5,29 @@ library(skimr)
 library(arrow)
 source(here::here("file_paths.R"))
 
+
+# load mapped codelists  --------------------------------------------------
+eczema_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/eczema_mapped.csv"))
+psoriasis_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/psoriasis_mapped.csv"))
+anxiety_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/anxiety_mapped.csv"))
+depression_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/depression_mapped.csv"))
+
+
+## Insert prodcodes_psoriasisRx codelist attempts )term search, mapped) 
+
+
 # load primary care records -----------------------------------------------
 dir.create(paste0(datapath, "primarycare_data"), showWarnings = FALSE)
 if(file.exists(paste0(datapath, "primarycare_data/gp_clinical.parquet"))==FALSE){
   print("Need to download the files from UK Biobank. Then convert to Parquet because the text files are BIG")
   #system(paste0("wget -nd -Ogp_clinical.txt https://biota.ndph.ox.ac.uk/tabserv.cgi?x=180721904008002d00985d6890ea037fWzQmaSN0PTE2NjU1NzgxMDUmcyNkPWdwX2NsaW5pY2FsJmkjYT03NDMxMSZpI3I9MTIyNTQzXQ=="))
   #system(paste0("wget -nd -Ogp_scripts.txt https://biota.ndph.ox.ac.uk/tabserv.cgi?x=dc7e693b0c59cb634ec97fa1c6ca99a7WzQmaSN0PTE2NjU1OTM3ODEmcyNkPWdwX3NjcmlwdHMmaSNhPTc0MzExJmkjcj0xMjI1NDNd"))
-  #gp_clinical <- arrow::read_delim_arrow(here("gp_clinical.txt"), delim = "\t")
+  gp_clinical <- arrow::read_delim_arrow(here("gp_clinical.txt"), delim = "\t")
   gp_script <- arrow::read_delim_arrow(paste0(datapath, "gp_scripts.txt"), delim = "\t")
-  #arrow::write_parquet(gp_clinical, paste0(datapath, "primarycare_data/gp_clinical.parquet"))
+  arrow::write_parquet(gp_clinical, paste0(datapath, "primarycare_data/gp_clinical.parquet"))
   arrow::write_parquet(gp_script, paste0(datapath, "primarycare_data/gp_script.parquet"))
 }else{
-  #gp_clinical <- arrow::read_parquet(file = paste0(datapath, "primarycare_data/gp_clinical.parquet"))
+  gp_clinical <- arrow::read_parquet(file = paste0(datapath, "primarycare_data/gp_clinical.parquet"))
   gp_script <- arrow::read_parquet(file = paste0(datapath, "primarycare_data/gp_script.parquet"))
 }
 
@@ -32,12 +43,22 @@ if(file.exists(paste0(datapath, "cohort_data/linkage_ids.txt"))==FALSE){
   f.eid <- readr::read_delim(paste0(datapath, "cohort_data/linkage_ids.txt"), delim = "\t")
 }
 
-# load mapped codelists  --------------------------------------------------
-eczema_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/eczema_mapped.csv"))
-psoriasis_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/psoriasis_mapped.csv"))
-anxiety_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/anxiety_mapped.csv"))
-depression_mapped <- read_csv(here::here("codelist/ukb_mapped_primarycare_codelists/depression_mapped.csv"))
 
+
+# extract prodcodes from gp_script  ---------------------------------------
+
+### try matching different versions of prodcode codelists here
+
+
+
+
+
+
+
+
+
+
+# extract medcodes/READ diagnoses -----------------------------------------
 fn_extract_medcodes <- function(data, codelist, outname = "null"){
   read_3_list <- codelist %>% dplyr::select(readv3_code) %>% pull() %>% unique()
   read_2_list <- codelist %>% dplyr::select(readv2_code) %>% pull() %>% unique()
