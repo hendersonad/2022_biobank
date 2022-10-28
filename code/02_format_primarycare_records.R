@@ -4,7 +4,8 @@ library(data.table)
 library(skimr)
 library(arrow)
 
-datapath <- "/Volumes/EHR Group/GPRD_GOLD/Ali/2022_biobank/"
+source(here::here("file_paths.R"))
+
 
 # load primary care records -----------------------------------------------
 dir.create(paste0(datapath, "primarycare_data"), showWarnings = FALSE)
