@@ -3,8 +3,8 @@ library(tidyverse)
 library(data.table)
 library(skimr)
 library(arrow)
+source(here::here("file_paths.R"))
 
-datapath <- "/Volumes/EHR Group/GPRD_GOLD/Ali/2022_biobank/"
 
 # load primary care records -----------------------------------------------
 dir.create(paste0(datapath, "primarycare_data"), showWarnings = FALSE)
@@ -13,7 +13,7 @@ if(file.exists(paste0(datapath, "primarycare_data/gp_clinical.parquet"))==FALSE)
   #system(paste0("wget -nd -Ogp_clinical.txt https://biota.ndph.ox.ac.uk/tabserv.cgi?x=180721904008002d00985d6890ea037fWzQmaSN0PTE2NjU1NzgxMDUmcyNkPWdwX2NsaW5pY2FsJmkjYT03NDMxMSZpI3I9MTIyNTQzXQ=="))
   #system(paste0("wget -nd -Ogp_scripts.txt https://biota.ndph.ox.ac.uk/tabserv.cgi?x=dc7e693b0c59cb634ec97fa1c6ca99a7WzQmaSN0PTE2NjU1OTM3ODEmcyNkPWdwX3NjcmlwdHMmaSNhPTc0MzExJmkjcj0xMjI1NDNd"))
   #gp_clinical <- arrow::read_delim_arrow(here("gp_clinical.txt"), delim = "\t")
-  gp_script <- arrow::read_delim_arrow(here("gp_scripts.txt"), delim = "\t")
+  gp_script <- arrow::read_delim_arrow(paste0(datapath, "gp_scripts.txt"), delim = "\t")
   #arrow::write_parquet(gp_clinical, paste0(datapath, "primarycare_data/gp_clinical.parquet"))
   arrow::write_parquet(gp_script, paste0(datapath, "primarycare_data/gp_script.parquet"))
 }else{
@@ -22,6 +22,7 @@ if(file.exists(paste0(datapath, "primarycare_data/gp_clinical.parquet"))==FALSE)
 }
 
 setDT(gp_clinical)
+setDT(gp_script)
 
 # Save a list of unique IDs in gp_clinical so that I can subset UKBiobank data later to just those with linkage
 if(file.exists(paste0(datapath, "cohort_data/linkage_ids.txt"))==FALSE){
