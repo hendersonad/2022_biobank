@@ -80,11 +80,14 @@ analysis_fn <- function(dataset, interviewvar){
   
   ggVennDiagram(x, category.names = c("Interview", "Linked GP data")) +
     scale_color_brewer(palette = "Paired") +
-    labs(fill = interviewvar) +
-    theme(legend.position = "top")
+    labs(fill = stringr::str_to_title(interviewvar)) +
+    theme(legend.position = "left")
 }
 p1 <- analysis_fn(eczema_combine, "eczema")
 p2 <- analysis_fn(psoriasis_combine, "psoriasis")
 p3 <- analysis_fn(anxiety_combine, "anxiety")
 p4 <- analysis_fn(depression_combine, "depression")
-cowplot::plot_grid(p1, p2, p3, p4)
+
+pdf(here::here("out/venn_diagrams.pdf"), 8,8)
+  cowplot::plot_grid(p1, p2, p3, p4, labels = "AUTO")
+dev.off()
