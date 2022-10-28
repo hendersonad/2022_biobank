@@ -5,7 +5,6 @@ library(skimr)
 library(arrow)
 source(here::here("file_paths.R"))
 
-
 # load primary care records -----------------------------------------------
 dir.create(paste0(datapath, "primarycare_data"), showWarnings = FALSE)
 if(file.exists(paste0(datapath, "primarycare_data/gp_clinical.parquet"))==FALSE){
