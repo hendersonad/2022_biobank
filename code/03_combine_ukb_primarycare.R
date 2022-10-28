@@ -17,6 +17,36 @@ psoriasis_gp <- readRDS(paste0(datapath, "primarycare_data/psoriasis_extract.rds
 anxiety_gp <- readRDS(paste0(datapath, "primarycare_data/anxiety_extract.rds"))
 depression_gp <- readRDS(paste0(datapath, "primarycare_data/depression_extract.rds"))
 
+
+# load eczema treatments and use CPRD eczema definition -------------------
+eczema_trt_gp <- readRDS(paste0(datapath, "primarycare_data/eczema_treatments_ukb.rds"))
+eczema_medcodes_gp <- readRDS(paste0(datapath, "primarycare_data/eczema_medcodesRx_extract.rds"))
+
+eczema_trt_gp <- eczema_trt_gp %>% 
+  dplyr::select(f.eid, data_provider, issue_date, desc = drug_name)
+
+## combine the medcodes and prodcoes for eczema treatments
+## select the first instant per patid per day
+eczema_rx <- eczema_medcodes_gp %>% 
+  dplyr::select(f.eid, data_provider, issue_date = event_dt, desc) %>% 
+  bind_rows(eczema_trt_gp) %>% 
+  group_by(f.eid, issue_date) %>% 
+  slice(1) 
+
+## combine trt data with the diagnosis code
+## filter out treatments that precede diagnosis
+## then count the number of incidents per patid and filter if don't have 2 treatments 
+eczema_alg_gp <- eczema_gp %>% 
+  left_join(eczema_rx, by = "f.eid") %>%
+  mutate(date_gap = issue_date - event_dt) %>% 
+  filter(date_gap>=0) %>% 
+  group_by(f.eid) %>%
+  mutate(event_record = 1:n()) %>% 
+  filter(event_record == 2) %>% 
+  ungroup() %>% 
+  mutate(data_gp = 1) %>% 
+  dplyr::select(f.eid, event_dt = issue_date, data_gp, desc = desc.x)
+  
 # load list of IDs with linked data ---------------------------------------
 if(file.exists(paste0(datapath, "cohort_data/linkage_ids.txt"))==FALSE){
   gp_clinical <- arrow::read_parquet(file = paste0(datapath, "primarycare_data/gp_clinical.parquet"))
@@ -28,7 +58,9 @@ if(file.exists(paste0(datapath, "cohort_data/linkage_ids.txt"))==FALSE){
 
 # subset UKb on just those with linkage -----------------------------------
 ukb_base_linked <- ukb_base %>% 
-  filter(f.eid %in% linked_ids$f.eid)
+  filter(f.eid %in% linked_ids$f.eid) %>% 
+  mutate(eczema_alg = eczema)
+
 match_ukb_gp <- function(condition = "eczema"){
   gp_data <- get(paste0(condition, "_gp"))
   
@@ -66,6 +98,7 @@ match_ukb_gp <- function(condition = "eczema"){
 }
 
 eczema_combine <- match_ukb_gp("eczema")
+eczema_alg_combine <- match_ukb_gp("eczema_alg")
 psoriasis_combine <- match_ukb_gp("psoriasis")
 anxiety_combine <- match_ukb_gp("anxiety")
 depression_combine <- match_ukb_gp("depression")
@@ -83,11 +116,30 @@ analysis_fn <- function(dataset, interviewvar){
     labs(fill = stringr::str_to_title(interviewvar)) +
     theme(legend.position = "left")
 }
+
 p1 <- analysis_fn(eczema_combine, "eczema")
 p2 <- analysis_fn(psoriasis_combine, "psoriasis")
 p3 <- analysis_fn(anxiety_combine, "anxiety")
 p4 <- analysis_fn(depression_combine, "depression")
+p5 <- analysis_fn(eczema_alg_combine, "eczema_alg")
 
 pdf(here::here("out/venn_diagrams.pdf"), 8,8)
-  cowplot::plot_grid(p1, p2, p3, p4, labels = "AUTO")
+  cowplot::plot_grid(p1, p5, p2, p3, p4, labels = "AUTO", ncol = 2)
 dev.off()
+
+
+
+# combine the merged datasets onto the baseline data  ---------------------
+# And export
+
+ukb_gp_combined <- ukb_base_linked %>% 
+  left_join(dplyr::select(eczema_combine, f.eid, eczema_gp = data_gp, eczema_dt_gp = event_dt_gp), by = "f.eid") %>% 
+  left_join(dplyr::select(psoriasis_combine, f.eid, psoriasis_gp = data_gp, psoriasis_dt_gp = event_dt_gp), by = "f.eid") %>% 
+  left_join(dplyr::select(anxiety_combine, f.eid, anxiety_gp = data_gp, anxiety_dt_gp = event_dt_gp), by = "f.eid") %>% 
+  left_join(dplyr::select(depression_combine, f.eid, depression_gp = data_gp, depression_dt_gp = event_dt_gp), by = "f.eid") %>% 
+  left_join(dplyr::select(eczema_alg_combine, f.eid, eczema_alg_gp = data_gp, eczema_alg_dt_gp = event_dt_gp), by = "f.eid") 
+
+## make "composite" variables - EITHER in ukb or GP
+
+arrow::write_parquet(ukb_gp_combined, sink = paste0(datapath, "cohort_data/ukb_gp_linked.parquet"))
+
