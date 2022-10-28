@@ -8,12 +8,15 @@ library(tidyverse)
 library(here)
 library(readxl)
 
-
 # Read in the CPRD GOLD codelists  ----------------------------------------
 medcodes_eczema_dx <- read_csv(here::here("codelist/CPRDgold/medcodes-eczemadx.csv"))
 ## terms to exclude in any codelist because they are not 'Atopic' dermatitis - then again what is aye? 
 eczema_exclude <- c("seborrhoeic", "contact", "psoriaform", "superficial", "hyperkeratotic")
 
+medcodes_eczema_rx <- read_csv(here::here("codelist/CPRDgold/medcodes-eczemarx.csv")) %>% 
+  janitor::clean_names() 
+medcodes_eczema_rx$desc <- medcodes_eczema_rx$readterm
+eczemaRx_exclude <- c("perineum", "abdomen", "neck", "chest wall", "axilla", "breast","head","pelvis","iodine")
 medcodes_psoriasis_dx <- read_csv(here::here("codelist/CPRDgold/medcodes-psoriasis.csv"))
 medcodes_psoriasis_dx$desc <- medcodes_psoriasis_dx$readterm
 
@@ -97,6 +100,7 @@ map_readcodes <- function(original_list = medcodes_eczema_dx, filename = "eczema
       "Number of unique READ CTV3 codes after mapping: ", length(unique(mapped_codelist$readv3_code)))
 }
 map_readcodes(original_list = medcodes_eczema_dx, filename = "eczema_mapped", exclude_words = eczema_exclude)
+map_readcodes(original_list = medcodes_eczema_rx, filename = "eczema_medcodesRx")
 map_readcodes(original_list = medcodes_psoriasis_dx, filename = "psoriasis_mapped")
 map_readcodes(original_list = medcodes_anxiety, filename = "anxiety_mapped")
 map_readcodes(original_list = medcodes_depression, filename = "depression_mapped")
