@@ -17,7 +17,6 @@ psoriasis_gp <- readRDS(paste0(datapath, "primarycare_data/psoriasis_extract.rds
 anxiety_gp <- readRDS(paste0(datapath, "primarycare_data/anxiety_extract.rds"))
 depression_gp <- readRDS(paste0(datapath, "primarycare_data/depression_extract.rds"))
 
-
 # load eczema treatments and use CPRD eczema definition -------------------
 eczema_trt_gp <- readRDS(paste0(datapath, "primarycare_data/eczema_treatments_ukb.rds"))
 eczema_medcodes_gp <- readRDS(paste0(datapath, "primarycare_data/eczema_medcodesRx_extract.rds"))
@@ -69,7 +68,6 @@ match_ukb_gp <- function(condition = "eczema"){
     left_join(gp_data, by = "f.eid") %>% 
     dplyr::select(f.eid, study_entry, year_entry, age_at_recruit, sex, ethnicity, hh_inc, qualifications, age_cat, bmi, mod_exercise, vig_exercise, met_score, alcohol, insomnia, sleep_duration, smoking, socsup_visits,
                   contains(condition), event_dt_gp = event_dt, desc, data_gp) %>% 
-    mutate(data_gp = replace_na(data_gp, 0)) %>% 
     mutate(dob = as.Date(paste(year_entry-age_at_recruit, "07", "01", sep = "-"))) %>% 
     mutate(age_gp = as.numeric((event_dt_gp - dob)/365.25)) %>% 
     mutate(gp_pre_recruit = as.numeric(age_gp <= age_at_recruit))
@@ -77,8 +75,8 @@ match_ukb_gp <- function(condition = "eczema"){
   cat("Number of GP records pre-UKB recruitment \n") 
   data_combine$gp_pre_recruit %>% table(useNA = "ifany") %>% print()
   data_combine <- data_combine %>% 
-    mutate(gp_pre_recruit = replace_na(gp_pre_recruit, 0)) %>% 
-    filter(gp_pre_recruit != 1)
+    mutate(data_gp = ifelse(gp_pre_recruit == 0, 0, data_gp)) %>% 
+    mutate(data_gp = replace_na(data_gp, 0))
   
   ## DEAL WITH NEGATIVE GP AGEs :(
   cat("number of GP records with negative age (remove these) \n") 
@@ -89,14 +87,16 @@ match_ukb_gp <- function(condition = "eczema"){
   ### WHY ARE THERE NO PEOPLE WITHOUT ECZEMA == 0 
   twoXtwo(data_combine, eval(condition), "data_gp")
   p1 <- ggplot(data_combine, aes(x = age_at_recruit , y = age_gp, colour = factor(eval(condition)))) +
-    geom_point(alpha = 0.1)
-  print(p1)
+    labs(x = "Age at recruitment", y = "Age of GP record", colour = glue::glue("{condition}")) +
+    geom_point(alpha = 0.1, size = 1, shape = 2) + 
+    theme(legend.position = "none")
   p2 <- ggplot(data_combine, aes(x = age_gp, fill = factor(eval(condition)))) +
-    geom_density(alpha = 0.4)  
-  print(p2)
-  data_combine
+    labs(x = "Age of GP record", colour = glue::glue("{condition}")) +
+    geom_density(alpha = 0.4) 
+  cowplot::plot_grid(p1, p2, ncol = 2)
+  return(list(data = data_combine, p1=p1, p2=p2))
 }
-
+eczema_combine$p2
 eczema_combine <- match_ukb_gp("eczema")
 eczema_alg_combine <- match_ukb_gp("eczema_alg")
 psoriasis_combine <- match_ukb_gp("psoriasis")
@@ -117,11 +117,11 @@ analysis_fn <- function(dataset, interviewvar){
     theme(legend.position = "left")
 }
 
-p1 <- analysis_fn(eczema_combine, "eczema")
-p2 <- analysis_fn(psoriasis_combine, "psoriasis")
-p3 <- analysis_fn(anxiety_combine, "anxiety")
-p4 <- analysis_fn(depression_combine, "depression")
-p5 <- analysis_fn(eczema_alg_combine, "eczema_alg")
+p1 <- analysis_fn(eczema_combine$data, "eczema")
+p2 <- analysis_fn(psoriasis_combine$data, "psoriasis")
+p3 <- analysis_fn(anxiety_combine$data, "anxiety")
+p4 <- analysis_fn(depression_combine$data, "depression")
+p5 <- analysis_fn(eczema_alg_combine$data, "eczema_alg")
 
 pdf(here::here("out/venn_diagrams.pdf"), 8,8)
   cowplot::plot_grid(p1, p5, p2, p3, p4, labels = "AUTO", ncol = 2)
@@ -129,17 +129,29 @@ dev.off()
 
 
 
+# histograms of diagnoses --------------------------------------------------
+pdf(here::here("out/linked_gp_dates.pdf"), 8,8)
+  cowplot::plot_grid(
+    eczema_combine$p1, eczema_combine$p2,
+    psoriasis_combine$p1, psoriasis_combine$p2,
+    anxiety_combine$p1, anxiety_combine$p2,
+    depression_combine$p1, depression_combine$p2,
+    eczema_alg_combine$p1, eczema_alg_combine$p2,
+    ncol = 2,
+    labels = "auto"
+  )
+dev.off()
+
 # combine the merged datasets onto the baseline data  ---------------------
 # And export
 
 ukb_gp_combined <- ukb_base_linked %>% 
-  left_join(dplyr::select(eczema_combine, f.eid, eczema_gp = data_gp, eczema_dt_gp = event_dt_gp), by = "f.eid") %>% 
-  left_join(dplyr::select(psoriasis_combine, f.eid, psoriasis_gp = data_gp, psoriasis_dt_gp = event_dt_gp), by = "f.eid") %>% 
-  left_join(dplyr::select(anxiety_combine, f.eid, anxiety_gp = data_gp, anxiety_dt_gp = event_dt_gp), by = "f.eid") %>% 
-  left_join(dplyr::select(depression_combine, f.eid, depression_gp = data_gp, depression_dt_gp = event_dt_gp), by = "f.eid") %>% 
-  left_join(dplyr::select(eczema_alg_combine, f.eid, eczema_alg_gp = data_gp, eczema_alg_dt_gp = event_dt_gp), by = "f.eid") 
+  left_join(dplyr::select(eczema_combine$data, f.eid, eczema_gp = data_gp, eczema_dt_gp = event_dt_gp), by = "f.eid") %>% 
+  left_join(dplyr::select(psoriasis_combine$data, f.eid, psoriasis_gp = data_gp, psoriasis_dt_gp = event_dt_gp), by = "f.eid") %>% 
+  left_join(dplyr::select(anxiety_combine$data, f.eid, anxiety_gp = data_gp, anxiety_dt_gp = event_dt_gp), by = "f.eid") %>% 
+  left_join(dplyr::select(depression_combine$data, f.eid, depression_gp = data_gp, depression_dt_gp = event_dt_gp), by = "f.eid") %>% 
+  left_join(dplyr::select(eczema_alg_combine$data, f.eid, eczema_alg_gp = data_gp, eczema_alg_dt_gp = event_dt_gp), by = "f.eid") 
 
-## make "composite" variables - EITHER in ukb or GP
 
 arrow::write_parquet(ukb_gp_combined, sink = paste0(datapath, "cohort_data/ukb_gp_linked.parquet"))
 
