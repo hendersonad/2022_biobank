@@ -260,20 +260,19 @@ baseline_assessment_cohort <- baseline_assessment_cohort %>%
   mutate_at(c("hes_eczema", "hes_psoriasis", "hes_anxiety", "hes_depression", "hes_smi"), ~as.factor(tidyr::replace_na(., replace = 0))) 
 
 # treatments --------------------------------------------------------------
-trt <- ukb %>% 
-  select(f.eid, starts_with("f.20003.0")) %>% 
-  pivot_longer(cols = c(starts_with("f.20003.0")), 
-               names_to = c("instance", "array"),
-               names_pattern = "f.20003.(.).(.*)")
-ukb_insomnia <- read_csv(here::here("codelist/ukb_insomnia.csv"))
-trt_insomnia <- trt %>% 
-  filter(value %in% ukb_insomnia$coding)
-sleep_test <- baseline_assessment_cohort %>% 
-  left_join(trt_insomnia, by = "f.eid")
-sleep_test$sleep_test <- as.numeric(!is.na(sleep_test$value))
-
-twoXtwo(sleep_test, "eczema", "sleep_test")
-
+# trt <- ukb %>% 
+#   select(f.eid, starts_with("f.20003.0")) %>% 
+#   pivot_longer(cols = c(starts_with("f.20003.0")), 
+#                names_to = c("instance", "array"),
+#                names_pattern = "f.20003.(.).(.*)")
+# ukb_insomnia <- read_csv(here::here("codelist/ukb_insomnia.csv"))
+# trt_insomnia <- trt %>% 
+#   filter(value %in% ukb_insomnia$coding)
+# sleep_test <- baseline_assessment_cohort %>% 
+#   left_join(trt_insomnia, by = "f.eid")
+# sleep_test$sleep_test <- as.numeric(!is.na(sleep_test$value))
+# 
+# twoXtwo(sleep_test, "eczema", "sleep_test")
 
 # get mental health survey questionnaire ----------------------------------
 ukb_mhealth <- ukb %>% 
@@ -292,4 +291,5 @@ baseline_assessment_cohort <- baseline_assessment_cohort %>%
 
 # save baseline_assessment_cohort -----------------------------------------
 arrow::write_parquet(baseline_assessment_cohort, sink = paste0(datapath, "cohort_data/ukb_baseline.parquet"))
-
+x <- data.frame(varnames = names(baseline_assessment_cohort))
+write_csv(x, here::here("ukb_baseline.parquet_definition.csv"))
