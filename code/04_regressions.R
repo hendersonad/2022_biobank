@@ -37,35 +37,17 @@ ukb_gp$anxiety_union <- (as.numeric(ukb_gp$anxiety)-1) + as.numeric(ukb_gp$anxie
 ukb_gp$anxiety_intersect <- ifelse(ukb_gp$anxiety_union==2, 1, 0)
 ukb_gp$anxiety_union[ukb_gp$anxiety_union==2] <- 1
 
-with(ukb_gp,
-     table(eczema_gp, depression_gp, useNA = "ifany")) 
-with(ukb_gp,
-     table(eczema_gp, depression_union, useNA = "ifany")) 
-
-with(ukb_gp,
-   table(psoriasis_gp, depression_gp, useNA = "ifany")) %>% prop.table()*100
-with(ukb_gp,
-     table(psoriasis_gp, depression_union, useNA = "ifany")) %>% prop.table()*100
-
-with(ukb_gp,
-     table(eczema_alg_gp, depression_gp, useNA = "ifany")) 
-with(ukb_gp,
-     table(eczema_alg_gp, depression_union, useNA = "ifany")) 
-
 run_comparison_regressions <- function(.x, .y){
   fm1 <- "{.y} ~ {.x} + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
   fm2 <- "{.y}_gp ~ {.x}_gp + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
-  fm3 <- "{.y}_union ~ {.x}_union + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
   fm4 <- "{.y}_union ~ {.x}_gp + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
   
   mod1 <- glm(fm1, data = ukb_gp, family = "binomial")
   mod2 <- glm(fm2, data = ukb_gp, family = "binomial")
-  mod3 <- glm(fm3, data = ukb_gp, family = "binomial")
   mod4 <- glm(fm4, data = ukb_gp, family = "binomial")
   
   res1 <- broom::tidy(mod1, exponentiate = T, conf.int = T)
   res2 <- broom::tidy(mod2, exponentiate = T, conf.int = T)
-  res3 <- broom::tidy(mod3, exponentiate = T, conf.int = T)
   res4 <- broom::tidy(mod4, exponentiate = T, conf.int = T)
   
   results <- filter(res1, str_detect(term, eval(.x))) %>% 
@@ -73,19 +55,16 @@ run_comparison_regressions <- function(.x, .y){
       filter(res2, str_detect(term, eval(.x)))
     ) %>% 
     bind_rows(
-      filter(res3, str_detect(term, eval(.x)))
-    ) %>% 
-    bind_rows(
       filter(res4, str_detect(term, eval(.x)))
     ) 
   
-  results$model <- factor(1:4, levels = 1:4, labels = c("UKB only", "Linked GP only", "Either data", "x(GP)~y(either)"))
+  results$model <- factor(1:3, levels = 1:3, labels = c("UKB only", "Linked GP only", "x(GP)~y(GP|UKB)"))
   ggplot(results, aes(y = model, x = estimate, xmin = conf.low, xmax = conf.high, colour = term, fill = term)) +
     geom_errorbar() +
     geom_point() +
     labs(title = glue::glue("{.x} ~ {.y}")) +
     geom_vline(xintercept = 1, lty = 2) +
-    xlim(0, 2) +
+    xlim(0, NA) +
     theme_ali()
 }
 p1 <- run_comparison_regressions("eczema_alg", "depression")
