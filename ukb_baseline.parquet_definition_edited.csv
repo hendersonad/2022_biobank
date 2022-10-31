@@ -1,0 +1,62 @@
+varnames,UKB data field,Source,Date recorded,Description
+f.eid,NA,baseline,At assessment centre,patid
+age_at_recruit,f.21022.0.0,baseline,At assessment centre,Age at recruitment 
+age_at_assess,f.21003.0.0,baseline,At assessment centre,Age when attending assessment interview
+sex,f.31.0.0,baseline,At assessment centre,sex
+deprivation,f.189.0.0,baseline,At assessment centre,Townsend deprvation score (lower score = less deprived)
+study_entry,f.53.0.0,baseline,At assessment centre,Date of attending assessment centre
+ethnicity,f.21000.0.0,baseline,At assessment centre,Ethnicity
+hh_inc,f.738.0.0,baseline,At assessment centre,Average total household income before tax
+emplyment,f.6142.0.0,baseline,At assessment centre,Current employment status (at assessment) 
+qualifications,f.6138.0.0,baseline,At assessment centre,"ACE touchscreen question ""Which of the following qualifications do you have?"
+age_cat,NA,baseline,At assessment centre,Calculated age categories at baseline (6 categories) 
+age_eczema,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+eczema,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+age_psoriasis,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+psoriasis,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+age_anxiety,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+anxiety,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+age_depression,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+depression,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+age_smi,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+smi,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+age_asthma,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+asthma,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+age_psoarth,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+psoarth,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+age_hayfever_allergicrhinitis,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+hayfever_allergicrhinitis,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+allergic_touchscreen,f.6152,baseline,At assessment centre,"Blood clot, DVT, bronchitis, emphysema, asthma, rhinitis, eczema, allergy diagnosed by doctor (N.B - it filters to only include people who respond ""Hayfever, allergic rhinitis or eczema"")"
+bmi,f.23104,baseline,At assessment centre,Body composition estimation by impedance measurement
+mod_exercise,f.884,baseline,At assessment centre,Number of days/week of moderate physical activity 10+ minutes
+vig_exercise,f.904,baseline,At assessment centre,Number of days/week of vigorous physical activity 10+ minutes
+met_score,f.22035,baseline,At assessment centre,Indicates whether a person met the 2017 UK Physical activity guidelines of 150 minutes of moderate activity per week or 75 minutes of vigorous activity.
+age_alcohol,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+alcohol,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+alcohol_touchscreen,f.1558,baseline,At assessment centre,"ACE touchscreen question ""About how often do you drink alcohol?"""
+age_insomnia,f.87,baseline,At assessment centre,Non-cancer illness year/age first occurred 
+insomnia,f.20002,baseline,At assessment centre,"Non-cancer illness code, self-reported (codes used to define specific outcomes are in 01_cohort_build.R ~line123)"
+insomnia_touchscreen,f.1200,baseline,At assessment centre,"ACE touchscreen question ""Do you have trouble falling asleep at night or do you wake up in the middle of the night?"""
+sleep_duration,f.1160,baseline,At assessment centre,"ACE touchscreen question ""About how many hours sleep do you get in every 24 hours? (please include naps)"""
+smoking,f.20116,baseline,At assessment centre,Assessment centre: current/past smoking status of the participant
+socsup_activity,f.6160,baseline,At assessment centre,"ACE touchscreen question ""Which of the following do you attend once a week or more often? (You can select more than one)"" (N.B. recategorised so 0 = none/prefer not to answer, 1 = everything else)"
+socsup_visits,f.1031,baseline,At assessment centre,"ACE touchscreen question ""How often do you visit friends or family or have them visit you?"""
+healthrating,f.2178,baseline,At assessment centre,"ACE touchscreen question ""In general how would you rate your overall health?"""
+year_entry,NA,baseline,At assessment centre,lubridate::year(study_entry)
+age_hes_anxiety,f.41280,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Date of first in-patient diagnosis - ICD10
+hes_anxiety,f.41270,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Diagnoses - ICD10 (uses HES codelists at `codelist/._HES.txt`)
+age_hes_depression,f.41280,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Date of first in-patient diagnosis - ICD10
+hes_depression,f.41270,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Diagnoses - ICD10 (uses HES codelists at `codelist/._HES.txt`)
+age_hes_eczema,f.41280,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Date of first in-patient diagnosis - ICD10
+hes_eczema,f.41270,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Diagnoses - ICD10 (uses HES codelists at `codelist/._HES.txt`)
+age_hes_psoriasis,f.41280,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Date of first in-patient diagnosis - ICD10
+hes_psoriasis,f.41270,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Diagnoses - ICD10 (uses HES codelists at `codelist/._HES.txt`)
+age_hes_smi,f.41280,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Date of first in-patient diagnosis - ICD10
+hes_smi,f.41270,linked_hes,The date given is the episode start date (the EPISTART field on the HESIN table),Diagnoses - ICD10 (uses HES codelists at `codelist/._HES.txt`)
+date_mh_survey,f.20400.0.0,mental_health_survey,Sometime in 2016,date of fulfilling mental health survey 
+ever_anxious_worried,f.20421.0.0,mental_health_survey,Sometime in 2016,"Ever felt worried, tense, or anxious for most of a month or longer"
+ever_depressed_sad,f.20446.0.0,mental_health_survey,Sometime in 2016,Ever had prolonged feelings of sadness or depression
+ever_soughthelp,f.20499.0.0,mental_health_survey,Sometime in 2016,Ever sought or received professional help for mental distress
+happy,f.20458.0.0,mental_health_survey,Sometime in 2016,General happiness
+GP records Clinical ,f.42040,Linked GP,Ongoing,a linked dataset including all clinical codes from GP records
+GP records prescriptions,f.42039,Linked GP,Ongoing,a linked dataset including all prescription codes from GP records
