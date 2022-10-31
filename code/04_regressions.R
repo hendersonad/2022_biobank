@@ -21,6 +21,10 @@ ukb_gp$eczema_union <- (as.numeric(ukb_gp$eczema)-1) + as.numeric(ukb_gp$eczema_
 ukb_gp$eczema_intersect <- ifelse(ukb_gp$eczema_union==2, 1, 0)
 ukb_gp$eczema_union[ukb_gp$eczema_union==2] <- 1
 
+ukb_gp$eczema_alg_union <- (as.numeric(ukb_gp$eczema_alg)-1) + as.numeric(ukb_gp$eczema_alg_gp)
+ukb_gp$eczema_alg_intersect <- ifelse(ukb_gp$eczema_alg_union==2, 1, 0)
+ukb_gp$eczema_alg_union[ukb_gp$eczema_alg_union==2] <- 1
+
 ukb_gp$psoriasis_union <- (as.numeric(ukb_gp$psoriasis)-1) + as.numeric(ukb_gp$psoriasis_gp)
 ukb_gp$psoriasis_intersect <- ifelse(ukb_gp$psoriasis_union==2, 1, 0)
 ukb_gp$psoriasis_union[ukb_gp$psoriasis_union==2] <- 1
@@ -33,8 +37,21 @@ ukb_gp$anxiety_union <- (as.numeric(ukb_gp$anxiety)-1) + as.numeric(ukb_gp$anxie
 ukb_gp$anxiety_intersect <- ifelse(ukb_gp$anxiety_union==2, 1, 0)
 ukb_gp$anxiety_union[ukb_gp$anxiety_union==2] <- 1
 
-table(ukb_gp$psoriasis_gp, ukb_gp$depression_gp, useNA = "ifany") %>% prop.table()
-table(ukb_gp$psoriasis_gp, ukb_gp$depression_union) %>% prop.table()
+with(ukb_gp,
+     table(eczema_gp, depression_gp, useNA = "ifany")) 
+with(ukb_gp,
+     table(eczema_gp, depression_union, useNA = "ifany")) 
+
+with(ukb_gp,
+   table(psoriasis_gp, depression_gp, useNA = "ifany")) %>% prop.table()*100
+with(ukb_gp,
+     table(psoriasis_gp, depression_union, useNA = "ifany")) %>% prop.table()*100
+
+with(ukb_gp,
+     table(eczema_alg_gp, depression_gp, useNA = "ifany")) 
+with(ukb_gp,
+     table(eczema_alg_gp, depression_union, useNA = "ifany")) 
+
 run_comparison_regressions <- function(.x, .y){
   fm1 <- "{.y} ~ {.x} + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
   fm2 <- "{.y}_gp ~ {.x}_gp + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
@@ -71,8 +88,8 @@ run_comparison_regressions <- function(.x, .y){
     xlim(0, 2) +
     theme_ali()
 }
-p1 <- run_comparison_regressions("eczema", "depression")
-p2 <- run_comparison_regressions("eczema", "anxiety")
+p1 <- run_comparison_regressions("eczema_alg", "depression")
+p2 <- run_comparison_regressions("eczema_alg", "anxiety")
 p3 <- run_comparison_regressions("psoriasis", "depression")
 p4 <- run_comparison_regressions("psoriasis", "anxiety")
 pdf(here::here("out/OR_comparison.pdf"), 8, 4)
