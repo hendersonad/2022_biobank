@@ -19,6 +19,7 @@ if (Sys.info()["user"] == "lsh1510922") {
    datapath <- "Z:/GPRD_GOLD/Ali/2022_biobank/"
  }
 }
+source(here::here("functions/fn_twoXtwo.R"))
                
 # read in data and codelists ----------------------------------------------
 ukb <- read_rds(paste0(datapath, "ukb669156.rds"))
@@ -173,8 +174,6 @@ baseline_assessment_cohort <- as_tibble(ukb_descriptive) %>%
   left_join(socsupport_visits, by = "f.eid")  %>% 
   left_join(healthrating, by = "f.eid") 
 
-#rm(eczema,psoriasis,anxiety,depression,smi,asthma,psoarth,hayfever,allergic_touch,bmi,mod_exercise,vig_exercise,met_score,alcohol,alcohol_touch,insomnia,insomnia_touch,sleep_duration,smoking,socsupport_activity,socsupport_visits)
-
 twoXtwo(baseline_assessment_cohort, "eczema", "insomnia")
 twoXtwo(baseline_assessment_cohort, "eczema", "insomnia_touchscreen")
 twoXtwo(baseline_assessment_cohort, "allergic_touchscreen", "insomnia_touchscreen")
@@ -259,8 +258,6 @@ baseline_assessment_cohort <- baseline_assessment_cohort %>%
 
 baseline_assessment_cohort <- baseline_assessment_cohort %>% 
   mutate_at(c("hes_eczema", "hes_psoriasis", "hes_anxiety", "hes_depression", "hes_smi"), ~as.factor(tidyr::replace_na(., replace = 0))) 
-baseline_assessment_cohort %>% 
-  filter(f.eid == 1000020) %>% glimpse()
 
 # treatments --------------------------------------------------------------
 trt <- ukb %>% 
@@ -277,65 +274,22 @@ sleep_test$sleep_test <- as.numeric(!is.na(sleep_test$value))
 
 twoXtwo(sleep_test, "eczema", "sleep_test")
 
-# composite exposure and outcome  -----------------------------------------
 
+# get mental health survey questionnaire ----------------------------------
+ukb_mhealth <- ukb %>% 
+  select(f.eid, 
+         date_mh_survey = f.20400.0.0, 
+         ever_anxious_worried = f.20421.0.0,
+         ever_depressed_sad = f.20446.0.0,
+         ever_soughthelp = f.20499.0.0,
+         happy = f.20458.0.0
+  ) %>% 
+  filter(!is.na(date_mh_survey))
+ukb_mhealth %>% dim
 
-
-
-
-
-
+baseline_assessment_cohort <- baseline_assessment_cohort %>% 
+  left_join(ukb_mhealth, by = "f.eid")
 
 # save baseline_assessment_cohort -----------------------------------------
 arrow::write_parquet(baseline_assessment_cohort, sink = paste0(datapath, "cohort_data/ukb_baseline.parquet"))
 
-# build temp table 1  -----------------------------------------------------
-table1_ecz <- baseline_assessment_cohort %>%
-  ungroup() %>%
-  dplyr::select(-f.eid, -study_entry) %>%
-  tbl_summary(
-    by = eczema,
-    statistic = list(
-      all_continuous() ~ "{p50} ({p25}-{p75})",
-      all_categorical() ~ "{n} ({p}%)"
-    ),
-    digits = all_continuous() ~ 1
-  ) %>%
-  add_overall() %>%
-  bold_labels() %>%
-  modify_footnote(all_stat_cols() ~ "Median (IQR) or Frequency (%)")
-
-table1_ecz
-
-gt_tab <- table1_ecz %>%
-  as_gt() %>% 
-  cols_align(columns = 6:8, "right") %>% 
-  gt::gtsave(
-    filename = paste0("ukb_baseline_eczema.html"),
-    path = here::here("out/tables")
-  )
-
-table1_pso <- baseline_assessment_cohort %>%
-  ungroup() %>%
-  dplyr::select(-f.eid, -study_entry) %>%
-  tbl_summary(
-    by = psoriasis,
-    statistic = list(
-      all_continuous() ~ "{p50} ({p25}-{p75})",
-      all_categorical() ~ "{n} ({p}%)"
-    ),
-    digits = all_continuous() ~ 1
-  ) %>%
-  add_overall() %>%
-  bold_labels() %>%
-  modify_footnote(all_stat_cols() ~ "Median (IQR) or Frequency (%)")
-
-table1_pso
-
-gt_tab <- table1_pso %>%
-  as_gt() %>% 
-  cols_align(columns = 6:8, "right") %>% 
-  gt::gtsave(
-    filename = paste0("ukb_baseline_psoriasis.html"),
-    path = here::here("out/tables")
-  )
