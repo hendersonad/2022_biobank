@@ -11,14 +11,8 @@ library(gtsummary)
 
 dir.create(path = here::here("out"), showWarnings = F)
 dir.create(path = here::here("out/tables"), showWarnings = F)
-if (Sys.info()["user"] == "lsh1510922") {
- if (Sys.info()["sysname"] == "Darwin") {
-   datapath <- "/Volumes/EHR Group/GPRD_GOLD/Ali/2022_biobank/"
- }
- if (Sys.info()["sysname"] == "Windows") {
-   datapath <- "Z:/GPRD_GOLD/Ali/2022_biobank/"
- }
-}
+
+source(here::here("file_paths.R"))
 source(here::here("functions/fn_twoXtwo.R"))
                
 # read in data and codelists ----------------------------------------------
@@ -291,5 +285,8 @@ baseline_assessment_cohort <- baseline_assessment_cohort %>%
 
 # save baseline_assessment_cohort -----------------------------------------
 arrow::write_parquet(baseline_assessment_cohort, sink = paste0(datapath, "cohort_data/ukb_baseline.parquet"))
-x <- data.frame(varnames = names(baseline_assessment_cohort))
-write_csv(x, here::here("ukb_baseline.parquet_definition.csv"))
+
+## For handover, spat out a list of variable names in the dataset 
+## and added info to become `ukb_baseline.parquet_definition_edited.csv`
+# x <- data.frame(varnames = names(baseline_assessment_cohort))
+# write_csv(x, here::here("ukb_baseline.parquet_definition.csv"))
