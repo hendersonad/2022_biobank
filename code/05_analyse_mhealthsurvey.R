@@ -69,8 +69,7 @@ run_comparison_regressions <- function(.x, .y){
     geom_point() +
     labs(title = glue::glue("{.x} ~ {.y}")) +
     geom_vline(xintercept = 1, lty = 2) +
-    xlim(0, NA) +
-    theme_ali()
+    xlim(0, NA)
 }
 p1 <- run_comparison_regressions("eczema_alg", "ever_anxious_worried")
 p2 <- run_comparison_regressions("eczema_alg", "ever_depressed_sad")

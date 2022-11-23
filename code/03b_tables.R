@@ -1,7 +1,7 @@
 # build temp table 1  -----------------------------------------------------
 table1_ecz <- baseline_assessment_cohort %>%
   ungroup() %>%
-  dplyr::select(-f.eid, -study_entry) %>%
+  dplyr::select(-f.eid, -study_entry, -date_mh_survey) %>%
   tbl_summary(
     by = eczema,
     statistic = list(
@@ -26,7 +26,7 @@ gt_tab <- table1_ecz %>%
 
 table1_pso <- baseline_assessment_cohort %>%
   ungroup() %>%
-  dplyr::select(-f.eid, -study_entry) %>%
+  dplyr::select(-f.eid, -study_entry, -date_mh_survey) %>%
   tbl_summary(
     by = psoriasis,
     statistic = list(

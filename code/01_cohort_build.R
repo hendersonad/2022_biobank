@@ -18,6 +18,8 @@ if (Sys.info()["user"] == "lsh1510922") {
  if (Sys.info()["sysname"] == "Windows") {
    datapath <- "Z:/GPRD_GOLD/Ali/2022_biobank/"
  }
+} else {
+  datapath <- "Z:/GPRD_GOLD/Ali/2022_biobank/"
 }
 source(here::here("functions/fn_twoXtwo.R"))
                

@@ -1,0 +1,43 @@
+read_3,read_2,desc,n,pc
+XE1Av,NA,eczema nos,9278,41
+X505K,NA,eczema,4926,22
+M111.,NA,atopic dermatitis,4272,19
+XE1C6,NA,atopic eczema/dermatitis nos,2299,10
+M1...,NA,dermatitis/dermatoses,229,1
+M113.,NA,flexural eczema,226,1
+M112.,NA,infantile eczema,163,0.73
+XaINK,NA,dry eczema,147,0.66
+M114.,NA,allergic (intrinsic) eczema,142,0.63
+M12z1,NA,eczema: [discoid] or [nos],131,0.59
+M07z.,NA,infected dermatitis,104,0.46
+XaBml,NA,eczema of leg,96,0.43
+M11z.,NA,atopic dermatitis nos,92,0.41
+X505N,NA,atopic dermatitis of hands,55,0.25
+Xa7lZ,NA,eczema of face,53,0.24
+M11..,NA,atopic dermatitis and related conditions,34,0.15
+XaBmm,NA,eczema of foot,34,0.15
+XaINM,NA,exacerbation of eczema,27,0.12
+X505M,NA,constitutional eczema,20,0.089
+X506U,NA,site-specific eczema,14,0.063
+M115.,NA,besnier's prurigo,11,0.049
+X505l,NA,psoriasiform eczema,7,0.031
+XaBsL,NA,chronic lichenified atopic dermatitis,6,0.027
+X505R,NA,follicular atopic dermatitis,4,0.018
+X505V,NA,constitutional eczema of hands and feet,4,0.018
+Xa7lb,NA,eczema of wrist,4,0.018
+X505Z,NA,constitutional eczema of hands,3,0.013
+X505f,NA,constitutional eczema of feet,2,0.0089
+X505T,NA,photosensitive atopic dermatitis,2,0.0089
+X506O,NA,papular eczema with elimination of papillary oedema,2,0.0089
+X505d,NA,constitutional discoid hand eczema,1,0.0045
+X505P,NA,discoid atopic dermatitis,1,0.0045
+X505Y,NA,discoid eczema of hands and feet,1,0.0045
+NA,M111.,Atopic dermatitis/eczema,4904,56
+NA,M12z1,Eczema NOS,3581,41
+NA,M113.,Flexural eczema,117,1.3
+NA,M114.,Allergic (intrinsic) eczema,95,1.1
+NA,M11z.,Atopic dermatitis NOS,41,0.47
+NA,M11..,Atopic dermatitis and related conditions,35,0.4
+NA,M112.,Infantile eczema,34,0.39
+NA,Myu22,[X]Exacerbation of eczema,4,0.045
+NA,M115.,Besnier's prurigo,1,0.011
