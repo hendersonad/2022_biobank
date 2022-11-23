@@ -38,9 +38,9 @@ ukb_gp$anxiety_intersect <- ifelse(ukb_gp$anxiety_union==2, 1, 0)
 ukb_gp$anxiety_union[ukb_gp$anxiety_union==2] <- 1
 
 run_comparison_regressions <- function(.x, .y){
-  fm1 <- "{.y} ~ {.x} + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
-  fm2 <- "{.y}_gp ~ {.x}_gp + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
-  fm4 <- "{.y}_union ~ {.x}_gp + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
+  fm1 <- "{.y} ~ {.x}_union + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
+  fm2 <- "{.y}_gp ~ {.x}_union + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
+  fm4 <- "{.y}_union ~ {.x}_union + age_at_assess + sex + deprivation + ethnicity2" %>% glue()
   
   mod1 <- glm(fm1, data = ukb_gp, family = "binomial")
   mod2 <- glm(fm2, data = ukb_gp, family = "binomial")
@@ -59,17 +59,31 @@ run_comparison_regressions <- function(.x, .y){
     ) 
   
   results$model <- factor(1:3, levels = 1:3, labels = c("UKB only", "Linked GP only", "x(GP)~y(GP|UKB)"))
-  ggplot(results, aes(y = model, x = estimate, xmin = conf.low, xmax = conf.high, colour = term, fill = term)) +
-    geom_errorbar() +
-    geom_point() +
-    labs(title = glue::glue("{.y} ~ {.x}")) +
-    geom_vline(xintercept = 1, lty = 2) +
-    xlim(0, NA)
+  results$x <- glue("{.x}")
+  results$y <- glue("{.y}")
 }
-p1 <- run_comparison_regressions("eczema_alg", "depression")
-p2 <- run_comparison_regressions("eczema_alg", "anxiety")
-p3 <- run_comparison_regressions("psoriasis", "depression")
-p4 <- run_comparison_regressions("psoriasis", "anxiety")
-pdf(here::here("out/OR_comparison.pdf"), 8, 4)
-  cowplot::plot_grid(p1, p2, p3, p4, ncol = 2, labels = "AUTO")
+res1 <- run_comparison_regressions("eczema_alg", "depression")
+res2 <- run_comparison_regressions("eczema_alg", "anxiety")
+res3 <- run_comparison_regressions("psoriasis", "depression")
+res4 <- run_comparison_regressions("psoriasis", "anxiety")
+
+results <- res1 %>% 
+  bind_rows(res2) %>% 
+  bind_rows(res3) %>% 
+  bind_rows(res4) 
+
+ggplot(results, aes(y = model, x = estimate, xmin = conf.low, xmax = conf.high, colour = term, fill = term)) +
+  geom_errorbar() +
+  geom_point() +
+  labs(title = glue::glue("{.y} ~ {.x}")) +
+  geom_vline(xintercept = 1, lty = 2) +
+  xlim(0, NA)
+pdf(here::here("out/OR_comparison_v2.pdf"), 10, 10)
+  cowplot::plot_grid(p1, p2, p3, p4, ncol = 1, labels = "AUTO")
 dev.off()
+
+twoXtwo(ukb_gp, "eczema_alg_union", "anxiety")
+twoXtwo(ukb_gp, "eczema_alg_union", "anxiety_gp")
+twoXtwo(ukb_gp, "eczema_alg_union", "ever_anxious_worried")
+
+glimpse(ukb_gp)
