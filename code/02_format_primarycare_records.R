@@ -95,7 +95,6 @@ data_out <- data_match %>%
   filter(!is.na(issue_date)) %>% 
   mutate(issue_date = as.Date(issue_date, format = "%d/%m/%Y")) %>% 
   group_by(f.eid, issue_date) %>% 
-  mutate(prescription_gp = 1:n()) %>%
   slice(1) %>% 
   ungroup()
 
