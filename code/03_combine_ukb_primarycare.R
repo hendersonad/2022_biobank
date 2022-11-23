@@ -19,34 +19,27 @@ anxiety_gp <- readRDS(paste0(datapath, "primarycare_data/anxiety_extract.rds"))
 depression_gp <- readRDS(paste0(datapath, "primarycare_data/depression_extract.rds"))
 
 # load eczema treatments and use CPRD eczema definition -------------------
-eczema_trt_gp <- readRDS(paste0(datapath, "primarycare_data/eczema_treatments_ukb.rds"))
-eczema_medcodes_gp <- readRDS(paste0(datapath, "primarycare_data/eczema_medcodesRx_extract.rds"))
-
-eczema_trt_gp <- eczema_trt_gp %>% 
-  dplyr::select(f.eid, data_provider, issue_date, desc = drug_name)
-
-## combine the medcodes and prodcoes for eczema treatments
-## select the first instant per patid per day
-eczema_rx <- eczema_medcodes_gp %>% 
-  dplyr::select(f.eid, data_provider, issue_date = event_dt, desc) %>% 
-  bind_rows(eczema_trt_gp) %>% 
-  group_by(f.eid, issue_date) %>% 
-  slice(1) 
+eczema_trt_gp <- readRDS(paste0(datapath, "primarycare_data/all_eczema_Rx_in_ukb.rds"))
+names(eczema_trt_gp)[names(eczema_trt_gp)=="event_dt"] <- "issue_date"
 
 ## combine trt data with the diagnosis code
 ## filter out treatments that precede diagnosis
 ## then count the number of incidents per patid and filter if don't have 2 treatments 
 eczema_alg_gp <- eczema_gp %>% 
-  left_join(eczema_rx, by = "f.eid") %>%
-  mutate(date_gap = issue_date - event_dt) %>% 
-  filter(date_gap>=0) %>% 
+  left_join(eczema_trt_gp, by = "f.eid") %>%
   group_by(f.eid) %>%
   mutate(event_record = 1:n()) %>% 
   filter(event_record == 2) %>% 
   ungroup() %>% 
-  mutate(data_gp = 1) %>% 
-  dplyr::select(f.eid, event_dt = issue_date, data_gp, desc = desc.x)
-  
+  mutate(data_gp = 1,
+         eczema_date = NA) %>% 
+  mutate_at("eczema_date", ~pmax(event_dt, issue_date)) %>% 
+  dplyr::select(f.eid, event_dt = eczema_date, data_gp, desc = desc.x, trt2nd = desc.y)
+ukb_dob <- ukb_base %>% 
+  dplyr::select(f.eid, year_entry, age_at_recruit) %>% 
+  mutate(dob = as.Date(paste(year_entry-age_at_recruit, "07", "01", sep = "-"))) 
+
+
 # load list of IDs with linked data ---------------------------------------
 if(file.exists(paste0(datapath, "cohort_data/linkage_ids.txt"))==FALSE){
   gp_clinical <- arrow::read_parquet(file = paste0(datapath, "primarycare_data/gp_clinical.parquet"))
@@ -72,7 +65,7 @@ match_ukb_gp <- function(condition = "eczema"){
                   contains(condition), event_dt_gp = event_dt, desc, data_gp) %>% 
     mutate(dob = as.Date(paste(year_entry-age_at_recruit, "07", "01", sep = "-"))) %>% 
     mutate(age_gp = as.numeric((event_dt_gp - dob)/365.25)) %>% 
-    mutate(gp_pre_recruit = as.numeric(age_gp <= age_at_recruit)) %>% 
+    mutate(gp_pre_recruit = as.numeric(age_gp <= age_at_assess)) %>% 
     mutate(gp_pre_questionnaire = as.numeric(event_dt_gp <= date_mh_survey))
   
   cat("Number of GP records pre-UKB recruitment \n") 
@@ -82,8 +75,8 @@ match_ukb_gp <- function(condition = "eczema"){
   
   data_combine <- data_combine %>% 
     mutate(data_gp = ifelse(gp_pre_recruit == 0, 0, data_gp)) %>% 
-    mutate(data_gp2016 = ifelse(gp_pre_questionnaire == 0, 0, data_gp)) %>% 
     mutate(data_gp = replace_na(data_gp, 0)) %>% 
+    mutate(data_gp2016 = ifelse(gp_pre_questionnaire == 0, 0, data_gp)) %>% 
     mutate(data_gp2016 = replace_na(data_gp2016, 0))
   
   ## DEAL WITH NEGATIVE GP AGEs :(
@@ -134,7 +127,6 @@ p5 <- analysis_fn(eczema_alg_combine$data, "eczema_alg")
 pdf(here::here("out/venn_diagrams.pdf"), 8,8)
   cowplot::plot_grid(p1, p5, p2, p3, p4, labels = "AUTO", ncol = 2)
 dev.off()
-
 
 
 # histograms of diagnoses --------------------------------------------------
