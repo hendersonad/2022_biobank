@@ -1,0 +1,270 @@
+SNOMEDCode,description
+'346938005,Clobetasol 0.05% cream
+'1326111000001106,Clobetasol 0.05% cream
+'1232611000001109,Clobetasol 0.05% cream
+'60611000001107,Dermovate 0.05% cream (GlaxoSmithKline UK Ltd)
+'1933511000001104,Dermovate 0.05% cream (GlaxoSmithKline UK Ltd)
+'1933611000001100,Dermovate 0.05% cream (GlaxoSmithKline UK Ltd)
+'5258311000001104,Clobetasol 0.05% cream (Waymade Healthcare Plc)
+'5258411000001106,Clobetasol 0.05% cream (Waymade Healthcare Plc)
+'5259711000001109,Dermovate 0.05% cream (Waymade Healthcare Plc)
+'5259811000001101,Dermovate 0.05% cream (Waymade Healthcare Plc)
+'22068711000001103,Dermovate 0.05% cream (Waymade Healthcare Plc)
+'13157611000001101,Dermovate 0.05% cream (Dowelhurst Ltd)
+'13157811000001102,Dermovate 0.05% cream (Dowelhurst Ltd)
+'13862711000001107,Dermovate 0.05% cream (DE Pharmaceuticals)
+'13862811000001104,Dermovate 0.05% cream (DE Pharmaceuticals)
+'14224011000001102,Dermovate 0.05% cream (Sigma Pharmaceuticals Plc)
+'14224111000001101,Dermovate 0.05% cream (Sigma Pharmaceuticals Plc)
+'16157611000001105,Dermovate 0.05% cream (Lexon (UK) Ltd)
+'16157711000001101,Dermovate 0.05% cream (Lexon (UK) Ltd)
+'16254111000001109,Dermovate 0.05% cream (Mawdsley-Brooks & Company Ltd)
+'16254311000001106,Dermovate 0.05% cream (Mawdsley-Brooks & Company Ltd)
+'16506911000001103,Clobetasol 0.05% cream (Mawdsley-Brooks & Company Ltd)
+'16507111000001103,Clobetasol 0.05% cream (Mawdsley-Brooks & Company Ltd)
+'18249911000001100,Dermovate 0.05% cream (Necessity Supplies Ltd)
+'18250011000001109,Dermovate 0.05% cream (Necessity Supplies Ltd)
+'347928005,Clobetasol 0.05% ointment
+'1159011000001106,Clobetasol 0.05% ointment
+'1310311000001100,Clobetasol 0.05% ointment
+'724611000001106,Dermovate 0.05% ointment (GlaxoSmithKline UK Ltd)
+'1933911000001106,Dermovate 0.05% ointment (GlaxoSmithKline UK Ltd)
+'1934011000001109,Dermovate 0.05% ointment (GlaxoSmithKline UK Ltd)
+'16253711000001108,Dermovate 0.05% ointment (Mawdsley-Brooks & Company Ltd)
+'16253811000001100,Dermovate 0.05% ointment (Mawdsley-Brooks & Company Ltd)
+'20450311000001109,Dermovate 0.05% ointment (Waymade Healthcare Plc)
+'20450411000001102,Dermovate 0.05% ointment (Waymade Healthcare Plc)
+'3405211000001103,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream"
+'1165011000001101,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream"
+'16511000001106,Dermovate-NN cream (Chemidex Pharma Ltd)
+'2201111000001101,Dermovate-NN cream (Chemidex Pharma Ltd)
+'18670711000001106,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (Essential Generics Ltd)"
+'18670811000001103,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (Essential Generics Ltd)"
+'19354911000001107,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (Alliance Healthcare (Distribution) Ltd)"
+'19355011000001107,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (Alliance Healthcare (Distribution) Ltd)"
+'21557411000001104,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (A A H Pharmaceuticals Ltd)"
+'21557511000001100,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (A A H Pharmaceuticals Ltd)"
+'24520511000001105,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (Mawdsley-Brooks & Company Ltd)"
+'24520611000001109,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (Mawdsley-Brooks & Company Ltd)"
+'28880611000001104,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (Ennogen Healthcare Ltd)"
+'28880711000001108,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g cream (Ennogen Healthcare Ltd)"
+'3405411000001104,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g ointment"
+'1023711000001101,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g ointment"
+'505511000001102,Dermovate-NN ointment (Chemidex Pharma Ltd)
+'2203111000001100,Dermovate-NN ointment (Chemidex Pharma Ltd)
+'18670911000001108,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g ointment (Essential Generics Ltd)"
+'18671011000001100,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g ointment (Essential Generics Ltd)"
+'19355111000001108,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g ointment (Alliance Healthcare (Distribution) Ltd)"
+'19355211000001102,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g ointment (Alliance Healthcare (Distribution) Ltd)"
+'21557611000001101,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g ointment (A A H Pharmaceuticals Ltd)"
+'21557711000001105,"Clobetasol 500microgram / Neomycin 5mg / Nystatin 100,000units/g ointment (A A H Pharmaceuticals Ltd)"
+'36098411000001106,Diflucortolone 0.3% oily cream
+'3836311000001103,Diflucortolone 0.3% oily cream
+'3836511000001109,Nerisone Forte 0.3% oily cream (Meadow Laboratories Ltd)
+'3836711000001104,Nerisone Forte 0.3% oily cream (Meadow Laboratories Ltd)
+'331908000,Diflucortolone 0.3% ointment
+'3961911000001109,Diflucortolone 0.3% ointment
+'3962011000001102,Nerisone Forte 0.3% ointment (Meadow Laboratories Ltd)
+'3962311000001104,Nerisone Forte 0.3% ointment (Meadow Laboratories Ltd)
+'375770003,Clobetasol 500micrograms/g foam
+'10264611000001102,Clobetasol 500micrograms/g foam
+'10264711000001106,Clarelux 500micrograms/g foam (Pierre Fabre Dermo-Cosmetique)
+'10264811000001103,Clarelux 500micrograms/g foam (Pierre Fabre Dermo-Cosmetique)
+'15226611000001106,Coal tar solution 5% in Clobetasol 0.05% ointment
+'15206311000001109,Coal tar solution 5% in Clobetasol 0.05% ointment
+'15206411000001102,Coal tar solution 5% in Clobetasol 0.05% ointment (Special Order)
+'15206511000001103,Coal tar solution 5% in Clobetasol 0.05% ointment (Special Order)
+'15226511000001107,Coal tar solution 5% in Clobetasol 0.05% cream
+'15206611000001104,Coal tar solution 5% in Clobetasol 0.05% cream
+'15206711000001108,Coal tar solution 5% in Clobetasol 0.05% cream (Special Order)
+'15206811000001100,Coal tar solution 5% in Clobetasol 0.05% cream (Special Order)
+'15410011000001105,Clobetasol 0.05% ointment 50% in White soft paraffin
+'15403811000001108,Clobetasol 0.05% ointment 50% in White soft paraffin
+'15403911000001103,Clobetasol 0.05% ointment 50% in White soft paraffin (Special Order)
+'15404011000001100,Clobetasol 0.05% ointment 50% in White soft paraffin (Special Order)
+'16075411000001108,Salicylic acid 15% in Clobetasol 0.05% ointment
+'16044711000001102,Salicylic acid 15% in Clobetasol 0.05% ointment
+'16044811000001105,Salicylic acid 15% in Clobetasol 0.05% ointment (Special Order)
+'16045111000001104,Salicylic acid 15% in Clobetasol 0.05% ointment (Special Order)
+'20422911000001105,Clobetasol 0.05% ointment 25% in White soft paraffin
+'20423011000001102,Clobetasol 0.05% ointment 25% in White soft paraffin
+'20423111000001101,Clobetasol 0.05% ointment 25% in White soft paraffin
+'20423211000001107,Clobetasol 0.05% ointment 25% in White soft paraffin (Special Order)
+'20423411000001106,Clobetasol 0.05% ointment 25% in White soft paraffin (Special Order)
+'20423311000001104,Clobetasol 0.05% ointment 25% in White soft paraffin (Special Order)
+'22911611000001106,Clobetasol 0.05% ointment 10% in Generic Unguentum M cream
+'22911711000001102,Clobetasol 0.05% ointment 10% in Generic Unguentum M cream
+'22911911000001100,Clobetasol 0.05% ointment 10% in Generic Unguentum M cream
+'22912211000001102,Clobetasol 0.05% ointment 10% in Unguentum M cream (Special Order)
+'22912411000001103,Clobetasol 0.05% ointment 10% in Unguentum M cream (Special Order)
+'22912611000001100,Clobetasol 0.05% ointment 10% in Unguentum M cream (Special Order)
+'22914211000001106,Propylene glycol 40% in Clobetasol 0.05% cream
+'22914411000001105,Propylene glycol 40% in Clobetasol 0.05% cream
+'22914911000001102,Propylene glycol 40% in Clobetasol 0.05% cream
+'22915111000001101,Propylene glycol 40% in Clobetasol 0.05% cream
+'22915311000001104,Propylene glycol 40% in Clobetasol 0.05% cream (Special Order)
+'22915411000001106,Propylene glycol 40% in Clobetasol 0.05% cream (Special Order)
+'22915711000001100,Propylene glycol 40% in Clobetasol 0.05% cream (Special Order)
+'22915611000001109,Propylene glycol 40% in Clobetasol 0.05% cream (Special Order)
+'24394111000001100,Propylene glycol 50% in Clobetasol 0.05% cream
+'24394211000001106,Propylene glycol 50% in Clobetasol 0.05% cream
+'24394311000001103,Propylene glycol 50% in Clobetasol 0.05% cream
+'24394411000001105,Propylene glycol 50% in Clobetasol 0.05% cream (Special Order)
+'24394511000001109,Propylene glycol 50% in Clobetasol 0.05% cream (Special Order)
+'24394611000001108,Propylene glycol 50% in Clobetasol 0.05% cream (Special Order)
+'24546911000001103,Clobetasol 0.05% ointment 25% / Coal tar solution 5% / Salicylic acid 2% in Yellow soft paraffin
+'24547011000001104,Clobetasol 0.05% ointment 25% / Coal tar solution 5% / Salicylic acid 2% in Yellow soft paraffin
+'24547111000001103,Clobetasol 0.05% ointment 25% / Coal tar solution 5% / Salicylic acid 2% in Yellow soft paraffin
+'24549211000001103,Clobetasol 0.05% ointment 25% / Coal tar solution 5% / Salicylic acid 2% in Yellow soft paraffin (Special Order)
+'24549411000001104,Clobetasol 0.05% ointment 25% / Coal tar solution 5% / Salicylic acid 2% in Yellow soft paraffin (Special Order)
+'24549311000001106,Clobetasol 0.05% ointment 25% / Coal tar solution 5% / Salicylic acid 2% in Yellow soft paraffin (Special Order)
+'24643111000001102,Clobetasol 0.05% ointment 25% / Coal tar solution 6% in Generic Unguentum M cream
+'24643211000001108,Clobetasol 0.05% ointment 25% / Coal tar solution 6% in Generic Unguentum M cream
+'24643311000001100,Clobetasol 0.05% ointment 25% / Coal tar solution 6% in Generic Unguentum M cream
+'24643411000001107,Clobetasol 0.05% ointment 25% / Coal tar solution 6% in Unguentum M cream (Special Order)
+'24643511000001106,Clobetasol 0.05% ointment 25% / Coal tar solution 6% in Unguentum M cream (Special Order)
+'24643611000001105,Clobetasol 0.05% ointment 25% / Coal tar solution 6% in Unguentum M cream (Special Order)
+'24675611000001108,Clobetasol 0.05% ointment 25% / Coal tar solution 5% in White soft paraffin
+'24675711000001104,Clobetasol 0.05% ointment 25% / Coal tar solution 5% in White soft paraffin
+'24675811000001107,Clobetasol 0.05% ointment 25% / Coal tar solution 5% in White soft paraffin
+'24675911000001102,Clobetasol 0.05% ointment 25% / Coal tar solution 5% in White soft paraffin (Special Order)
+'24676011000001105,Clobetasol 0.05% ointment 25% / Coal tar solution 5% in White soft paraffin (Special Order)
+'24676111000001106,Clobetasol 0.05% ointment 25% / Coal tar solution 5% in White soft paraffin (Special Order)
+'25040211000001102,Propylene glycol 40% / Clobetasol 0.05% ointment 25% / Coal tar solution 5% in Generic Unguentum M cream
+'25040611000001100,Propylene glycol 40% / Clobetasol 0.05% ointment 25% / Coal tar solution 5% in Generic Unguentum M cream
+'25040711000001109,Propylene glycol 40% / Clobetasol 0.05% ointment 25% / Coal tar solution 5% in Generic Unguentum M cream
+'25041111000001102,Propylene glycol 40% / Clobetasol 0.05% ointment 25% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'25041411000001107,Propylene glycol 40% / Clobetasol 0.05% ointment 25% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'25041311000001100,Propylene glycol 40% / Clobetasol 0.05% ointment 25% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'28415511000001104,Propylene glycol 60% in Clobetasol 0.05% cream
+'28407811000001109,Propylene glycol 60% in Clobetasol 0.05% cream
+'28408011000001102,Propylene glycol 60% in Clobetasol 0.05% cream (Special Order)
+'28408111000001101,Propylene glycol 60% in Clobetasol 0.05% cream (Special Order)
+'28423211000001105,Salicylic acid 50% in Clobetasol 0.05% ointment
+'28411211000001100,Salicylic acid 50% in Clobetasol 0.05% ointment
+'28411311000001108,Salicylic acid 50% in Clobetasol 0.05% ointment (Special Order)
+'28411411000001101,Salicylic acid 50% in Clobetasol 0.05% ointment (Special Order)
+'28946111000001109,Clobetasol 0.05% ointment 20% in White soft paraffin
+'28930211000001101,Clobetasol 0.05% ointment 20% in White soft paraffin
+'28930311000001109,Clobetasol 0.05% ointment 20% in White soft paraffin (Special Order)
+'28930411000001102,Clobetasol 0.05% ointment 20% in White soft paraffin (Special Order)
+'28945711000001102,Clobetasol 0.05% cream 25% in White soft paraffin
+'28930511000001103,Clobetasol 0.05% cream 25% in White soft paraffin
+'28930611000001104,Clobetasol 0.05% cream 25% in White soft paraffin (Special Order)
+'28930711000001108,Clobetasol 0.05% cream 25% in White soft paraffin (Special Order)
+'28945911000001100,Clobetasol 0.05% cream 50% in White soft paraffin
+'28930811000001100,Clobetasol 0.05% cream 50% in White soft paraffin
+'28930911000001105,Clobetasol 0.05% cream 50% in White soft paraffin (Special Order)
+'28931011000001102,Clobetasol 0.05% cream 50% in White soft paraffin (Special Order)
+'28946011000001108,Clobetasol 0.05% ointment 10% in White soft paraffin
+'28931111000001101,Clobetasol 0.05% ointment 10% in White soft paraffin
+'28931211000001107,Clobetasol 0.05% ointment 10% in White soft paraffin (Special Order)
+'28931411000001106,Clobetasol 0.05% ointment 10% in White soft paraffin (Special Order)
+'28947011000001106,Coal tar solution 6% in Clobetasol 0.05% cream
+'28931611000001109,Coal tar solution 6% in Clobetasol 0.05% cream
+'28931711000001100,Coal tar solution 6% in Clobetasol 0.05% cream (Special Order)
+'28932211000001100,Coal tar solution 6% in Clobetasol 0.05% cream (Special Order)
+'28946211000001103,Clobetasol 0.05% ointment 30% in White soft paraffin
+'28935811000001106,Clobetasol 0.05% ointment 30% in White soft paraffin
+'28935911000001101,Clobetasol 0.05% ointment 30% in White soft paraffin (Special Order)
+'28936011000001109,Clobetasol 0.05% ointment 30% in White soft paraffin (Special Order)
+'28946411000001104,Coal tar 3% / Salicylic acid 2% in Clobetasol 0.05% ointment
+'28938011000001108,Coal tar 3% / Salicylic acid 2% in Clobetasol 0.05% ointment
+'28938111000001109,Coal tar 3% / Salicylic acid 2% in Clobetasol 0.05% ointment (Special Order)
+'28938211000001103,Coal tar 3% / Salicylic acid 2% in Clobetasol 0.05% ointment (Special Order)
+'28947511000001103,Salicylic acid 10% in Clobetasol 0.05% ointment
+'28938311000001106,Salicylic acid 10% in Clobetasol 0.05% ointment
+'28938411000001104,Salicylic acid 10% in Clobetasol 0.05% ointment (Special Order)
+'28938511000001100,Salicylic acid 10% in Clobetasol 0.05% ointment (Special Order)
+'28947411000001102,Propylene glycol 50% in Clobetasol 0.05% ointment
+'28938611000001101,Propylene glycol 50% in Clobetasol 0.05% ointment
+'28938711000001105,Propylene glycol 50% in Clobetasol 0.05% ointment (Special Order)
+'28938811000001102,Propylene glycol 50% in Clobetasol 0.05% ointment (Special Order)
+'28945811000001105,Clobetasol 0.05% cream 30% in Aqueous cream
+'28938911000001107,Clobetasol 0.05% cream 30% in Aqueous cream
+'28939011000001103,Clobetasol 0.05% cream 30% in Aqueous cream (Special Order)
+'28939111000001102,Clobetasol 0.05% cream 30% in Aqueous cream (Special Order)
+'28946611000001101,Coal tar solution 10% in Clobetasol 0.05% ointment
+'28939211000001108,Coal tar solution 10% in Clobetasol 0.05% ointment
+'28939311000001100,Coal tar solution 10% in Clobetasol 0.05% ointment (Special Order)
+'28939411000001107,Coal tar solution 10% in Clobetasol 0.05% ointment (Special Order)
+'29826711000001102,Clobetasol 0.05% cream 10% in Generic Unguentum M cream
+'29783511000001105,Clobetasol 0.05% cream 10% in Generic Unguentum M cream
+'29783611000001109,Clobetasol 0.05% cream 10% in Unguentum M cream (Special Order)
+'29783711000001100,Clobetasol 0.05% cream 10% in Unguentum M cream (Special Order)
+'29826811000001105,Clobetasol 0.05% cream 50% in Generic Unguentum M cream
+'29783811000001108,Clobetasol 0.05% cream 50% in Generic Unguentum M cream
+'29783911000001103,Clobetasol 0.05% cream 50% in Unguentum M cream (Special Order)
+'29784011000001100,Clobetasol 0.05% cream 50% in Unguentum M cream (Special Order)
+'29828111000001104,Propylene glycol 40% in Clobetasol 0.05% ointment
+'29784311000001102,Propylene glycol 40% in Clobetasol 0.05% ointment
+'29784411000001109,Propylene glycol 40% in Clobetasol 0.05% ointment (Special Order)
+'29784611000001107,Propylene glycol 40% in Clobetasol 0.05% ointment (Special Order)
+'29828211000001105,Salicylic acid 5% in Clobetasol 0.05% cream
+'29785011000001101,Salicylic acid 5% in Clobetasol 0.05% cream
+'29785111000001100,Salicylic acid 5% in Clobetasol 0.05% cream (Special Order)
+'29785211000001106,Salicylic acid 5% in Clobetasol 0.05% cream (Special Order)
+'30919811000001102,Coal tar solution 10% in Clobetasol 0.05% cream
+'30847611000001109,Coal tar solution 10% in Clobetasol 0.05% cream
+'30847711000001100,Coal tar solution 10% in Clobetasol 0.05% cream (Special Order)
+'30847811000001108,Coal tar solution 10% in Clobetasol 0.05% cream (Special Order)
+'30920211000001104,Propylene glycol 20% in Clobetasol 0.05% cream
+'30847911000001103,Propylene glycol 20% in Clobetasol 0.05% cream
+'30848011000001101,Propylene glycol 20% in Clobetasol 0.05% cream (Special Order)
+'30848111000001100,Propylene glycol 20% in Clobetasol 0.05% cream (Special Order)
+'30919411000001104,Clobetasol 0.05% ointment 25% in Generic Unguentum M cream
+'30848211000001106,Clobetasol 0.05% ointment 25% in Generic Unguentum M cream
+'30848311000001103,Clobetasol 0.05% ointment 25% in Unguentum M cream (Special Order)
+'30848411000001105,Clobetasol 0.05% ointment 25% in Unguentum M cream (Special Order)
+'30957411000001100,Clobetasol 0.05% ointment 50% in Carmellose gelatin paste
+'30957511000001101,Clobetasol 0.05% ointment 50% in Carmellose gelatin paste
+'30957611000001102,Clobetasol 0.05% ointment 50% in Carmellose gelatin paste
+'30957711000001106,Clobetasol 0.05% ointment 50% in Carmellose gelatin paste (Special Order)
+'30957911000001108,Clobetasol 0.05% ointment 50% in Carmellose gelatin paste (Special Order)
+'30957811000001103,Clobetasol 0.05% ointment 50% in Carmellose gelatin paste (Special Order)
+'31147511000001109,Salicylic acid 5% / Propylene glycol 47.5% in Clobetasol 0.05% cream
+'31147611000001108,Salicylic acid 5% / Propylene glycol 47.5% in Clobetasol 0.05% cream
+'35360311000001100,Salicylic acid 5% / Propylene glycol 47.5% in Clobetasol 0.05% cream
+'31147711000001104,Salicylic acid 5% / Propylene glycol 47.5% in Clobetasol 0.05% cream (Special Order)
+'31147811000001107,Salicylic acid 5% / Propylene glycol 47.5% in Clobetasol 0.05% cream (Special Order)
+'35360411000001107,Salicylic acid 5% / Propylene glycol 47.5% in Clobetasol 0.05% cream (Special Order)
+'32391811000001100,Clobetasol 0.05% ointment 25% / Dithranol 0.05% in White soft paraffin
+'32332311000001105,Clobetasol 0.05% ointment 25% / Dithranol 0.05% in White soft paraffin
+'32332611000001100,Clobetasol 0.05% ointment 25% / Dithranol 0.05% in White soft paraffin (Special Order)
+'32332811000001101,Clobetasol 0.05% ointment 25% / Dithranol 0.05% in White soft paraffin (Special Order)
+'32653811000001104,Clobetasol 0.05% cream 25% in Cetomacrogol cream (Formula A)
+'32643411000001103,Clobetasol 0.05% cream 25% in Cetomacrogol cream (Formula A)
+'32643511000001104,Clobetasol 0.05% cream 25% in Cetomacrogol cream (Formula A) (Special Order)
+'32643611000001100,Clobetasol 0.05% cream 25% in Cetomacrogol cream (Formula A) (Special Order)
+'32653911000001109,Clobetasol 0.05% ointment 20% in Cetomacrogol cream (Formula A)
+'32643811000001101,Clobetasol 0.05% ointment 20% in Cetomacrogol cream (Formula A)
+'32644011000001109,Clobetasol 0.05% ointment 20% in Cetomacrogol cream (Formula A) (Special Order)
+'32644111000001105,Clobetasol 0.05% ointment 20% in Cetomacrogol cream (Formula A) (Special Order)
+'32748111000001109,Clobetasol 0.05% cream 10% in Aqueous cream
+'32707111000001101,Clobetasol 0.05% cream 10% in Aqueous cream
+'32707211000001107,Clobetasol 0.05% cream 10% in Aqueous cream (Special Order)
+'32707311000001104,Clobetasol 0.05% cream 10% in Aqueous cream (Special Order)
+'32748311000001106,Clobetasol 0.05% ointment 50% in Emulsifying ointment
+'32729911000001102,Clobetasol 0.05% ointment 50% in Emulsifying ointment
+'32730011000001107,Clobetasol 0.05% ointment 50% in Emulsifying ointment (Special Order)
+'32730111000001108,Clobetasol 0.05% ointment 50% in Emulsifying ointment (Special Order)
+'32748211000001103,Clobetasol 0.05% cream 25% / Propylene glycol 40% in Aqueous cream
+'32740911000001105,Clobetasol 0.05% cream 25% / Propylene glycol 40% in Aqueous cream
+'32741011000001102,Clobetasol 0.05% cream 25% / Propylene glycol 40% in Aqueous cream (Special Order)
+'32741111000001101,Clobetasol 0.05% cream 25% / Propylene glycol 40% in Aqueous cream (Special Order)
+'35148311000001101,Coal tar solution 25% in Clobetasol 0.05% ointment
+'35133211000001100,Coal tar solution 25% in Clobetasol 0.05% ointment
+'35133311000001108,Coal tar solution 25% in Clobetasol 0.05% ointment (Special Order)
+'35133411000001101,Coal tar solution 25% in Clobetasol 0.05% ointment (Special Order)
+'35642511000001109,Clobetasol 0.05% ointment 50% / Propylene glycol 48% / Salicylic acid 2% ointment
+'35640111000001104,Clobetasol 0.05% ointment 50% / Propylene glycol 48% / Salicylic acid 2% ointment
+'35640211000001105,Clobetasol 0.05% ointment 50% / Propylene glycol 48% / Salicylic acid 2% ointment (Special Order)
+'35640311000001102,Clobetasol 0.05% ointment 50% / Propylene glycol 48% / Salicylic acid 2% ointment (Special Order)
+'36002611000001109,Coal tar 10% in Clobetasol 0.05% ointment
+'35991611000001107,Coal tar 10% in Clobetasol 0.05% ointment
+'35991711000001103,Coal tar 10% in Clobetasol 0.05% ointment (Special Order)
+'35991811000001106,Coal tar 10% in Clobetasol 0.05% ointment (Special Order)
+'36903311000001102,Clobetasol 0.05% cream 25% / Propylene glycol 40% in Generic Ungentum M cream
+'36892711000001104,Clobetasol 0.05% cream 25% / Propylene glycol 40% in Generic Ungentum M cream
+'36892811000001107,Clobetasol 0.05% cream 25% / Propylene glycol 40% in Ungentum M cream (Special Order)
+'36892911000001102,Clobetasol 0.05% cream 25% / Propylene glycol 40% in Ungentum M cream (Special Order)

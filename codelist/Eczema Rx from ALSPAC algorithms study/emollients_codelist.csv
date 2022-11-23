@@ -1,0 +1,724 @@
+SNOMEDCode,description
+'3422511000001104,Generic E45 emollient wash cream
+'1230311000001103,Generic E45 emollient wash cream
+'696111000001108,E45 emollient wash cream (Forum Health Products Ltd)
+'1814911000001106,E45 emollient wash cream (Forum Health Products Ltd)
+'3422411000001103,Generic E45 lotion
+'1165511000001109,Generic E45 lotion
+'1165711000001104,Generic E45 lotion
+'167211000001103,E45 lotion (Forum Health Products Ltd)
+'1838711000001106,E45 lotion (Forum Health Products Ltd)
+'1839011000001104,E45 lotion (Forum Health Products Ltd)
+'3422211000001102,Generic E45 cream
+'1082011000001102,Generic E45 cream
+'1106411000001102,Generic E45 cream
+'1011211000001103,Generic E45 cream
+'1262811000001102,Generic E45 cream
+'545211000001106,E45 cream (Forum Health Products Ltd)
+'1919511000001109,E45 cream (Forum Health Products Ltd)
+'1919711000001104,E45 cream (Forum Health Products Ltd)
+'1919911000001102,E45 cream (Forum Health Products Ltd)
+'1920011000001100,E45 cream (Forum Health Products Ltd)
+'3395511000001109,Generic Dermol 600 bath emollient
+'1025911000001103,Generic Dermol 600 bath emollient
+'919911000001102,Dermol 600 bath emollient (Dermal Laboratories Ltd)
+'2257411000001109,Dermol 600 bath emollient (Dermal Laboratories Ltd)
+'159411000001102,Oilatum Emollient (GlaxoSmithKline Consumer Healthcare)
+'2266911000001107,Oilatum Emollient (GlaxoSmithKline Consumer Healthcare)
+'2267011000001106,Oilatum Emollient (GlaxoSmithKline Consumer Healthcare)
+'15441211000001103,Oilatum Emollient (GlaxoSmithKline Consumer Healthcare)
+'22659911000001108,LPL 63.4 bath additive and emollient (Huxley Europe Ltd)
+'22660011000001105,LPL 63.4 bath additive and emollient (Huxley Europe Ltd)
+'3395311000001103,Generic Dermol 200 shower emollient
+'1133311000001107,Generic Dermol 200 shower emollient
+'420611000001105,Dermol 200 shower emollient (Dermal Laboratories Ltd)
+'2257711000001103,Dermol 200 shower emollient (Dermal Laboratories Ltd)
+'3395411000001105,Generic Dermol 500 lotion
+'1262311000001106,Generic Dermol 500 lotion
+'553611000001106,Dermol 500 lotion (Dermal Laboratories Ltd)
+'2257811000001106,Dermol 500 lotion (Dermal Laboratories Ltd)
+'3465711000001106,Generic Emulsiderm emollient
+'1179811000001103,Generic Emulsiderm emollient
+'1288211000001103,Generic Emulsiderm emollient
+'424511000001102,Emulsiderm emollient (Dermal Laboratories Ltd)
+'2258011000001104,Emulsiderm emollient (Dermal Laboratories Ltd)
+'2258111000001103,Emulsiderm emollient (Dermal Laboratories Ltd)
+'3501811000001109,Sodium pidolate 2.5% cream
+'1170111000001100,Sodium pidolate 2.5% cream
+'949211000001101,Sodium pidolate 2.5% cream
+'1244111000001105,Sodium pidolate 2.5% cream
+'3392011000001106,Generic Aveeno bath oil
+'1192511000001101,Generic Aveeno bath oil
+'831211000001108,Aveeno bath oil (Johnson & Johnson Ltd)
+'2639111000001108,Aveeno bath oil (Johnson & Johnson Ltd)
+'10920211000001101,Aveeno bath oil (Waymade Healthcare Plc)
+'10920311000001109,Aveeno bath oil (Waymade Healthcare Plc)
+'13834211000001100,Aveeno bath oil (DE Pharmaceuticals)
+'13834411000001101,Aveeno bath oil (DE Pharmaceuticals)
+'16273811000001103,Aveeno bath oil (Mawdsley-Brooks & Company Ltd)
+'16274211000001101,Aveeno bath oil (Mawdsley-Brooks & Company Ltd)
+'3392111000001107,Generic Aveeno cream
+'1176011000001103,Generic Aveeno cream
+'14744211000001102,Generic Aveeno cream
+'25594711000001108,Generic Aveeno cream
+'892711000001100,Aveeno cream (Johnson & Johnson Ltd)
+'2643711000001107,Aveeno cream (Johnson & Johnson Ltd)
+'14744311000001105,Aveeno cream (Johnson & Johnson Ltd)
+'25594811000001100,Aveeno cream (Johnson & Johnson Ltd)
+'10920411000001102,Aveeno cream (Waymade Healthcare Plc)
+'10920511000001103,Aveeno cream (Waymade Healthcare Plc)
+'24098511000001101,Aveeno cream (Waymade Healthcare Plc)
+'13834611000001103,Aveeno cream (DE Pharmaceuticals)
+'13834711000001107,Aveeno cream (DE Pharmaceuticals)
+'16274311000001109,Aveeno cream (Mawdsley-Brooks & Company Ltd)
+'16274411000001102,Aveeno cream (Mawdsley-Brooks & Company Ltd)
+'18216511000001106,Aveeno cream (Mawdsley-Brooks & Company Ltd)
+'3392211000001101,Generic Aveeno lotion
+'1018411000001106,Generic Aveeno lotion
+'20470111000001109,Generic Aveeno lotion
+'450211000001109,Aveeno lotion (Johnson & Johnson Ltd)
+'2644911000001106,Aveeno lotion (Johnson & Johnson Ltd)
+'20470311000001106,Aveeno lotion (Johnson & Johnson Ltd)
+'15504211000001104,Aveeno lotion (Waymade Healthcare Plc)
+'15504311000001107,Aveeno lotion (Waymade Healthcare Plc)
+'16274711000001108,Aveeno lotion (Mawdsley-Brooks & Company Ltd)
+'16274811000001100,Aveeno lotion (Mawdsley-Brooks & Company Ltd)
+'3422311000001105,Generic E45 emollient bath oil
+'1277611000001109,Generic E45 emollient bath oil
+'1057511000001100,Generic E45 emollient bath oil
+'862311000001102,E45 emollient bath oil (Forum Health Products Ltd)
+'2645511000001103,E45 emollient bath oil (Forum Health Products Ltd)
+'2645611000001104,E45 emollient bath oil (Forum Health Products Ltd)
+'331384006,White soft paraffin 50% / Liquid paraffin 50% ointment
+'2914611000001105,White soft paraffin 50% / Liquid paraffin 50% ointment
+'2914811000001109,White soft paraffin 50% / Liquid paraffin 50% ointment
+'2915211000001109,White soft paraffin 50% / Liquid paraffin 50% ointment (A A H Pharmaceuticals Ltd)
+'2915411000001108,White soft paraffin 50% / Liquid paraffin 50% ointment (A A H Pharmaceuticals Ltd)
+'10134311000001102,White soft paraffin 50% / Liquid paraffin 50% ointment (A A H Pharmaceuticals Ltd)
+'2915511000001107,The 50:50 Ointment (The Boots Company Plc)
+'2917511000001103,The 50:50 Ointment (The Boots Company Plc)
+'3303911000001101,White soft paraffin 50% / Liquid paraffin 50% ointment (Kent Pharmaceuticals Ltd)
+'2915911000001100,White soft paraffin 50% / Liquid paraffin 50% ointment (Kent Pharmaceuticals Ltd)
+'3302611000001102,White soft paraffin 50% / Liquid paraffin 50% ointment (J M Loveridge Ltd)
+'2916011000001108,White soft paraffin 50% / Liquid paraffin 50% ointment (J M Loveridge Ltd)
+'3306911000001107,White soft paraffin 50% / Liquid paraffin 50% ointment (Thornton & Ross Ltd)
+'2916411000001104,White soft paraffin 50% / Liquid paraffin 50% ointment (Thornton & Ross Ltd)
+'3303611000001107,White soft paraffin 50% / Liquid paraffin 50% ointment (Alliance Healthcare (Distribution) Ltd)
+'2916611000001101,White soft paraffin 50% / Liquid paraffin 50% ointment (Alliance Healthcare (Distribution) Ltd)
+'2916711000001105,White soft paraffin 50% / Liquid paraffin 50% ointment (Alliance Healthcare (Distribution) Ltd)
+'2917011000001106,Pure Health Liquid Paraffin/White Soft Paraffin (Lexon (UK) Ltd)
+'2917111000001107,Pure Health Liquid Paraffin/White Soft Paraffin (Lexon (UK) Ltd)
+'22716711000001101,White soft paraffin 50% / Liquid paraffin 50% ointment (DE Pharmaceuticals)
+'30835511000001100,White soft paraffin 50% / Liquid paraffin 50% ointment (DE Pharmaceuticals)
+'22717011000001100,White soft paraffin 50% / Liquid paraffin 50% ointment (DE Pharmaceuticals)
+'32476311000001104,"Bell's Emollient 50 ointment (Bell,Sons & Co (Druggists) Ltd)"
+'32476411000001106,"Bell's Emollient 50 ointment (Bell,Sons & Co (Druggists) Ltd)"
+'32476511000001105,"Bell's Emollient 50 ointment (Bell,Sons & Co (Druggists) Ltd)"
+'15620411000001108,Cetraben emollient cream (Waymade Healthcare Plc)
+'15620511000001107,Cetraben emollient cream (Waymade Healthcare Plc)
+'3376311000001102,White soft paraffin 15% / Liquid paraffin light 6% cream
+'2984511000001109,White soft paraffin 15% / Liquid paraffin light 6% cream
+'2984711000001104,White soft paraffin 15% / Liquid paraffin light 6% cream
+'4339311000001105,White soft paraffin 15% / Liquid paraffin light 6% cream
+'9848911000001101,White soft paraffin 15% / Liquid paraffin light 6% cream
+'10614511000001100,White soft paraffin 15% / Liquid paraffin light 6% cream
+'22218711000001106,White soft paraffin 15% / Liquid paraffin light 6% cream
+'35006911000001101,White soft paraffin 15% / Liquid paraffin light 6% cream
+'2985111000001101,Oilatum cream (GlaxoSmithKline Consumer Healthcare)
+'2985511000001105,Oilatum cream (GlaxoSmithKline Consumer Healthcare)
+'2985611000001109,Oilatum cream (GlaxoSmithKline Consumer Healthcare)
+'9849511000001102,Oilatum cream (GlaxoSmithKline Consumer Healthcare)
+'10614611000001101,Oilatum cream (GlaxoSmithKline Consumer Healthcare)
+'22218811000001103,Oilatum cream (GlaxoSmithKline Consumer Healthcare)
+'3004211000001107,Hydromol Bath & Shower emollient (Alliance Pharmaceuticals Ltd)
+'3004511000001105,Hydromol Bath & Shower emollient (Alliance Pharmaceuticals Ltd)
+'3004611000001109,Hydromol Bath & Shower emollient (Alliance Pharmaceuticals Ltd)
+'3004711000001100,Hydromol Bath & Shower emollient (Alliance Pharmaceuticals Ltd)
+'9529611000001104,Hydromol Bath & Shower emollient (Alliance Pharmaceuticals Ltd)
+'3486011000001103,Liquid paraffin light 46% / Isopropyl myristate 39% bath emollient
+'3045211000001102,Liquid paraffin light 46% / Isopropyl myristate 39% bath emollient
+'3045411000001103,Diprobath bath emollient (Merck Sharp & Dohme Ltd)
+'3045611000001100,Diprobath bath emollient (Merck Sharp & Dohme Ltd)
+'3486411000001107,Liquid paraffin 16% lotion
+'3059211000001102,Liquid paraffin 16% lotion
+'3059411000001103,Liquid paraffin 16% lotion
+'3059611000001100,Liquid paraffin 16% lotion
+'3061511000001107,Keri Therapeutic lotion (Bristol-Myers Squibb Pharmaceuticals Ltd)
+'3061811000001105,Keri Therapeutic lotion (Bristol-Myers Squibb Pharmaceuticals Ltd)
+'3061911000001100,Keri Therapeutic lotion (Bristol-Myers Squibb Pharmaceuticals Ltd)
+'3062411000001103,Alcoderm lotion (Galderma (UK) Ltd)
+'3063511000001106,Alcoderm lotion (Galderma (UK) Ltd)
+'3391811000001109,Generic Aveeno baby bath additive colloidal powder 15g sachets
+'3333011000001106,Generic Aveeno baby bath additive colloidal powder 15g sachets
+'3333311000001109,Aveeno baby bath additive colloidal powder 15g sachets (Johnson & Johnson Ltd)
+'3333511000001103,Aveeno baby bath additive colloidal powder 15g sachets (Johnson & Johnson Ltd)
+'3391911000001104,Generic Aveeno bath additive colloidal powder 50g sachets
+'3334211000001103,Generic Aveeno bath additive colloidal powder 50g sachets
+'3334411000001104,Aveeno bath additive colloidal powder 50g sachets (Johnson & Johnson Ltd)
+'3334611000001101,Aveeno bath additive colloidal powder 50g sachets (Johnson & Johnson Ltd)
+'3542311000001102,Generic Diprobase cream
+'3467911000001103,Generic Diprobase cream
+'3468111000001100,Generic Diprobase cream
+'3468211000001106,Diprobase cream (Bayer Plc)
+'3468311000001103,Diprobase cream (Bayer Plc)
+'3468411000001105,Diprobase cream (Bayer Plc)
+'3557511000001109,Generic Unguentum M cream
+'3487711000001103,Generic Unguentum M cream
+'3488011000001104,Generic Unguentum M cream
+'3488111000001103,Generic Unguentum M cream
+'3488211000001109,Generic Unguentum M cream
+'3488311000001101,Generic Unguentum M cream
+'3488411000001108,Unguentum M cream (Almirall Ltd)
+'3488511000001107,Unguentum M cream (Almirall Ltd)
+'3488811000001105,Unguentum M cream (Almirall Ltd)
+'3489211000001104,Unguentum M cream (Almirall Ltd)
+'3489311000001107,Unguentum M cream (Almirall Ltd)
+'3490511000001108,Unguentum M cream (Almirall Ltd)
+'400760005,White soft paraffin 95% / Liquid paraffin 5% ointment
+'3491011000001109,White soft paraffin 95% / Liquid paraffin 5% ointment
+'18454211000001108,White soft paraffin 95% / Liquid paraffin 5% ointment
+'3491511000001101,Diprobase ointment (Bayer Plc)
+'3491611000001102,Diprobase ointment (Bayer Plc)
+'18454311000001100,Diprobase ointment (Bayer Plc)
+'10851611000001100,Diprobase ointment (Waymade Healthcare Plc)
+'10851711000001109,Diprobase ointment (Waymade Healthcare Plc)
+'3655311000001100,Isopropyl myristate 15% / Liquid paraffin 15% gel
+'3640811000001101,Isopropyl myristate 15% / Liquid paraffin 15% gel
+'3640911000001106,Isopropyl myristate 15% / Liquid paraffin 15% gel
+'11497511000001103,Isopropyl myristate 15% / Liquid paraffin 15% gel
+'23463711000001108,Isopropyl myristate 15% / Liquid paraffin 15% gel
+'35100211000001104,Isopropyl myristate 15% / Liquid paraffin 15% gel
+'36506611000001107,Isopropyl myristate 15% / Liquid paraffin 15% gel
+'3641211000001108,Doublebase gel (Dermal Laboratories Ltd)
+'3641311000001100,Doublebase gel (Dermal Laboratories Ltd)
+'3641511000001106,Doublebase gel (Dermal Laboratories Ltd)
+'35100311000001107,Doublebase gel (Dermal Laboratories Ltd)
+'11497611000001104,Doublebase emollient shower gel (Dermal Laboratories Ltd)
+'11497711000001108,Doublebase emollient shower gel (Dermal Laboratories Ltd)
+'15441611000001101,Doublebase emollient wash gel (Dermal Laboratories Ltd)
+'15441711000001105,Doublebase emollient wash gel (Dermal Laboratories Ltd)
+'19380211000001102,Doublebase Dayleve gel (Dermal Laboratories Ltd)
+'19380311000001105,Doublebase Dayleve gel (Dermal Laboratories Ltd)
+'19380411000001103,Doublebase Dayleve gel (Dermal Laboratories Ltd)
+'3655211000001108,Generic Ultrabase cream
+'3641011000001103,Generic Ultrabase cream
+'3641111000001102,Generic Ultrabase cream
+'31073411000001105,Generic Ultrabase cream
+'3641411000001107,Ultrabase cream (Derma UK Ltd)
+'3641711000001101,Ultrabase cream (Derma UK Ltd)
+'31073711000001104,Ultrabase cream (Derma UK Ltd)
+'3641911000001104,Ultrabase cream (Derma UK Ltd)
+'31073511000001109,Ultrabase cream (Derma UK Ltd)
+'3655111000001102,Generic Polytar Emollient
+'3646311000001108,Generic Polytar Emollient
+'3646411000001101,Polytar Emollient (GlaxoSmithKline Consumer Healthcare)
+'3646511000001102,Polytar Emollient (GlaxoSmithKline Consumer Healthcare)
+'3754611000001101,White soft paraffin 15% / Dimeticone 1% cream
+'3743911000001107,White soft paraffin 15% / Dimeticone 1% cream
+'3744911000001109,Vaseline Dermacare cream (Unilever UK Home & Personal Care)
+'3745211000001104,Vaseline Dermacare cream (Unilever UK Home & Personal Care)
+'3766311000001106,Generic Lipobase cream
+'3759111000001105,Generic Lipobase cream
+'3759211000001104,Lipobase cream (LEO Pharma)
+'3759311000001107,Lipobase cream (LEO Pharma)
+'14654811000001105,Cetomacrogol cream (Formula A)
+'3767011000001106,Cetomacrogol cream (Formula A)
+'3767111000001107,Cetomacrogol cream (Formula A) (A A H Pharmaceuticals Ltd)
+'3767211000001101,Cetomacrogol cream (Formula A) (A A H Pharmaceuticals Ltd)
+'3767311000001109,Cetomacrogol cream (Formula A) (Thornton & Ross Ltd)
+'3767411000001102,Cetomacrogol cream (Formula A) (Thornton & Ross Ltd)
+'3767511000001103,Cetomacrogol cream (Formula A) (Alliance Healthcare (Distribution) Ltd)
+'3767611000001104,Cetomacrogol cream (Formula A) (Alliance Healthcare (Distribution) Ltd)
+'21832811000001103,Cetomacrogol cream (Formula A) (Waymade Healthcare Plc)
+'21832911000001108,Cetomacrogol cream (Formula A) (Waymade Healthcare Plc)
+'33533411000001101,AquaDerm Cetomacrogol cream (Formula A) (Impectron Ltd)
+'33533511000001102,AquaDerm Cetomacrogol cream (Formula A) (Impectron Ltd)
+'3774111000001107,Ashbourne Emollient Medicinal bath oil (Ashbourne Pharmaceuticals Ltd)
+'3774211000001101,Ashbourne Emollient Medicinal bath oil (Ashbourne Pharmaceuticals Ltd)
+'3774311000001109,Ashbourne Emollient Medicinal bath oil (Ashbourne Pharmaceuticals Ltd)
+'3979411000001108,Dermalo bath emollient (Dermal Laboratories Ltd)
+'3979811000001105,Dermalo bath emollient (Dermal Laboratories Ltd)
+'14694211000001101,Zerolatum Emollient bath additive (Thornton & Ross Ltd)
+'14694311000001109,Zerolatum Emollient bath additive (Thornton & Ross Ltd)
+'3805711000001100,Glycerol 40% cream
+'3789111000001103,Glycerol 40% cream
+'3789611000001106,Neutrogena Norwegian Formula 40% dermatological cream (Johnson & Johnson Ltd)
+'3789911000001100,Neutrogena Norwegian Formula 40% dermatological cream (Johnson & Johnson Ltd)
+'3826711000001102,Generic Vaseline Dermacare lotion
+'3823411000001103,Generic Vaseline Dermacare lotion
+'3823511000001104,Generic Vaseline Dermacare lotion
+'3823611000001100,Generic Vaseline Dermacare lotion
+'3823811000001101,Vaseline Dermacare lotion (Unilever UK Home & Personal Care)
+'3824011000001109,Vaseline Dermacare lotion (Unilever UK Home & Personal Care)
+'3824111000001105,Vaseline Dermacare lotion (Unilever UK Home & Personal Care)
+'3824211000001104,Vaseline Dermacare lotion (Unilever UK Home & Personal Care)
+'3875711000001109,Lactic acid 5% / Sodium pidolate 2.5% lotion
+'3871211000001100,Lactic acid 5% / Sodium pidolate 2.5% lotion
+'3871311000001108,LactiCare lotion (Stiefel Laboratories (UK) Ltd)
+'3871411000001101,LactiCare lotion (Stiefel Laboratories (UK) Ltd)
+'3973711000001100,Generic Decubal Clinic cream
+'3966311000001100,Generic Decubal Clinic cream
+'3966411000001107,Decubal Clinic cream (Actavis UK Ltd)
+'3966511000001106,Decubal Clinic cream (Actavis UK Ltd)
+'4018111000001108,Zinc oxide 8.1% / Hydrous wool fat 4% cream
+'4005411000001105,Zinc oxide 8.1% / Hydrous wool fat 4% cream
+'4005511000001109,Zinc oxide 8.1% / Hydrous wool fat 4% cream
+'4005611000001108,Hewletts cream (Kestrel Healthcare Ltd)
+'4005711000001104,Hewletts cream (Kestrel Healthcare Ltd)
+'4005811000001107,Hewletts cream (Kestrel Healthcare Ltd)
+'4032611000001106,Generic Alcoderm cream
+'4021711000001107,Generic Alcoderm cream
+'4022011000001102,Alcoderm cream (Galderma (UK) Ltd)
+'4022211000001107,Alcoderm cream (Galderma (UK) Ltd)
+'14613811000001102,Cetomacrogol cream (Formula B)
+'4229111000001101,Cetomacrogol cream (Formula B)
+'4229511000001105,Cetomacrogol cream (Formula B) (Alliance Healthcare (Distribution) Ltd)
+'4229611000001109,Cetomacrogol cream (Formula B) (Alliance Healthcare (Distribution) Ltd)
+'4282411000001108,Generic E45 emollient shower cream
+'4275311000001102,Generic E45 emollient shower cream
+'4275411000001109,E45 emollient shower cream (Reckitt Benckiser Healthcare (UK) Ltd)
+'4275511000001108,E45 emollient shower cream (Reckitt Benckiser Healthcare (UK) Ltd)
+'4282311000001101,Generic Allergenics emollient cream
+'4277311000001105,Generic Allergenics emollient cream
+'4277411000001103,Generic Allergenics emollient cream
+'4277611000001100,Allergenics emollient cream (Optima Consumer Health Ltd)
+'4277711000001109,Allergenics emollient cream (Optima Consumer Health Ltd)
+'4277811000001101,Allergenics emollient cream (Optima Consumer Health Ltd)
+'4282911000001100,Generic Imuderm cream
+'4279411000001107,Generic Imuderm cream
+'4279511000001106,Imuderm cream (Mercury Pharma Group Ltd)
+'4279611000001105,Imuderm cream (Mercury Pharma Group Ltd)
+'36066211000001109,Evening primrose oil 20% cream
+'4616811000001107,Evening primrose oil 20% cream
+'4616911000001102,Evening primrose oil 20% cream
+'17475411000001101,Evening primrose oil 20% cream
+'4617111000001102,Linola Gamma 20% cream (Linderma Ltd)
+'4617311000001100,Linola Gamma 20% cream (Linderma Ltd)
+'4617411000001107,Linola Gamma 20% cream (Linderma Ltd)
+'17475511000001102,Evening primrose oil 20% cream (Special Order)
+'17475611000001103,Evening primrose oil 20% cream (Special Order)
+'5040811000001103,Evening primrose oil 0.87% cream
+'5025711000001104,Evening primrose oil 0.87% cream
+'5025911000001102,Evening primrose oil 0.87% cream (Nelsons)
+'5026011000001105,Evening primrose oil 0.87% cream (Nelsons)
+'35127711000001100,Remedy barrier moisturising cream 2ml sachets (Medline Industries Ltd)
+'35127811000001108,Remedy barrier moisturising cream 2ml sachets (Medline Industries Ltd)
+'35128011000001101,Remedy barrier moisturising cream (Medline Industries Ltd)
+'35128111000001100,Remedy barrier moisturising cream (Medline Industries Ltd)
+'35144811000001102,Remedy barrier moisturising cream (Medline Industries Ltd)
+'7527611000001102,Generic E45 Lipcare
+'7515211000001100,Generic E45 Lipcare
+'7515311000001108,E45 Lipcare (Reckitt Benckiser Healthcare (UK) Ltd)
+'7515411000001101,E45 Lipcare (Reckitt Benckiser Healthcare (UK) Ltd)
+'7526511000001103,Generic AquaBar
+'7523211000001108,Generic AquaBar
+'7523411000001107,AquaBar (Strides Pharma UK Ltd)
+'7523711000001101,AquaBar (Strides Pharma UK Ltd)
+'7538311000001106,Allergenics Skin lotion (Optima Consumer Health Ltd)
+'7538511000001100,Allergenics Skin lotion (Optima Consumer Health Ltd)
+'7538611000001101,Eucerin Dry Skin Relief soothing spray (Beiersdorf UK Ltd)
+'7538711000001105,Eucerin Dry Skin Relief soothing spray (Beiersdorf UK Ltd)
+'7539111000001102,Oilatum lotion (GlaxoSmithKline Consumer Healthcare)
+'7539211000001108,Oilatum lotion (GlaxoSmithKline Consumer Healthcare)
+'11053911000001102,Aveeno Skin Relief moisturising lotion with shea butter (Johnson & Johnson Ltd)
+'11054011000001104,Aveeno Skin Relief moisturising lotion with shea butter (Johnson & Johnson Ltd)
+'24373611000001102,Aveeno Skin Relief moisturising lotion with shea butter (Johnson & Johnson Ltd)
+'17076711000001106,Cetaphil moisturising lotion (Galderma (UK) Ltd)
+'17076811000001103,Cetaphil moisturising lotion (Galderma (UK) Ltd)
+'19532011000001100,Cetaphil moisturising lotion (Galderma (UK) Ltd)
+'24246911000001107,Cetaphil moisturising lotion (Galderma (UK) Ltd)
+'19531611000001101,Cetaphil Restoraderm skin restoring moisturiser (Galderma (UK) Ltd)
+'19531711000001105,Cetaphil Restoraderm skin restoring moisturiser (Galderma (UK) Ltd)
+'24373711000001106,Aveeno Daily moisturising lotion (Johnson & Johnson Ltd)
+'24373811000001103,Aveeno Daily moisturising lotion (Johnson & Johnson Ltd)
+'24373911000001108,Aveeno Daily moisturising lotion (Johnson & Johnson Ltd)
+'24374511000001103,Aveeno Daily moisturising lotion with lavender (Johnson & Johnson Ltd)
+'24374611000001104,Aveeno Daily moisturising lotion with lavender (Johnson & Johnson Ltd)
+'24374711000001108,Aveeno Skin Relief moisturising lotion with menthol (Johnson & Johnson Ltd)
+'24374811000001100,Aveeno Skin Relief moisturising lotion with menthol (Johnson & Johnson Ltd)
+'7551611000001105,Boots Baby Sensitive Skin moisturising cream (The Boots Company Plc)
+'7551711000001101,Boots Baby Sensitive Skin moisturising cream (The Boots Company Plc)
+'7557411000001104,Exorex moisturising cream (Teva UK Ltd)
+'7557711000001105,Exorex moisturising cream (Teva UK Ltd)
+'7557611000001101,Exorex moisturising cream (Teva UK Ltd)
+'7558811000001103,Kamillosan baby cream (Mercury Pharma Group Ltd)
+'7559011000001104,Kamillosan baby cream (Mercury Pharma Group Ltd)
+'7560311000001100,Neutrogena Norwegian Formula Moisturisation foot cream (Johnson & Johnson Ltd)
+'7560411000001107,Neutrogena Norwegian Formula Moisturisation foot cream (Johnson & Johnson Ltd)
+'8421711000001101,Eumobase cream (GlaxoSmithKline Consumer Healthcare)
+'8422211000001101,Eumobase cream (GlaxoSmithKline Consumer Healthcare)
+'8421911000001104,Eumobase cream (GlaxoSmithKline Consumer Healthcare)
+'13580511000001104,Lotil cream (Fenton Pharmaceuticals Ltd)
+'13580711000001109,Lotil cream (Fenton Pharmaceuticals Ltd)
+'13580611000001100,Lotil cream (Fenton Pharmaceuticals Ltd)
+'13580811000001101,Lotil cream (Fenton Pharmaceuticals Ltd)
+'14930911000001105,Lotil cream (Fenton Pharmaceuticals Ltd)
+'13950811000001103,E45 Junior moisturising cream (Reckitt Benckiser Healthcare (UK) Ltd)
+'13950911000001108,E45 Junior moisturising cream (Reckitt Benckiser Healthcare (UK) Ltd)
+'16595911000001108,Vivaderm Daily cream (Scarlett & George UK Ltd)
+'16596011000001100,Vivaderm Daily cream (Scarlett & George UK Ltd)
+'16596111000001104,Vivaderm Ultra cream (Scarlett & George UK Ltd)
+'16596211000001105,Vivaderm Ultra cream (Scarlett & George UK Ltd)
+'17076511000001101,Cetaphil moisturising cream (Galderma (UK) Ltd)
+'17076611000001102,Cetaphil moisturising cream (Galderma (UK) Ltd)
+'18656311000001108,Unique Deep Skin Moisturiser (SkinKind Ltd)
+'18656411000001101,Unique Deep Skin Moisturiser (SkinKind Ltd)
+'18656511000001102,Skin Moisturiser (SkinKind Ltd)
+'18656611000001103,Skin Moisturiser (SkinKind Ltd)
+'21712811000001107,Skin Moisturiser (SkinKind Ltd)
+'20135811000001106,Moisturiser Plus (SkinKind Ltd)
+'20135911000001101,Moisturiser Plus (SkinKind Ltd)
+'20945011000001101,Clinisan emollient wash cream (Synergy Health (UK) Ltd)
+'20945111000001100,Clinisan emollient wash cream (Synergy Health (UK) Ltd)
+'29013211000001107,Skin Salvation intensive hand cream (Purepotions Skincare Ltd)
+'29013411000001106,Skin Salvation intensive hand cream (Purepotions Skincare Ltd)
+'29012811000001100,Skin Salvation daily moisturising cream (Purepotions Skincare Ltd)
+'29012011000001106,Skin Salvation daily moisturising cream (Purepotions Skincare Ltd)
+'29012111000001107,Skin Salvation daily moisturising cream (Purepotions Skincare Ltd)
+'33552711000001103,Lotil foot cream (Fenton Pharmaceuticals Ltd)
+'33552811000001106,Lotil foot cream (Fenton Pharmaceuticals Ltd)
+'7559511000001107,Allergenics Intensive Care ointment (Optima Consumer Health Ltd)
+'7559611000001106,Allergenics Intensive Care ointment (Optima Consumer Health Ltd)
+'7563111000001109,Comfrey and Vitamin E balm (Power Health Products Ltd)
+'7563211000001103,Comfrey and Vitamin E balm (Power Health Products Ltd)
+'7660511000001101,Generic Dermol cream
+'7644211000001104,Generic Dermol cream
+'7644311000001107,Generic Dermol cream
+'7644411000001100,Dermol cream (Dermal Laboratories Ltd)
+'7644511000001101,Dermol cream (Dermal Laboratories Ltd)
+'7644611000001102,Dermol cream (Dermal Laboratories Ltd)
+'8010911000001105,Generic Chymol emollient balm ointment
+'8012211000001100,Generic Chymol emollient balm ointment
+'8012311000001108,Chymol emollient balm ointment (Herbal Concepts Ltd)
+'8012411000001101,Chymol emollient balm ointment (Herbal Concepts Ltd)
+'331473003,Chamomile extract 10.5% ointment
+'8036511000001109,Chamomile extract 10.5% ointment
+'8036611000001108,Kamillosan Chamomile 10.5% ointment (Omega Pharma Ltd)
+'8036711000001104,Kamillosan Chamomile 10.5% ointment (Omega Pharma Ltd)
+'8056511000001108,Cetrimide 0.2% / Benzalkonium chloride 0.1% cream
+'8056711000001103,Cetrimide 0.2% / Benzalkonium chloride 0.1% cream
+'8056811000001106,Cetrimide 0.2% / Benzalkonium chloride 0.1% cream
+'8061411000001107,Neo Baby cream (Kent Pharmaceuticals Ltd)
+'8061511000001106,Neo Baby cream (Kent Pharmaceuticals Ltd)
+'8061611000001105,Neo Baby cream (Kent Pharmaceuticals Ltd)
+'8093111000001104,Cetraben emollient 82.8% bath additive (Genus Pharmaceuticals Ltd)
+'8093211000001105,Cetraben emollient 82.8% bath additive (Genus Pharmaceuticals Ltd)
+'13951011000001100,E45 Junior moisturising mousse (Reckitt Benckiser Healthcare (UK) Ltd)
+'13951111000001104,E45 Junior moisturising mousse (Reckitt Benckiser Healthcare (UK) Ltd)
+'11359311000001104,Generic SensiCare emollient cream
+'11349411000001109,Generic SensiCare emollient cream
+'11349511000001108,SensiCare emollient cream (ConvaTec Ltd)
+'11349611000001107,SensiCare emollient cream (ConvaTec Ltd)
+'11487311000001108,E45 Sun moisturising lotion SPF 15 (Reckitt Benckiser Healthcare (UK) Ltd)
+'11487411000001101,E45 Sun moisturising lotion SPF 15 (Reckitt Benckiser Healthcare (UK) Ltd)
+'12797711000001100,Glycerol 25% cream
+'12791211000001102,Glycerol 25% cream
+'12791311000001105,Glycerol 25% cream
+'12791411000001103,Eumocream 25% cream (GlaxoSmithKline Consumer Healthcare)
+'12791511000001104,Eumocream 25% cream (GlaxoSmithKline Consumer Healthcare)
+'12791611000001100,Eumocream 25% cream (GlaxoSmithKline Consumer Healthcare)
+'13141811000001107,Doublebase emollient bath additive (Dermal Laboratories Ltd)
+'13141911000001102,Doublebase emollient bath additive (Dermal Laboratories Ltd)
+'15411611000001108,Propylene glycol 60% in Aqueous cream
+'15409611000001106,Propylene glycol 60% in Aqueous cream
+'15409711000001102,Propylene glycol 60% in Aqueous cream (Special Order)
+'15409811000001105,Propylene glycol 60% in Aqueous cream (Special Order)
+'16101211000001105,Generic CCS Foot Care cream
+'16091611000001103,Generic CCS Foot Care cream
+'16091711000001107,Generic CCS Foot Care cream
+'16091811000001104,Generic CCS Foot Care cream
+'16091911000001109,CCS Foot Care cream (Lornamead UK Ltd)
+'16092011000001102,CCS Foot Care cream (Lornamead UK Ltd)
+'16092111000001101,CCS Foot Care cream (Lornamead UK Ltd)
+'16092211000001107,CCS Foot Care cream (Lornamead UK Ltd)
+'16246911000001101,White soft paraffin 75% / Liquid paraffin 25% ointment
+'16239511000001102,White soft paraffin 75% / Liquid paraffin 25% ointment
+'16239611000001103,White soft paraffin 75% / Liquid paraffin 25% ointment (Special Order)
+'16239711000001107,White soft paraffin 75% / Liquid paraffin 25% ointment (Special Order)
+'17174511000001102,Generic Evolve Plus emollient spray
+'17083811000001102,Generic Evolve Plus emollient spray
+'17084211000001100,Evolve Plus emollient spray (Intelligent Therapeutics Ltd)
+'17084311000001108,Evolve Plus emollient spray (Intelligent Therapeutics Ltd)
+'17527911000001107,Generic Aveeno Intense Relief hand cream
+'17512411000001108,Generic Aveeno Intense Relief hand cream
+'17512511000001107,Aveeno Intense Relief hand cream (Johnson & Johnson Ltd)
+'17512611000001106,Aveeno Intense Relief hand cream (Johnson & Johnson Ltd)
+'18161211000001101,Propylene glycol 40% in Aqueous cream
+'18160311000001104,Propylene glycol 40% in Aqueous cream
+'21026411000001100,Propylene glycol 40% in Aqueous cream
+'21026711000001106,Propylene glycol 40% in Aqueous cream
+'18160411000001106,Propylene glycol 40% in Aqueous cream (Special Order)
+'18160511000001105,Propylene glycol 40% in Aqueous cream (Special Order)
+'21026611000001102,Propylene glycol 40% in Aqueous cream (Special Order)
+'21026811000001103,Propylene glycol 40% in Aqueous cream (Special Order)
+'18349411000001104,Generic Aveeno body wash
+'18348711000001101,Generic Aveeno body wash
+'19509511000001108,Generic Aveeno body wash
+'18348811000001109,Aveeno body wash (Johnson & Johnson Ltd)
+'18348911000001104,Aveeno body wash (Johnson & Johnson Ltd)
+'19509611000001107,Aveeno body wash (Johnson & Johnson Ltd)
+'18349511000001100,Generic Aveeno moisturising creamy oil
+'18349011000001108,Generic Aveeno moisturising creamy oil
+'18349111000001109,Aveeno moisturising creamy oil (Johnson & Johnson Ltd)
+'18349211000001103,Aveeno moisturising creamy oil (Johnson & Johnson Ltd)
+'18496511000001108,Glycerol 10% in Cetomacrogol cream (Formula A)
+'18472011000001106,Glycerol 10% in Cetomacrogol cream (Formula A)
+'18472111000001107,Glycerol 10% in Cetomacrogol cream (Formula A) (Special Order)
+'18472211000001101,Glycerol 10% in Cetomacrogol cream (Formula A) (Special Order)
+'18519811000001106,Emulsifying ointment 50% / Liquid paraffin 50% ointment
+'18511711000001102,Emulsifying ointment 50% / Liquid paraffin 50% ointment
+'21936411000001106,Emulsifying ointment 50% / Liquid paraffin 50% ointment
+'21936711000001100,Emulsifying ointment 50% / Liquid paraffin 50% ointment
+'31004211000001101,Emulsifying ointment 50% / Liquid paraffin 50% ointment
+'18511811000001105,Emulsifying ointment 50% / Liquid paraffin 50% ointment (Special Order)
+'18511911000001100,Emulsifying ointment 50% / Liquid paraffin 50% ointment (Special Order)
+'21936511000001105,Emulsifying ointment 50% / Liquid paraffin 50% ointment (Special Order)
+'21936811000001108,Emulsifying ointment 50% / Liquid paraffin 50% ointment (Special Order)
+'31004311000001109,Emulfin ointment (Ennogen Healthcare Ltd)
+'31004411000001102,Emulfin ointment (Ennogen Healthcare Ltd)
+'18852611000001109,Generic ZeroAQS emollient cream
+'18784111000001102,Generic ZeroAQS emollient cream
+'18784211000001108,Generic ZeroAQS emollient cream
+'18784311000001100,ZeroAQS emollient cream (Thornton & Ross Ltd)
+'18784411000001107,ZeroAQS emollient cream (Thornton & Ross Ltd)
+'18784511000001106,ZeroAQS emollient cream (Thornton & Ross Ltd)
+'19698211000001106,Generic Skin Salvation ointment
+'19685811000001104,Generic Skin Salvation ointment
+'19685911000001109,Generic Skin Salvation ointment
+'19686011000001101,Generic Skin Salvation ointment
+'34157611000001102,Generic Skin Salvation ointment
+'19686111000001100,Skin Salvation ointment (Purepotions Skincare Ltd)
+'19686211000001106,Skin Salvation ointment (Purepotions Skincare Ltd)
+'19686311000001103,Skin Salvation ointment (Purepotions Skincare Ltd)
+'19686411000001105,Skin Salvation ointment (Purepotions Skincare Ltd)
+'34157711000001106,Skin Salvation ointment (Purepotions Skincare Ltd)
+'20345011000001107,Generic E45 Intense Recovery lotion
+'20322411000001108,Generic E45 Intense Recovery lotion
+'20322511000001107,Generic E45 Intense Recovery lotion
+'20322611000001106,E45 Intense Recovery lotion (Reckitt Benckiser Healthcare (UK) Ltd)
+'20322711000001102,E45 Intense Recovery lotion (Reckitt Benckiser Healthcare (UK) Ltd)
+'20322811000001105,E45 Intense Recovery lotion (Reckitt Benckiser Healthcare (UK) Ltd)
+'21378411000001104,Cidofovir 1% in Generic Unguentum M cream
+'21378511000001100,Cidofovir 1% in Generic Unguentum M cream
+'35021711000001103,Cidofovir 1% in Generic Unguentum M cream
+'34872911000001103,Cidofovir 1% in Unguentum M cream (Special Order)
+'34873011000001106,Cidofovir 1% in Unguentum M cream (Special Order)
+'35021811000001106,Cidofovir 1% in Unguentum M cream (Special Order)
+'21411611000001108,Urea 10% in Generic Unguentum M cream
+'21411711000001104,Urea 10% in Generic Unguentum M cream
+'21411811000001107,Urea 10% in Generic Unguentum M cream
+'21411911000001102,Urea 10% in Unguentum M cream (Special Order)
+'21412011000001109,Urea 10% in Unguentum M cream (Special Order)
+'21412111000001105,Urea 10% in Unguentum M cream (Special Order)
+'21583911000001105,Propylene glycol 20% in Aqueous cream
+'21584111000001109,Propylene glycol 20% in Aqueous cream
+'21584211000001103,Propylene glycol 20% in Aqueous cream
+'21584311000001106,Propylene glycol 20% in Aqueous cream
+'21584511000001100,Propylene glycol 20% in Aqueous cream (Special Order)
+'21584611000001101,Propylene glycol 20% in Aqueous cream (Special Order)
+'21584711000001105,Propylene glycol 20% in Aqueous cream (Special Order)
+'21584811000001102,Propylene glycol 20% in Aqueous cream (Special Order)
+'22256711000001104,Propylene glycol 40% in Generic Unguentum M cream
+'22256811000001107,Propylene glycol 40% in Generic Unguentum M cream
+'22256911000001102,Propylene glycol 40% in Generic Unguentum M cream
+'22257011000001103,Propylene glycol 40% in Unguentum M cream (Special Order)
+'22257211000001108,Propylene glycol 40% in Unguentum M cream (Special Order)
+'22257311000001100,Propylene glycol 40% in Unguentum M cream (Special Order)
+'22469311000001101,Coal tar 10% in Generic Unguentum M cream
+'22469411000001108,Coal tar 10% in Generic Unguentum M cream
+'22469511000001107,Coal tar 10% in Generic Unguentum M cream
+'22492711000001106,Coal tar 10% in Generic Unguentum M cream
+'22469611000001106,Coal tar 10% in Unguentum M cream (Special Order)
+'22469711000001102,Coal tar 10% in Unguentum M cream (Special Order)
+'22469811000001105,Coal tar 10% in Unguentum M cream (Special Order)
+'22492811000001103,Coal tar 10% in Unguentum M cream (Special Order)
+'22469911000001100,Coal tar 2% in Generic Unguentum M cream
+'22470011000001101,Coal tar 2% in Generic Unguentum M cream
+'22470111000001100,Coal tar 2% in Generic Unguentum M cream
+'22470211000001106,Coal tar 2% in Generic Unguentum M cream
+'22470311000001103,Coal tar 2% in Unguentum M cream (Special Order)
+'22470411000001105,Coal tar 2% in Unguentum M cream (Special Order)
+'22470511000001109,Coal tar 2% in Unguentum M cream (Special Order)
+'22470611000001108,Coal tar 2% in Unguentum M cream (Special Order)
+'22470711000001104,Coal tar 5% in Generic Unguentum M cream
+'22470811000001107,Coal tar 5% in Generic Unguentum M cream
+'22470911000001102,Coal tar 5% in Generic Unguentum M cream
+'22471011000001105,Coal tar 5% in Unguentum M cream (Special Order)
+'22471111000001106,Coal tar 5% in Unguentum M cream (Special Order)
+'22471211000001100,Coal tar 5% in Unguentum M cream (Special Order)
+'22477411000001109,Methylrosanilinium chloride 0.125% in Generic Unguentum M cream
+'22477511000001108,Methylrosanilinium chloride 0.125% in Generic Unguentum M cream
+'22477611000001107,Methylrosanilinium chloride 0.125% in Generic Unguentum M cream
+'22477711000001103,Methylrosanilinium chloride 0.125% in Unguentum M cream (Special Order)
+'22477811000001106,Methylrosanilinium chloride 0.125% in Unguentum M cream (Special Order)
+'22477911000001101,Methylrosanilinium chloride 0.125% in Unguentum M cream (Special Order)
+'22531811000001109,Generic Diprobase lotion
+'22531911000001104,Generic Diprobase lotion
+'22532011000001106,Generic Diprobase lotion
+'22532111000001107,Diprobase lotion (Bayer Plc)
+'22532211000001101,Diprobase lotion (Bayer Plc)
+'22532311000001109,Diprobase lotion (Bayer Plc)
+'22807811000001107,Generic Eucerin Anti-Redness Calming Night cream
+'22799711000001107,Generic Eucerin Anti-Redness Calming Night cream
+'22799811000001104,Eucerin Anti-Redness Calming Night cream (Beiersdorf UK Ltd)
+'22799911000001109,Eucerin Anti-Redness Calming Night cream (Beiersdorf UK Ltd)
+'22807911000001102,Generic Eucerin Anti-Redness Neutralising Day fluid
+'22800011000001102,Generic Eucerin Anti-Redness Neutralising Day fluid
+'22800111000001101,Eucerin Anti-Redness Neutralising Day fluid (Beiersdorf UK Ltd)
+'22800211000001107,Eucerin Anti-Redness Neutralising Day fluid (Beiersdorf UK Ltd)
+'23672511000001100,Generic E45 Touchably Smooth lotion
+'23662711000001102,Generic E45 Touchably Smooth lotion
+'23662811000001105,Generic E45 Touchably Smooth lotion
+'23662911000001100,E45 Touchably Smooth lotion (Reckitt Benckiser Healthcare (UK) Ltd)
+'23663011000001108,E45 Touchably Smooth lotion (Reckitt Benckiser Healthcare (UK) Ltd)
+'23663111000001109,E45 Touchably Smooth lotion (Reckitt Benckiser Healthcare (UK) Ltd)
+'23672411000001104,Generic E45 Nourish & Restore lotion
+'23663211000001103,Generic E45 Nourish & Restore lotion
+'23663311000001106,Generic E45 Nourish & Restore lotion
+'23663411000001104,E45 Nourish & Restore lotion (Reckitt Benckiser Healthcare (UK) Ltd)
+'23663511000001100,E45 Nourish & Restore lotion (Reckitt Benckiser Healthcare (UK) Ltd)
+'23663611000001101,E45 Nourish & Restore lotion (Reckitt Benckiser Healthcare (UK) Ltd)
+'24622711000001107,Propylene glycol 40% / Coal tar solution 5% in Generic Unguentum M cream
+'24622811000001104,Propylene glycol 40% / Coal tar solution 5% in Generic Unguentum M cream
+'24623511000001109,Propylene glycol 40% / Coal tar solution 5% in Generic Unguentum M cream
+'24623611000001108,Propylene glycol 40% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'24623711000001104,Propylene glycol 40% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'24623811000001107,Propylene glycol 40% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'25035111000001101,Generic imuDERM emollient
+'25035211000001107,Generic imuDERM emollient
+'25035311000001104,imuDERM emollient (CliniSupplies Ltd)
+'25035411000001106,imuDERM emollient (CliniSupplies Ltd)
+'27888211000001106,Generic Elave body oil
+'27884411000001101,Generic Elave body oil
+'27884611000001103,Elave body oil (Ovelle Pharmaceuticals)
+'27884811000001104,Elave body oil (Ovelle Pharmaceuticals)
+'27888311000001103,Generic Elave lotion
+'27885111000001105,Generic Elave lotion
+'27885711000001106,Elave lotion (Ovelle Pharmaceuticals)
+'27886411000001109,Elave lotion (Ovelle Pharmaceuticals)
+'28389811000001106,Generic AproDerm emollient cream
+'28389911000001101,Generic AproDerm emollient cream
+'28390011000001109,Generic AproDerm emollient cream
+'33780411000001100,Generic AproDerm emollient cream
+'33780511000001101,Generic AproDerm emollient cream
+'28390111000001105,AproDerm emollient cream (Fontus Health Ltd)
+'28390211000001104,AproDerm emollient cream (Fontus Health Ltd)
+'28390311000001107,AproDerm emollient cream (Fontus Health Ltd)
+'33780611000001102,AproDerm emollient cream (Fontus Health Ltd)
+'33780811000001103,AproDerm emollient cream (Fontus Health Ltd)
+'28415711000001109,White soft paraffin 62.5% / Liquid paraffin 37.5% ointment
+'28402111000001104,White soft paraffin 62.5% / Liquid paraffin 37.5% ointment
+'28402211000001105,White soft paraffin 62.5% / Liquid paraffin 37.5% ointment (Special Order)
+'28402311000001102,White soft paraffin 62.5% / Liquid paraffin 37.5% ointment (Special Order)
+'28423811000001106,Generic Eucerin AntiREDNESS concealing day cream SPF25
+'28421211000001106,Generic Eucerin AntiREDNESS concealing day cream SPF25
+'28421311000001103,Eucerin AntiREDNESS concealing day cream SPF25 (Beiersdorf UK Ltd)
+'28421411000001105,Eucerin AntiREDNESS concealing day cream SPF25 (Beiersdorf UK Ltd)
+'29669611000001101,Hydrocortisone 1% / Tretinoin 0.025% / Hydroquinone 4% in Generic Unguentum M cream
+'29573411000001101,Hydrocortisone 1% / Tretinoin 0.025% / Hydroquinone 4% in Generic Unguentum M cream
+'29573511000001102,Hydrocortisone 1% / Tretinoin 0.025% / Hydroquinone 4% in Unguentum M cream (Special Order)
+'29573711000001107,Hydrocortisone 1% / Tretinoin 0.025% / Hydroquinone 4% in Unguentum M cream (Special Order)
+'29733611000001100,Sulfur 1% in Generic Unguentum M cream
+'29707511000001104,Sulfur 1% in Generic Unguentum M cream
+'29707611000001100,Sulfur 1% in Unguentum M cream (Special Order)
+'29707711000001109,Sulfur 1% in Unguentum M cream (Special Order)
+'29732511000001106,Propylene glycol 50% in Aqueous cream
+'29716111000001108,Propylene glycol 50% in Aqueous cream
+'29716211000001102,Propylene glycol 50% in Aqueous cream (Special Order)
+'29716311000001105,Propylene glycol 50% in Aqueous cream (Special Order)
+'29732011000001103,Menthol 1% in Cetomacrogol cream (Formula A)
+'29720011000001100,Menthol 1% in Cetomacrogol cream (Formula A)
+'29720111000001104,Menthol 1% in Cetomacrogol cream (Formula A) (Special Order)
+'29720211000001105,Menthol 1% in Cetomacrogol cream (Formula A) (Special Order)
+'30952611000001100,Generic Aveeno Skin Relief Soothing shampoo
+'30934111000001104,Generic Aveeno Skin Relief Soothing shampoo
+'30934211000001105,Aveeno Skin Relief Soothing shampoo (Johnson & Johnson Ltd)
+'30934311000001102,Aveeno Skin Relief Soothing shampoo (Johnson & Johnson Ltd)
+'31141411000001102,Coconut oil 50% in White soft paraffin
+'31137411000001109,Coconut oil 50% in White soft paraffin
+'31137311000001102,Coconut oil 50% in White soft paraffin (Special Order)
+'31137611000001107,Coconut oil 50% in White soft paraffin (Special Order)
+'31535011000001104,Menthol 2% in Cetomacrogol cream (Formula A)
+'31506111000001102,Menthol 2% in Cetomacrogol cream (Formula A)
+'31506211000001108,Menthol 2% in Cetomacrogol cream (Formula A) (Special Order)
+'31506311000001100,Menthol 2% in Cetomacrogol cream (Formula A) (Special Order)
+'32750411000001104,Propylene glycol 25% in Aqueous cream
+'32742711000001107,Propylene glycol 25% in Aqueous cream
+'32742811000001104,Propylene glycol 25% in Aqueous cream (Special Order)
+'32742911000001109,Propylene glycol 25% in Aqueous cream (Special Order)
+'32750511000001100,Propylene glycol 40% in Clobetasone 0.05% cream
+'32744711000001102,Propylene glycol 40% in Clobetasone 0.05% cream
+'32744811000001105,Propylene glycol 40% in Clobetasone 0.05% cream (Special Order)
+'32744911000001100,Propylene glycol 40% in Clobetasone 0.05% cream (Special Order)
+'32879511000001108,Propylene glycol 30% in Generic Unguentum M cream
+'32844811000001108,Propylene glycol 30% in Generic Unguentum M cream
+'32844911000001103,Propylene glycol 30% in Unguentum M cream (Special Order)
+'32845011000001103,Propylene glycol 30% in Unguentum M cream (Special Order)
+'32876511000001103,Generic Cuderm moisturising cream
+'32854911000001100,Generic Cuderm moisturising cream
+'32855011000001100,Generic Cuderm moisturising cream
+'32855111000001104,Cuderm moisturising cream (Synergy Biologics Ltd)
+'32855211000001105,Cuderm moisturising cream (Synergy Biologics Ltd)
+'32855311000001102,Cuderm moisturising cream (Synergy Biologics Ltd)
+'32876711000001108,Generic Cuderm moisturising lotion
+'32855611000001107,Generic Cuderm moisturising lotion
+'32855811000001106,Generic Cuderm moisturising lotion
+'32855911000001101,Cuderm moisturising lotion (Synergy Biologics Ltd)
+'32856011000001109,Cuderm moisturising lotion (Synergy Biologics Ltd)
+'32856111000001105,Cuderm moisturising lotion (Synergy Biologics Ltd)
+'32876611000001104,Generic Cuderm moisturising hand cream
+'32856211000001104,Generic Cuderm moisturising hand cream
+'32856411000001100,Cuderm moisturising hand cream (Synergy Biologics Ltd)
+'32856611000001102,Cuderm moisturising hand cream (Synergy Biologics Ltd)
+'33150011000001105,Generic E45 Derma Protect Fast Acting 24H moisturiser spray
+'33143011000001103,Generic E45 Derma Protect Fast Acting 24H moisturiser spray
+'33143211000001108,E45 Derma Protect Fast Acting 24H moisturiser spray (Reckitt Benckiser Healthcare (UK) Ltd)
+'33143511000001106,E45 Derma Protect Fast Acting 24H moisturiser spray (Reckitt Benckiser Healthcare (UK) Ltd)
+'33690811000001105,White soft paraffin 15% / Liquid paraffin 6% cream
+'33688511000001106,White soft paraffin 15% / Liquid paraffin 6% cream
+'33688811000001109,White soft paraffin 15% / Liquid paraffin 6% cream
+'33688611000001105,Emcrem cream (Glenmark Pharmaceuticals Europe Ltd)
+'33688711000001101,Emcrem cream (Glenmark Pharmaceuticals Europe Ltd)
+'33688911000001104,Emcrem cream (Glenmark Pharmaceuticals Europe Ltd)
+'34030211000001105,Generic Eucerin AntiREDNESS soothing care cream
+'34028011000001101,Generic Eucerin AntiREDNESS soothing care cream
+'34028111000001100,Eucerin AntiREDNESS soothing care cream (Beiersdorf UK Ltd)
+'34028211000001106,Eucerin AntiREDNESS soothing care cream (Beiersdorf UK Ltd)
+'34156611000001104,Generic Aveeno Bath & Shower oil
+'34155911000001103,Generic Aveeno Bath & Shower oil
+'34156011000001106,Aveeno Daily moisturising body cleansing oil (Johnson & Johnson Ltd)
+'34156111000001107,Aveeno Daily moisturising body cleansing oil (Johnson & Johnson Ltd)
+'34683511000001100,Generic Udderly Smooth moisturising cream
+'34671211000001107,Generic Udderly Smooth moisturising cream
+'34671311000001104,Generic Udderly Smooth moisturising cream
+'34671411000001106,Udderly Smooth moisturising cream (Glanford Ltd)
+'34671511000001105,Udderly Smooth moisturising cream (Glanford Ltd)
+'34671611000001109,Udderly Smooth moisturising cream (Glanford Ltd)
+'34769811000001108,Propylene glycol 20% / Lactic acid 3% in Generic Unguentum M cream
+'34763011000001100,Propylene glycol 20% / Lactic acid 3% in Generic Unguentum M cream
+'34763111000001104,Propylene glycol 20% / Lactic acid 3% in Unguentum M cream (Special Order)
+'34763211000001105,Propylene glycol 20% / Lactic acid 3% in Unguentum M cream (Special Order)
+'34908011000001103,Generic Clinisan emollient skin cleansing foam
+'34892711000001106,Generic Clinisan emollient skin cleansing foam
+'34892811000001103,Generic Clinisan emollient skin cleansing foam
+'34892911000001108,Clinisan emollient skin cleansing foam (Synergy Health (UK) Ltd)
+'34893011000001100,Clinisan emollient skin cleansing foam (Synergy Health (UK) Ltd)
+'34893111000001104,Clinisan emollient skin cleansing foam (Synergy Health (UK) Ltd)
+'35299111000001104,Generic A-Derma Exomega emollient cream
+'35278011000001102,Generic A-Derma Exomega emollient cream
+'35278111000001101,Generic A-Derma Exomega emollient cream
+'35278211000001107,A-Derma Exomega emollient cream (Pierre Fabre Dermo-Cosmetique)
+'35278311000001104,A-Derma Exomega emollient cream (Pierre Fabre Dermo-Cosmetique)
+'35278411000001106,A-Derma Exomega emollient cream (Pierre Fabre Dermo-Cosmetique)
+'35337411000001103,Generic Ultraveen Moisturising cream
+'35337511000001104,Generic Ultraveen Moisturising cream
+'35337611000001100,Ultraveen Moisturising cream (Dermatonics Ltd)
+'35337711000001109,Ultraveen Moisturising cream (Dermatonics Ltd)
+'35814311000001106,Generic Childs Farm unfragranced moisturising cream
+'35813211000001101,Generic Childs Farm unfragranced moisturising cream
+'35813311000001109,Childs Farm unfragranced moisturising cream (Childs Farm)
+'35813411000001102,Childs Farm unfragranced moisturising cream (Childs Farm)
+'36003411000001102,Propylene glycol 20% / Lactic acid 5% in Generic Unguentum M cream
+'35990211000001104,Propylene glycol 20% / Lactic acid 5% in Generic Unguentum M cream
+'35990311000001107,Propylene glycol 20% / Lactic acid 5% in Unguentum M cream (Special Order)
+'35990711000001106,Propylene glycol 20% / Lactic acid 5% in Unguentum M cream (Special Order)

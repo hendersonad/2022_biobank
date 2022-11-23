@@ -1,0 +1,863 @@
+SNOMEDCode,description
+'375668004,Betamethasone dipropionate 0.05% cream
+'954511000001100,Betamethasone dipropionate 0.05% cream
+'1260911000001108,Betamethasone dipropionate 0.05% cream
+'9011000001106,Diprosone 0.05% cream (Merck Sharp & Dohme Ltd)
+'1720511000001103,Diprosone 0.05% cream (Merck Sharp & Dohme Ltd)
+'1720611000001104,Diprosone 0.05% cream (Merck Sharp & Dohme Ltd)
+'14321211000001100,Diprosone 0.05% cream (Sigma Pharmaceuticals Plc)
+'14321311000001108,Diprosone 0.05% cream (Sigma Pharmaceuticals Plc)
+'375669007,Betamethasone dipropionate 0.05% ointment
+'1044211000001108,Betamethasone dipropionate 0.05% ointment
+'953811000001100,Betamethasone dipropionate 0.05% ointment
+'878711000001109,Diprosone 0.05% ointment (Merck Sharp & Dohme Ltd)
+'1720911000001105,Diprosone 0.05% ointment (Merck Sharp & Dohme Ltd)
+'1721011000001102,Diprosone 0.05% ointment (Merck Sharp & Dohme Ltd)
+'14321511000001102,Diprosone 0.05% ointment (Sigma Pharmaceuticals Plc)
+'14321611000001103,Diprosone 0.05% ointment (Sigma Pharmaceuticals Plc)
+'331792000,Beclometasone 0.025% cream
+'1249911000001109,Beclometasone 0.025% cream
+'18436411000001103,Beclometasone 0.025% cream (Essential Generics Ltd)
+'18436611000001100,Beclometasone 0.025% cream (Essential Generics Ltd)
+'18659111000001103,Beclometasone 0.025% cream (Alliance Healthcare (Distribution) Ltd)
+'18659211000001109,Beclometasone 0.025% cream (Alliance Healthcare (Distribution) Ltd)
+'18752511000001108,Beclometasone 0.025% cream (A A H Pharmaceuticals Ltd)
+'18752611000001107,Beclometasone 0.025% cream (A A H Pharmaceuticals Ltd)
+'331793005,Beclometasone 0.025% ointment
+'1204311000001100,Beclometasone 0.025% ointment
+'18434811000001108,Beclometasone 0.025% ointment (Essential Generics Ltd)
+'18435011000001103,Beclometasone 0.025% ointment (Essential Generics Ltd)
+'18659311000001101,Beclometasone 0.025% ointment (Alliance Healthcare (Distribution) Ltd)
+'18659411000001108,Beclometasone 0.025% ointment (Alliance Healthcare (Distribution) Ltd)
+'18752811000001106,Beclometasone 0.025% ointment (A A H Pharmaceuticals Ltd)
+'18752911000001101,Beclometasone 0.025% ointment (A A H Pharmaceuticals Ltd)
+'426011000001100,Betnovate RD 0.025% ointment (GlaxoSmithKline UK Ltd)
+'1922811000001107,Betnovate RD 0.025% ointment (GlaxoSmithKline UK Ltd)
+'35910711000001107,Betamethasone dipropionate 0.05% / Salicylic acid 2% scalp application
+'1181411000001109,Betamethasone dipropionate 0.05% / Salicylic acid 2% scalp application
+'18253011000001104,Betamethasone dipropionate 0.05% / Salicylic acid 2% scalp application
+'531811000001105,Diprosalic 0.05%/2% scalp application (Merck Sharp & Dohme Ltd)
+'1926611000001109,Diprosalic 0.05%/2% scalp application (Merck Sharp & Dohme Ltd)
+'10531311000001105,Diprosalic 0.05%/2% scalp application (Waymade Healthcare Plc)
+'10531411000001103,Diprosalic 0.05%/2% scalp application (Waymade Healthcare Plc)
+'30205411000001101,Diprosalic 0.05%/2% scalp application (Waymade Healthcare Plc)
+'13158811000001103,Diprosalic 0.05%/2% scalp application (Dowelhurst Ltd)
+'13159111000001103,Diprosalic 0.05%/2% scalp application (Dowelhurst Ltd)
+'13867011000001107,Diprosalic 0.05%/2% scalp application (DE Pharmaceuticals)
+'13867111000001108,Diprosalic 0.05%/2% scalp application (DE Pharmaceuticals)
+'14321011000001105,Diprosalic 0.05%/2% scalp application (Sigma Pharmaceuticals Plc)
+'14321111000001106,Diprosalic 0.05%/2% scalp application (Sigma Pharmaceuticals Plc)
+'16169611000001107,Diprosalic 0.05%/2% scalp application (Lexon (UK) Ltd)
+'16169711000001103,Diprosalic 0.05%/2% scalp application (Lexon (UK) Ltd)
+'16561011000001105,Diprosalic 0.05%/2% scalp application (Mawdsley-Brooks & Company Ltd)
+'16561211000001100,Diprosalic 0.05%/2% scalp application (Mawdsley-Brooks & Company Ltd)
+'18252911000001107,Diprosalic 0.05%/2% scalp application (Necessity Supplies Ltd)
+'18253211000001109,Diprosalic 0.05%/2% scalp application (Necessity Supplies Ltd)
+'18253111000001103,Diprosalic 0.05%/2% scalp application (Necessity Supplies Ltd)
+'331828002,Betamethasone dipropionate 0.05% / Salicylic acid 3% ointment
+'1132311000001102,Betamethasone dipropionate 0.05% / Salicylic acid 3% ointment
+'1039211000001108,Betamethasone dipropionate 0.05% / Salicylic acid 3% ointment
+'611311000001103,Diprosalic 0.05%/3% ointment (Merck Sharp & Dohme Ltd)
+'1999011000001100,Diprosalic 0.05%/3% ointment (Merck Sharp & Dohme Ltd)
+'1999211000001105,Diprosalic 0.05%/3% ointment (Merck Sharp & Dohme Ltd)
+'5287611000001104,Diprosalic 0.05%/3% ointment (Dowelhurst Ltd)
+'5287811000001100,Diprosalic 0.05%/3% ointment (Dowelhurst Ltd)
+'5358811000001101,Diprosalic 0.05%/3% ointment (Waymade Healthcare Plc)
+'5358911000001106,Diprosalic 0.05%/3% ointment (Waymade Healthcare Plc)
+'13866811000001103,Diprosalic 0.05%/3% ointment (DE Pharmaceuticals)
+'13866911000001108,Diprosalic 0.05%/3% ointment (DE Pharmaceuticals)
+'14320711000001104,Diprosalic 0.05%/3% ointment (Sigma Pharmaceuticals Plc)
+'14320811000001107,Diprosalic 0.05%/3% ointment (Sigma Pharmaceuticals Plc)
+'16159011000001107,Diprosalic 0.05%/3% ointment (Lexon (UK) Ltd)
+'16159111000001108,Diprosalic 0.05%/3% ointment (Lexon (UK) Ltd)
+'16561611000001103,Diprosalic 0.05%/3% ointment (Mawdsley-Brooks & Company Ltd)
+'16561811000001104,Diprosalic 0.05%/3% ointment (Mawdsley-Brooks & Company Ltd)
+'18252611000001101,Diprosalic 0.05%/3% ointment (Necessity Supplies Ltd)
+'18252711000001105,Diprosalic 0.05%/3% ointment (Necessity Supplies Ltd)
+'331849001,Betamethasone valerate 0.1% / Fusidic acid 2% cream
+'1041811000001107,Betamethasone valerate 0.1% / Fusidic acid 2% cream
+'963311000001102,Betamethasone valerate 0.1% / Fusidic acid 2% cream
+'399111000001108,Fucibet cream (LEO Pharma)
+'2008511000001109,Fucibet cream (LEO Pharma)
+'2008611000001108,Fucibet cream (LEO Pharma)
+'5546311000001107,Fucibet cream (Dowelhurst Ltd)
+'5546411000001100,Fucibet cream (Dowelhurst Ltd)
+'5546511000001101,Fucibet cream (Dowelhurst Ltd)
+'13408511000001107,Fucibet Lipid cream (LEO Pharma)
+'13408611000001106,Fucibet Lipid cream (LEO Pharma)
+'221911000001107,Cutivate 0.05% cream (GlaxoSmithKline UK Ltd)
+'2095211000001102,Cutivate 0.05% cream (GlaxoSmithKline UK Ltd)
+'2095411000001103,Cutivate 0.05% cream (GlaxoSmithKline UK Ltd)
+'15844111000001101,Cutivate 0.05% cream (GlaxoSmithKline UK Ltd)
+'24098911000001108,Cutivate 0.05% cream (Waymade Healthcare Plc)
+'24099011000001104,Cutivate 0.05% cream (Waymade Healthcare Plc)
+'332049000,Mometasone 0.1% cream
+'1242911000001104,Mometasone 0.1% cream
+'1121511000001103,Mometasone 0.1% cream
+'498811000001102,Elocon 0.1% cream (Merck Sharp & Dohme Ltd)
+'2140211000001106,Elocon 0.1% cream (Merck Sharp & Dohme Ltd)
+'2140311000001103,Elocon 0.1% cream (Merck Sharp & Dohme Ltd)
+'5264111000001100,Elocon 0.1% cream (Waymade Healthcare Plc)
+'5264211000001106,Elocon 0.1% cream (Waymade Healthcare Plc)
+'10853811000001102,Elocon 0.1% cream (Waymade Healthcare Plc)
+'5288311000001105,Elocon 0.1% cream (Dowelhurst Ltd)
+'5288511000001104,Elocon 0.1% cream (Dowelhurst Ltd)
+'5304011000001107,Mometasone 0.1% cream (Dowelhurst Ltd)
+'5304111000001108,Mometasone 0.1% cream (Dowelhurst Ltd)
+'13870811000001106,Elocon 0.1% cream (DE Pharmaceuticals)
+'13870911000001101,Elocon 0.1% cream (DE Pharmaceuticals)
+'14217511000001107,Elocon 0.1% cream (Sigma Pharmaceuticals Plc)
+'14217711000001102,Elocon 0.1% cream (Sigma Pharmaceuticals Plc)
+'16170911000001103,Elocon 0.1% cream (Lexon (UK) Ltd)
+'16171011000001106,Elocon 0.1% cream (Lexon (UK) Ltd)
+'16171111000001107,Elocon 0.1% cream (Lexon (UK) Ltd)
+'16570411000001103,Elocon 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'16570511000001104,Elocon 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'16570611000001100,Elocon 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'18256311000001105,Elocon 0.1% cream (Necessity Supplies Ltd)
+'18256411000001103,Elocon 0.1% cream (Necessity Supplies Ltd)
+'19237711000001109,Mometasone 0.1% cream (A A H Pharmaceuticals Ltd)
+'19238211000001103,Mometasone 0.1% cream (A A H Pharmaceuticals Ltd)
+'19238311000001106,Mometasone 0.1% cream (A A H Pharmaceuticals Ltd)
+'19302511000001102,Mometasone 0.1% cream (Glenmark Pharmaceuticals Europe Ltd)
+'19302611000001103,Mometasone 0.1% cream (Glenmark Pharmaceuticals Europe Ltd)
+'19302711000001107,Mometasone 0.1% cream (Glenmark Pharmaceuticals Europe Ltd)
+'19563411000001106,Mometasone 0.1% cream (Alliance Healthcare (Distribution) Ltd)
+'19563511000001105,Mometasone 0.1% cream (Alliance Healthcare (Distribution) Ltd)
+'19563611000001109,Mometasone 0.1% cream (Alliance Healthcare (Distribution) Ltd)
+'21303411000001100,Mometasone 0.1% cream (Auden McKenzie (Pharma Division) Ltd)
+'21303511000001101,Mometasone 0.1% cream (Auden McKenzie (Pharma Division) Ltd)
+'21303711000001106,Mometasone 0.1% cream (Auden McKenzie (Pharma Division) Ltd)
+'21539911000001104,Mometasone 0.1% cream (Actavis UK Ltd)
+'21540011000001105,Mometasone 0.1% cream (Actavis UK Ltd)
+'21540111000001106,Mometasone 0.1% cream (Actavis UK Ltd)
+'21807111000001104,Mometasone 0.1% cream (Waymade Healthcare Plc)
+'21807211000001105,Mometasone 0.1% cream (Waymade Healthcare Plc)
+'22517911000001100,Mometasone 0.1% cream (Teva UK Ltd)
+'22518011000001103,Mometasone 0.1% cream (Teva UK Ltd)
+'22518111000001102,Mometasone 0.1% cream (Teva UK Ltd)
+'24401911000001106,Mometasone 0.1% cream (DE Pharmaceuticals)
+'24402211000001109,Mometasone 0.1% cream (DE Pharmaceuticals)
+'24402111000001103,Mometasone 0.1% cream (DE Pharmaceuticals)
+'29925911000001101,Mometasone 0.1% cream (Sigma Pharmaceuticals Plc)
+'29926011000001109,Mometasone 0.1% cream (Sigma Pharmaceuticals Plc)
+'30832811000001109,Mometasone 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'30832911000001104,Mometasone 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'30833011000001107,Mometasone 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'332050000,Mometasone 0.1% ointment
+'1293111000001101,Mometasone 0.1% ointment
+'1303211000001101,Mometasone 0.1% ointment
+'19298311000001100,Mometasone 0.1% ointment
+'19299111000001109,Mometasone 0.1% ointment
+'338611000001100,Elocon 0.1% ointment (Merck Sharp & Dohme Ltd)
+'2140811000001107,Elocon 0.1% ointment (Merck Sharp & Dohme Ltd)
+'2141211000001100,Elocon 0.1% ointment (Merck Sharp & Dohme Ltd)
+'5264511000001109,Elocon 0.1% ointment (Waymade Healthcare Plc)
+'5264611000001108,Elocon 0.1% ointment (Waymade Healthcare Plc)
+'10853911000001107,Elocon 0.1% ointment (Waymade Healthcare Plc)
+'5289111000001101,Elocon 0.1% ointment (Dowelhurst Ltd)
+'5289411000001106,Elocon 0.1% ointment (Dowelhurst Ltd)
+'5304411000001103,Mometasone 0.1% ointment (Dowelhurst Ltd)
+'5304511000001104,Mometasone 0.1% ointment (Dowelhurst Ltd)
+'13871011000001109,Elocon 0.1% ointment (DE Pharmaceuticals)
+'13871111000001105,Elocon 0.1% ointment (DE Pharmaceuticals)
+'14217911000001100,Elocon 0.1% ointment (Sigma Pharmaceuticals Plc)
+'14218011000001103,Elocon 0.1% ointment (Sigma Pharmaceuticals Plc)
+'16098611000001106,Mometasone 0.1% ointment (Glenmark Pharmaceuticals Europe Ltd)
+'16098811000001105,Mometasone 0.1% ointment (Glenmark Pharmaceuticals Europe Ltd)
+'16098711000001102,Mometasone 0.1% ointment (Glenmark Pharmaceuticals Europe Ltd)
+'19298611000001105,Mometasone 0.1% ointment (Glenmark Pharmaceuticals Europe Ltd)
+'19299211000001103,Mometasone 0.1% ointment (Glenmark Pharmaceuticals Europe Ltd)
+'16171211000001101,Elocon 0.1% ointment (Lexon (UK) Ltd)
+'16171311000001109,Elocon 0.1% ointment (Lexon (UK) Ltd)
+'16184811000001109,Mometasone 0.1% ointment (A A H Pharmaceuticals Ltd)
+'16184911000001104,Mometasone 0.1% ointment (A A H Pharmaceuticals Ltd)
+'16185011000001104,Mometasone 0.1% ointment (A A H Pharmaceuticals Ltd)
+'19669611000001102,Mometasone 0.1% ointment (A A H Pharmaceuticals Ltd)
+'19669711000001106,Mometasone 0.1% ointment (A A H Pharmaceuticals Ltd)
+'16570911000001106,Elocon 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'16571011000001103,Elocon 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'16571111000001102,Elocon 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'16638711000001100,Mometasone 0.1% ointment (Teva UK Ltd)
+'16638811000001108,Mometasone 0.1% ointment (Teva UK Ltd)
+'16638911000001103,Mometasone 0.1% ointment (Teva UK Ltd)
+'16641211000001104,Mometasone 0.1% ointment (Alliance Healthcare (Distribution) Ltd)
+'16641311000001107,Mometasone 0.1% ointment (Alliance Healthcare (Distribution) Ltd)
+'16641411000001100,Mometasone 0.1% ointment (Alliance Healthcare (Distribution) Ltd)
+'18140911000001108,Mometasone 0.1% ointment (Phoenix Healthcare Distribution Ltd)
+'18141011000001100,Mometasone 0.1% ointment (Phoenix Healthcare Distribution Ltd)
+'18141111000001104,Mometasone 0.1% ointment (Phoenix Healthcare Distribution Ltd)
+'18256511000001104,Elocon 0.1% ointment (Necessity Supplies Ltd)
+'18256611000001100,Elocon 0.1% ointment (Necessity Supplies Ltd)
+'21303811000001103,Mometasone 0.1% ointment (Auden McKenzie (Pharma Division) Ltd)
+'21303911000001108,Mometasone 0.1% ointment (Auden McKenzie (Pharma Division) Ltd)
+'21304011000001106,Mometasone 0.1% ointment (Auden McKenzie (Pharma Division) Ltd)
+'21540211000001100,Mometasone 0.1% ointment (Actavis UK Ltd)
+'21540311000001108,Mometasone 0.1% ointment (Actavis UK Ltd)
+'21540411000001101,Mometasone 0.1% ointment (Actavis UK Ltd)
+'21807411000001109,Mometasone 0.1% ointment (Waymade Healthcare Plc)
+'21807711000001103,Mometasone 0.1% ointment (Waymade Healthcare Plc)
+'21807911000001101,Mometasone 0.1% ointment (Waymade Healthcare Plc)
+'21807611000001107,Mometasone 0.1% ointment (Waymade Healthcare Plc)
+'21807811000001106,Mometasone 0.1% ointment (Waymade Healthcare Plc)
+'24402311000001101,Mometasone 0.1% ointment (DE Pharmaceuticals)
+'24402511000001107,Mometasone 0.1% ointment (DE Pharmaceuticals)
+'24402411000001108,Mometasone 0.1% ointment (DE Pharmaceuticals)
+'29926211000001104,Mometasone 0.1% ointment (Sigma Pharmaceuticals Plc)
+'29926311000001107,Mometasone 0.1% ointment (Sigma Pharmaceuticals Plc)
+'29926411000001100,Mometasone 0.1% ointment (Sigma Pharmaceuticals Plc)
+'30833111000001108,Mometasone 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'30833211000001102,Mometasone 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'30833311000001105,Mometasone 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'33599611000001105,Mometasone 0.1% ointment (Mylan)
+'33599711000001101,Mometasone 0.1% ointment (Mylan)
+'33599811000001109,Mometasone 0.1% ointment (Mylan)
+'331938006,Fluocinolone acetonide 0.025% gel
+'1295811000001107,Fluocinolone acetonide 0.025% gel
+'11507211000001107,Fluocinolone acetonide 0.025% gel
+'427911000001103,Synalar 0.025% gel (Reig Jofre UK Ltd)
+'2156911000001102,Synalar 0.025% gel (Reig Jofre UK Ltd)
+'11507311000001104,Synalar 0.025% gel (Reig Jofre UK Ltd)
+'331944005,Fluocinolone acetonide 0.025% cream
+'1105811000001108,Fluocinolone acetonide 0.025% cream
+'1216311000001109,Fluocinolone acetonide 0.025% cream
+'264611000001109,Synalar 0.025% cream (Reig Jofre UK Ltd)
+'2158611000001109,Synalar 0.025% cream (Reig Jofre UK Ltd)
+'2158911000001103,Synalar 0.025% cream (Reig Jofre UK Ltd)
+'331939003,Fluocinolone acetonide 0.025% ointment
+'1252311000001103,Fluocinolone acetonide 0.025% ointment
+'1096611000001109,Fluocinolone acetonide 0.025% ointment
+'434611000001100,Synalar 0.025% ointment (Reig Jofre UK Ltd)
+'2160411000001104,Synalar 0.025% ointment (Reig Jofre UK Ltd)
+'2162011000001107,Synalar 0.025% ointment (Reig Jofre UK Ltd)
+'332000007,Hydrocortisone butyrate 0.1% ointment
+'1039811000001109,Hydrocortisone butyrate 0.1% ointment
+'1286011000001109,Hydrocortisone butyrate 0.1% ointment
+'911811000001106,Locoid 0.1% ointment (LEO Pharma)
+'2170411000001106,Locoid 0.1% ointment (LEO Pharma)
+'2170711000001100,Locoid 0.1% ointment (LEO Pharma)
+'10855911000001108,Locoid 0.1% ointment (Waymade Healthcare Plc)
+'10856011000001100,Locoid 0.1% ointment (Waymade Healthcare Plc)
+'14327611000001107,Locoid 0.1% ointment (Sigma Pharmaceuticals Plc)
+'14327711000001103,Locoid 0.1% ointment (Sigma Pharmaceuticals Plc)
+'16200011000001106,Locoid 0.1% ointment (Lexon (UK) Ltd)
+'16200111000001107,Locoid 0.1% ointment (Lexon (UK) Ltd)
+'16508611000001105,Locoid 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'16508811000001109,Locoid 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'374372000,Betamethasone valerate 0.1% cream
+'1084011000001108,Betamethasone valerate 0.1% cream
+'947511000001105,Betamethasone valerate 0.1% cream
+'33565211000001107,Betamethasone valerate 0.1% cream
+'589311000001109,Betamethasone valerate 0.1% cream (A A H Pharmaceuticals Ltd)
+'2176411000001108,Betamethasone valerate 0.1% cream (A A H Pharmaceuticals Ltd)
+'10986011000001101,Betamethasone valerate 0.1% cream (A A H Pharmaceuticals Ltd)
+'692111000001109,Betnovate 0.1% cream (GlaxoSmithKline UK Ltd)
+'2176511000001107,Betnovate 0.1% cream (GlaxoSmithKline UK Ltd)
+'2176711000001102,Betnovate 0.1% cream (GlaxoSmithKline UK Ltd)
+'318411000001105,Betamethasone valerate 0.1% cream (Kent Pharmaceuticals Ltd)
+'2177111000001100,Betamethasone valerate 0.1% cream (Kent Pharmaceuticals Ltd)
+'79811000001109,Betamethasone valerate 0.1% cream (Alliance Healthcare (Distribution) Ltd)
+'2177811000001107,Betamethasone valerate 0.1% cream (Alliance Healthcare (Distribution) Ltd)
+'16164911000001102,Betamethasone valerate 0.1% cream (Alliance Healthcare (Distribution) Ltd)
+'5619011000001101,Betnovate 0.1% cream (Dowelhurst Ltd)
+'5619111000001100,Betnovate 0.1% cream (Dowelhurst Ltd)
+'10844811000001101,Betnovate 0.1% cream (Waymade Healthcare Plc)
+'10845011000001106,Betnovate 0.1% cream (Waymade Healthcare Plc)
+'10844911000001106,Betnovate 0.1% cream (Waymade Healthcare Plc)
+'10964111000001109,Betamethasone valerate 0.1% cream (Teva UK Ltd)
+'10964311000001106,Betamethasone valerate 0.1% cream (Teva UK Ltd)
+'10964411000001104,Betamethasone valerate 0.1% cream (Teva UK Ltd)
+'13183111000001107,Betamethasone valerate 0.1% cream (Dowelhurst Ltd)
+'13183211000001101,Betamethasone valerate 0.1% cream (Dowelhurst Ltd)
+'13183311000001109,Betamethasone valerate 0.1% cream (Dowelhurst Ltd)
+'13575511000001102,Betamethasone valerate 0.1% cream (DE Pharmaceuticals)
+'13575611000001103,Betamethasone valerate 0.1% cream (DE Pharmaceuticals)
+'22620611000001107,Betamethasone valerate 0.1% cream (DE Pharmaceuticals)
+'15053011000001100,Betamethasone valerate 0.1% cream (Sigma Pharmaceuticals Plc)
+'15053111000001104,Betamethasone valerate 0.1% cream (Sigma Pharmaceuticals Plc)
+'15053311000001102,Betamethasone valerate 0.1% cream (Sigma Pharmaceuticals Plc)
+'15515011000001105,Betamethasone valerate 0.1% cream (Actavis UK Ltd)
+'15515111000001106,Betamethasone valerate 0.1% cream (Actavis UK Ltd)
+'15515311000001108,Betamethasone valerate 0.1% cream (Actavis UK Ltd)
+'17495311000001104,Betnovate 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'17495411000001106,Betnovate 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'17495511000001105,Betnovate 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'17799411000001104,Betamethasone valerate 0.1% cream (Phoenix Healthcare Distribution Ltd)
+'17799711000001105,Betamethasone valerate 0.1% cream (Phoenix Healthcare Distribution Ltd)
+'17800011000001100,Betamethasone valerate 0.1% cream (Phoenix Healthcare Distribution Ltd)
+'21792711000001100,Betamethasone valerate 0.1% cream (Waymade Healthcare Plc)
+'21793011000001106,Betamethasone valerate 0.1% cream (Waymade Healthcare Plc)
+'21793111000001107,Betamethasone valerate 0.1% cream (Waymade Healthcare Plc)
+'29999611000001104,Betamethasone valerate 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'29999711000001108,Betamethasone valerate 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'30000211000001102,Betamethasone valerate 0.1% cream (Mawdsley-Brooks & Company Ltd)
+'33564711000001104,Betamethasone valerate 0.1% cream (Manx Healthcare Ltd)
+'33565311000001104,Betamethasone valerate 0.1% cream (Manx Healthcare Ltd)
+'159911000001105,Betnovate RD 0.025% cream (GlaxoSmithKline UK Ltd)
+'2179911000001109,Betnovate RD 0.025% cream (GlaxoSmithKline UK Ltd)
+'36098311000001104,Diflucortolone 0.1% oily cream
+'1193011000001100,Diflucortolone 0.1% oily cream
+'322911000001105,Nerisone 0.1% oily cream (Meadow Laboratories Ltd)
+'2569811000001103,Nerisone 0.1% oily cream (Meadow Laboratories Ltd)
+'331852009,Betamethasone valerate 0.1% / Clioquinol 3% ointment
+'1288711000001105,Betamethasone valerate 0.1% / Clioquinol 3% ointment
+'909211000001108,Betnovate-C ointment (Chemidex Pharma Ltd)
+'2677911000001101,Betnovate-C ointment (Chemidex Pharma Ltd)
+'21736211000001100,Betamethasone valerate 0.1% / Clioquinol 3% ointment (Essential Generics Ltd)
+'21736311000001108,Betamethasone valerate 0.1% / Clioquinol 3% ointment (Essential Generics Ltd)
+'21959011000001107,Betamethasone valerate 0.1% / Clioquinol 3% ointment (Alliance Healthcare (Distribution) Ltd)
+'21959411000001103,Betamethasone valerate 0.1% / Clioquinol 3% ointment (Alliance Healthcare (Distribution) Ltd)
+'22125711000001109,Betamethasone valerate 0.1% / Clioquinol 3% ointment (A A H Pharmaceuticals Ltd)
+'22125911000001106,Betamethasone valerate 0.1% / Clioquinol 3% ointment (A A H Pharmaceuticals Ltd)
+'331853004,Betamethasone valerate 0.1% / Clioquinol 3% cream
+'1109311000001102,Betamethasone valerate 0.1% / Clioquinol 3% cream
+'547311000001106,Betnovate-C cream (Chemidex Pharma Ltd)
+'2678011000001104,Betnovate-C cream (Chemidex Pharma Ltd)
+'21736011000001105,Betamethasone valerate 0.1% / Clioquinol 3% cream (Essential Generics Ltd)
+'21736111000001106,Betamethasone valerate 0.1% / Clioquinol 3% cream (Essential Generics Ltd)
+'21958411000001106,Betamethasone valerate 0.1% / Clioquinol 3% cream (Alliance Healthcare (Distribution) Ltd)
+'21958611000001109,Betamethasone valerate 0.1% / Clioquinol 3% cream (Alliance Healthcare (Distribution) Ltd)
+'22124911000001107,Betamethasone valerate 0.1% / Clioquinol 3% cream (A A H Pharmaceuticals Ltd)
+'22125511000001104,Betamethasone valerate 0.1% / Clioquinol 3% cream (A A H Pharmaceuticals Ltd)
+'35910811000001104,Betamethasone dipropionate 0.064% / Clotrimazole 1% cream
+'1153611000001101,Betamethasone dipropionate 0.064% / Clotrimazole 1% cream
+'2899411000001101,Lotriderm cream (Merck Sharp & Dohme Ltd)
+'2899511000001102,Lotriderm cream (Merck Sharp & Dohme Ltd)
+'14368511000001100,Lotriderm cream (Sigma Pharmaceuticals Plc)
+'14368711000001105,Lotriderm cream (Sigma Pharmaceuticals Plc)
+'16202611000001103,Lotriderm cream (Lexon (UK) Ltd)
+'16202811000001104,Lotriderm cream (Lexon (UK) Ltd)
+'16513511000001104,Lotriderm cream (Mawdsley-Brooks & Company Ltd)
+'16513711000001109,Lotriderm cream (Mawdsley-Brooks & Company Ltd)
+'16582211000001105,Lotriderm cream (Stephar (U.K.) Ltd)
+'16582311000001102,Lotriderm cream (Stephar (U.K.) Ltd)
+'17572911000001106,Lotriderm cream (Necessity Supplies Ltd)
+'17573011000001103,Lotriderm cream (Necessity Supplies Ltd)
+'18590311000001105,Lotriderm cream (DE Pharmaceuticals)
+'18590411000001103,Lotriderm cream (DE Pharmaceuticals)
+'331997004,Chlorquinaldol 3% / Hydrocortisone butyrate 0.1% cream
+'971911000001107,Chlorquinaldol 3% / Hydrocortisone butyrate 0.1% cream
+'137411000001107,Locoid C cream (Astellas Pharma Ltd)
+'2736011000001108,Locoid C cream (Astellas Pharma Ltd)
+'331851002,Betamethasone valerate 0.1% / Neomycin 0.5% cream
+'1231911000001109,Betamethasone valerate 0.1% / Neomycin 0.5% cream
+'1116911000001108,Betamethasone valerate 0.1% / Neomycin 0.5% cream
+'44811000001106,Betnovate-N cream (Chemidex Pharma Ltd)
+'2784111000001108,Betnovate-N cream (Chemidex Pharma Ltd)
+'2784211000001102,Betnovate-N cream (Chemidex Pharma Ltd)
+'21736711000001107,Betamethasone valerate 0.1% / Neomycin 0.5% cream (Essential Generics Ltd)
+'21737411000001104,Betamethasone valerate 0.1% / Neomycin 0.5% cream (Essential Generics Ltd)
+'21737511000001100,Betamethasone valerate 0.1% / Neomycin 0.5% cream (Essential Generics Ltd)
+'21959511000001104,Betamethasone valerate 0.1% / Neomycin 0.5% cream (Alliance Healthcare (Distribution) Ltd)
+'21959711000001109,Betamethasone valerate 0.1% / Neomycin 0.5% cream (Alliance Healthcare (Distribution) Ltd)
+'21959811000001101,Betamethasone valerate 0.1% / Neomycin 0.5% cream (Alliance Healthcare (Distribution) Ltd)
+'22126011000001103,Betamethasone valerate 0.1% / Neomycin 0.5% cream (A A H Pharmaceuticals Ltd)
+'22126111000001102,Betamethasone valerate 0.1% / Neomycin 0.5% cream (A A H Pharmaceuticals Ltd)
+'22126211000001108,Betamethasone valerate 0.1% / Neomycin 0.5% cream (A A H Pharmaceuticals Ltd)
+'331850001,Betamethasone valerate 0.1% / Neomycin 0.5% ointment
+'958611000001106,Betamethasone valerate 0.1% / Neomycin 0.5% ointment
+'1191611000001108,Betamethasone valerate 0.1% / Neomycin 0.5% ointment
+'547511000001100,Betnovate-N ointment (Chemidex Pharma Ltd)
+'2788411000001107,Betnovate-N ointment (Chemidex Pharma Ltd)
+'2788611000001105,Betnovate-N ointment (Chemidex Pharma Ltd)
+'21737611000001101,Betamethasone valerate 0.1% / Neomycin 0.5% ointment (Essential Generics Ltd)
+'21737711000001105,Betamethasone valerate 0.1% / Neomycin 0.5% ointment (Essential Generics Ltd)
+'21737811000001102,Betamethasone valerate 0.1% / Neomycin 0.5% ointment (Essential Generics Ltd)
+'21959911000001106,Betamethasone valerate 0.1% / Neomycin 0.5% ointment (Alliance Healthcare (Distribution) Ltd)
+'21960011000001108,Betamethasone valerate 0.1% / Neomycin 0.5% ointment (Alliance Healthcare (Distribution) Ltd)
+'21960111000001109,Betamethasone valerate 0.1% / Neomycin 0.5% ointment (Alliance Healthcare (Distribution) Ltd)
+'22126611000001105,Betamethasone valerate 0.1% / Neomycin 0.5% ointment (A A H Pharmaceuticals Ltd)
+'22126711000001101,Betamethasone valerate 0.1% / Neomycin 0.5% ointment (A A H Pharmaceuticals Ltd)
+'22126811000001109,Betamethasone valerate 0.1% / Neomycin 0.5% ointment (A A H Pharmaceuticals Ltd)
+'331822001,Betamethasone valerate 0.1% scalp application
+'1147811000001105,Betamethasone valerate 0.1% scalp application
+'10466611000001107,Betamethasone valerate 0.1% scalp application
+'14209211000001101,Betamethasone valerate 0.1% scalp application
+'29979811000001105,Betamethasone valerate 0.1% scalp application
+'29911000001103,Betacap 0.1% scalp application (Dermal Laboratories Ltd)
+'2818511000001107,Betacap 0.1% scalp application (Dermal Laboratories Ltd)
+'766211000001108,Betnovate 0.1% scalp application (GlaxoSmithKline UK Ltd)
+'2818611000001106,Betnovate 0.1% scalp application (GlaxoSmithKline UK Ltd)
+'5260911000001107,Betnovate 0.1% scalp application (Waymade Healthcare Plc)
+'5261011000001104,Betnovate 0.1% scalp application (Waymade Healthcare Plc)
+'5284011000001103,Betnovate 0.1% scalp application (Dowelhurst Ltd)
+'5284111000001102,Betnovate 0.1% scalp application (Dowelhurst Ltd)
+'10466711000001103,Betnovate 0.1% scalp application (Dowelhurst Ltd)
+'13836111000001104,Betnovate 0.1% scalp application (DE Pharmaceuticals)
+'13836311000001102,Betnovate 0.1% scalp application (DE Pharmaceuticals)
+'13836211000001105,Betnovate 0.1% scalp application (DE Pharmaceuticals)
+'14209311000001109,Betnovate 0.1% scalp application (Sigma Pharmaceuticals Plc)
+'14209411000001102,Betnovate 0.1% scalp application (Sigma Pharmaceuticals Plc)
+'16141511000001102,Betnovate 0.1% scalp application (Lexon (UK) Ltd)
+'16141711000001107,Betnovate 0.1% scalp application (Lexon (UK) Ltd)
+'16141611000001103,Betnovate 0.1% scalp application (Lexon (UK) Ltd)
+'29979911000001100,Betnovate 0.1% scalp application (Lexon (UK) Ltd)
+'16342311000001107,Betnovate 0.1% scalp application (Mawdsley-Brooks & Company Ltd)
+'16342411000001100,Betnovate 0.1% scalp application (Mawdsley-Brooks & Company Ltd)
+'17601111000001104,Betnovate 0.1% scalp application (Necessity Supplies Ltd)
+'17601311000001102,Betnovate 0.1% scalp application (Necessity Supplies Ltd)
+'17601211000001105,Betnovate 0.1% scalp application (Necessity Supplies Ltd)
+'396279000,Betamethasone valerate 0.1% ointment
+'2912511000001101,Betamethasone valerate 0.1% ointment
+'2912611000001102,Betamethasone valerate 0.1% ointment
+'2912811000001103,Betamethasone valerate 0.1% ointment (A A H Pharmaceuticals Ltd)
+'2913011000001100,Betamethasone valerate 0.1% ointment (A A H Pharmaceuticals Ltd)
+'10986211000001106,Betamethasone valerate 0.1% ointment (A A H Pharmaceuticals Ltd)
+'2913211000001105,Betnovate 0.1% ointment (GlaxoSmithKline UK Ltd)
+'2913311000001102,Betnovate 0.1% ointment (GlaxoSmithKline UK Ltd)
+'2913411000001109,Betnovate 0.1% ointment (GlaxoSmithKline UK Ltd)
+'2913511000001108,Betamethasone valerate 0.1% ointment (Kent Pharmaceuticals Ltd)
+'2913811000001106,Betamethasone valerate 0.1% ointment (Kent Pharmaceuticals Ltd)
+'2914111000001102,Betamethasone valerate 0.1% ointment (Alliance Healthcare (Distribution) Ltd)
+'2914211000001108,Betamethasone valerate 0.1% ointment (Alliance Healthcare (Distribution) Ltd)
+'31067711000001102,Betamethasone valerate 0.1% ointment (Alliance Healthcare (Distribution) Ltd)
+'5619411000001105,Betnovate 0.1% ointment (Dowelhurst Ltd)
+'5619611000001108,Betnovate 0.1% ointment (Dowelhurst Ltd)
+'10845211000001101,Betnovate 0.1% ointment (Waymade Healthcare Plc)
+'10845511000001103,Betnovate 0.1% ointment (Waymade Healthcare Plc)
+'10845411000001102,Betnovate 0.1% ointment (Waymade Healthcare Plc)
+'10987211000001108,Betamethasone valerate 0.1% ointment (Teva UK Ltd)
+'10987311000001100,Betamethasone valerate 0.1% ointment (Teva UK Ltd)
+'10987411000001107,Betamethasone valerate 0.1% ointment (Teva UK Ltd)
+'13183411000001102,Betamethasone valerate 0.1% ointment (Dowelhurst Ltd)
+'13183511000001103,Betamethasone valerate 0.1% ointment (Dowelhurst Ltd)
+'13183611000001104,Betamethasone valerate 0.1% ointment (Dowelhurst Ltd)
+'13575711000001107,Betamethasone valerate 0.1% ointment (DE Pharmaceuticals)
+'13575811000001104,Betamethasone valerate 0.1% ointment (DE Pharmaceuticals)
+'22620711000001103,Betamethasone valerate 0.1% ointment (DE Pharmaceuticals)
+'15053611000001107,Betamethasone valerate 0.1% ointment (Sigma Pharmaceuticals Plc)
+'15053811000001106,Betamethasone valerate 0.1% ointment (Sigma Pharmaceuticals Plc)
+'15053911000001101,Betamethasone valerate 0.1% ointment (Sigma Pharmaceuticals Plc)
+'15515411000001101,Betamethasone valerate 0.1% ointment (Actavis UK Ltd)
+'15515511000001102,Betamethasone valerate 0.1% ointment (Actavis UK Ltd)
+'15515711000001107,Betamethasone valerate 0.1% ointment (Actavis UK Ltd)
+'17495611000001109,Betnovate 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'17495711000001100,Betnovate 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'17495811000001108,Betnovate 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'17800311000001102,Betamethasone valerate 0.1% ointment (Phoenix Healthcare Distribution Ltd)
+'17800511000001108,Betamethasone valerate 0.1% ointment (Phoenix Healthcare Distribution Ltd)
+'17800811000001106,Betamethasone valerate 0.1% ointment (Phoenix Healthcare Distribution Ltd)
+'21793511000001103,Betamethasone valerate 0.1% ointment (Waymade Healthcare Plc)
+'21793611000001104,Betamethasone valerate 0.1% ointment (Waymade Healthcare Plc)
+'21794011000001108,Betamethasone valerate 0.1% ointment (Waymade Healthcare Plc)
+'30000311000001105,Betamethasone valerate 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'30000411000001103,Betamethasone valerate 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'30000511000001104,Betamethasone valerate 0.1% ointment (Mawdsley-Brooks & Company Ltd)
+'3180811000001108,Metosyn 0.05% ointment (Reig Jofre UK Ltd)
+'3181111000001107,Metosyn 0.05% ointment (Reig Jofre UK Ltd)
+'3181211000001101,Metosyn 0.05% ointment (Reig Jofre UK Ltd)
+'3182011000001103,Metosyn FAPG 0.05% cream (Reig Jofre UK Ltd)
+'3182111000001102,Metosyn FAPG 0.05% cream (Reig Jofre UK Ltd)
+'3182211000001108,Metosyn FAPG 0.05% cream (Reig Jofre UK Ltd)
+'3431911000001103,Betamethasone 0.1% foam
+'3186211000001109,Betamethasone 0.1% foam
+'3186411000001108,Bettamousse 0.1% cutaneous foam (RPH Pharmaceuticals AB)
+'3186611000001106,Bettamousse 0.1% cutaneous foam (RPH Pharmaceuticals AB)
+'11921911000001107,Bettamousse 0.1% cutaneous foam (Waymade Healthcare Plc)
+'11922011000001100,Bettamousse 0.1% cutaneous foam (Waymade Healthcare Plc)
+'14281811000001100,Bettamousse 0.1% cutaneous foam (Sigma Pharmaceuticals Plc)
+'14283011000001107,Bettamousse 0.1% cutaneous foam (Sigma Pharmaceuticals Plc)
+'16142211000001107,Bettamousse 0.1% cutaneous foam (Lexon (UK) Ltd)
+'16142311000001104,Bettamousse 0.1% cutaneous foam (Lexon (UK) Ltd)
+'16345111000001103,Bettamousse 0.1% cutaneous foam (Mawdsley-Brooks & Company Ltd)
+'16345211000001109,Bettamousse 0.1% cutaneous foam (Mawdsley-Brooks & Company Ltd)
+'17601811000001106,Bettamousse 0.1% cutaneous foam (Necessity Supplies Ltd)
+'17602111000001109,Bettamousse 0.1% cutaneous foam (Necessity Supplies Ltd)
+'18546811000001105,Bettamousse 0.1% cutaneous foam (DE Pharmaceuticals)
+'18546911000001100,Bettamousse 0.1% cutaneous foam (DE Pharmaceuticals)
+'3189711000001107,Beclometasone 100 Cyclocaps (Teva UK Ltd)
+'3189911000001109,Beclometasone 100 Cyclocaps (Teva UK Ltd)
+'3192611000001109,Beclometasone 200 Cyclocaps (Teva UK Ltd)
+'3192811000001108,Beclometasone 200 Cyclocaps (Teva UK Ltd)
+'3194511000001100,Beclometasone 400 Cyclocaps (Teva UK Ltd)
+'3194911000001107,Beclometasone 400 Cyclocaps (Teva UK Ltd)
+'331998009,Hydrocortisone butyrate 0.1% cream
+'3355611000001104,Hydrocortisone butyrate 0.1% cream
+'3355811000001100,Hydrocortisone butyrate 0.1% cream
+'3356211000001107,Locoid 0.1% cream (LEO Pharma)
+'3356311000001104,Locoid 0.1% cream (LEO Pharma)
+'3356411000001106,Locoid 0.1% cream (LEO Pharma)
+'3357011000001104,Locoid 0.1% Lipocream (LEO Pharma)
+'3357211000001109,Locoid 0.1% Lipocream (LEO Pharma)
+'3357411000001108,Locoid 0.1% Lipocream (LEO Pharma)
+'10855711000001106,Locoid 0.1% cream (Waymade Healthcare Plc)
+'10855811000001103,Locoid 0.1% cream (Waymade Healthcare Plc)
+'13924311000001100,Locoid 0.1% cream (DE Pharmaceuticals)
+'13924411000001107,Locoid 0.1% cream (DE Pharmaceuticals)
+'13924511000001106,Locoid 0.1% Lipocream (DE Pharmaceuticals)
+'13924611000001105,Locoid 0.1% Lipocream (DE Pharmaceuticals)
+'14323111000001107,Locoid 0.1% cream (Sigma Pharmaceuticals Plc)
+'14323211000001101,Locoid 0.1% cream (Sigma Pharmaceuticals Plc)
+'14326911000001104,Locoid 0.1% Lipocream (Sigma Pharmaceuticals Plc)
+'14327111000001104,Locoid 0.1% Lipocream (Sigma Pharmaceuticals Plc)
+'16508011000001103,Locoid 0.1% Lipocream (Mawdsley-Brooks & Company Ltd)
+'16508111000001102,Locoid 0.1% Lipocream (Mawdsley-Brooks & Company Ltd)
+'3682811000001105,Triamcinolone acetonide 0.1% / Chlortetracycline 3.09% ointment
+'3681511000001104,Triamcinolone acetonide 0.1% / Chlortetracycline 3.09% ointment
+'3681611000001100,Aureocort ointment (Advanz Pharma)
+'3681711000001109,Aureocort ointment (Advanz Pharma)
+'3687911000001103,Cutivate 0.005% ointment (GlaxoSmithKline UK Ltd)
+'3688111000001100,Cutivate 0.005% ointment (GlaxoSmithKline UK Ltd)
+'3688211000001106,Cutivate 0.005% ointment (GlaxoSmithKline UK Ltd)
+'15844311000001104,Cutivate 0.005% ointment (GlaxoSmithKline UK Ltd)
+'374014000,Betamethasone valerate 0.1% lotion
+'3746511000001108,Betamethasone valerate 0.1% lotion
+'3746611000001107,Betnovate 0.1% lotion (GlaxoSmithKline UK Ltd)
+'3746711000001103,Betnovate 0.1% lotion (GlaxoSmithKline UK Ltd)
+'331904003,Diflucortolone 0.1% cream
+'3835711000001107,Diflucortolone 0.1% cream
+'3835911000001109,Nerisone 0.1% cream (Meadow Laboratories Ltd)
+'3836011000001101,Nerisone 0.1% cream (Meadow Laboratories Ltd)
+'3862311000001109,Fluocinolone acetonide 0.025% / Clioquinol 3% ointment
+'3855711000001106,Fluocinolone acetonide 0.025% / Clioquinol 3% ointment
+'3855911000001108,Synalar C ointment (Reig Jofre UK Ltd)
+'3856011000001100,Synalar C ointment (Reig Jofre UK Ltd)
+'407832000,Fluocinolone acetonide 0.025% / Neomycin 0.5% ointment
+'3858911000001102,Fluocinolone acetonide 0.025% / Neomycin 0.5% ointment
+'3859211000001101,Synalar N ointment (Reig Jofre UK Ltd)
+'3859411000001102,Synalar N ointment (Reig Jofre UK Ltd)
+'331906001,Diflucortolone 0.1% ointment
+'3961011000001105,Diflucortolone 0.1% ointment
+'3961311000001108,Nerisone 0.1% ointment (Meadow Laboratories Ltd)
+'3961611000001103,Nerisone 0.1% ointment (Meadow Laboratories Ltd)
+'4019211000001107,Locoid Crelo 0.1% topical emulsion (LEO Pharma)
+'4019411000001106,Locoid Crelo 0.1% topical emulsion (LEO Pharma)
+'4023711000001108,Diprosone 0.05% lotion (Merck Sharp & Dohme Ltd)
+'4024011000001108,Diprosone 0.05% lotion (Merck Sharp & Dohme Ltd)
+'4024311000001106,Diprosone 0.05% lotion (Merck Sharp & Dohme Ltd)
+'4194911000001105,Fluocinolone acetonide 0.025% / Clioquinol 3% cream
+'4180911000001101,Fluocinolone acetonide 0.025% / Clioquinol 3% cream
+'4181111000001105,Synalar C cream (Reig Jofre UK Ltd)
+'4181211000001104,Synalar C cream (Reig Jofre UK Ltd)
+'407831007,Fluocinolone acetonide 0.025% / Neomycin 0.5% cream
+'4181711000001106,Fluocinolone acetonide 0.025% / Neomycin 0.5% cream
+'4182011000001101,Synalar N cream (Reig Jofre UK Ltd)
+'4182411000001105,Synalar N cream (Reig Jofre UK Ltd)
+'331996008,Chlorquinaldol 3% / Hydrocortisone butyrate 0.1% ointment
+'4369811000001105,Chlorquinaldol 3% / Hydrocortisone butyrate 0.1% ointment
+'4369911000001100,Locoid C ointment (Astellas Pharma Ltd)
+'4370011000001101,Locoid C ointment (Astellas Pharma Ltd)
+'4671911000001101,Generic Betnovate rectal ointment
+'4669411000001102,Generic Betnovate rectal ointment
+'4669611000001104,Betnovate rectal ointment (GlaxoSmithKline UK Ltd)
+'4669711000001108,Betnovate rectal ointment (GlaxoSmithKline UK Ltd)
+'15220011000001102,Betamethasone dipropionate 0.05% ointment 25% in Emulsifying ointment
+'15178211000001107,Betamethasone dipropionate 0.05% ointment 25% in Emulsifying ointment
+'15178511000001105,Betamethasone dipropionate 0.05% ointment 25% in Emulsifying ointment (Special Order)
+'15178711000001100,Betamethasone dipropionate 0.05% ointment 25% in Emulsifying ointment (Special Order)
+'15220111000001101,Betamethasone valerate 0.1% cream 10% in Aqueous cream
+'15179111000001108,Betamethasone valerate 0.1% cream 10% in Aqueous cream
+'15179211000001102,Betamethasone valerate 0.1% cream 10% in Aqueous cream (Special Order)
+'15179311000001105,Betamethasone valerate 0.1% cream 10% in Aqueous cream (Special Order)
+'15220211000001107,Betamethasone valerate 0.1% ointment 10% in Emulsifying ointment
+'15179811000001101,Betamethasone valerate 0.1% ointment 10% in Emulsifying ointment
+'15180111000001108,Betamethasone valerate 0.1% ointment 10% in Emulsifying ointment (Special Order)
+'15180211000001102,Betamethasone valerate 0.1% ointment 10% in Emulsifying ointment (Special Order)
+'15220311000001104,Betamethasone valerate 0.1% ointment 10% in White soft paraffin
+'15180911000001106,Betamethasone valerate 0.1% ointment 10% in White soft paraffin
+'15181011000001103,Betamethasone valerate 0.1% ointment 10% in White soft paraffin (Special Order)
+'15181111000001102,Betamethasone valerate 0.1% ointment 10% in White soft paraffin (Special Order)
+'15220411000001106,Betamethasone valerate 0.1% cream 20% in Aqueous cream
+'15181311000001100,Betamethasone valerate 0.1% cream 20% in Aqueous cream
+'15181611000001105,Betamethasone valerate 0.1% cream 20% in Aqueous cream (Special Order)
+'15181711000001101,Betamethasone valerate 0.1% cream 20% in Aqueous cream (Special Order)
+'15220511000001105,Betamethasone valerate 0.1% ointment 20% in Emulsifying ointment
+'15182311000001109,Betamethasone valerate 0.1% ointment 20% in Emulsifying ointment
+'15182611000001104,Betamethasone valerate 0.1% ointment 20% in Emulsifying ointment (Special Order)
+'15182811000001100,Betamethasone valerate 0.1% ointment 20% in Emulsifying ointment (Special Order)
+'15220611000001109,Betamethasone valerate 0.1% ointment 25% in White soft paraffin
+'15183411000001106,Betamethasone valerate 0.1% ointment 25% in White soft paraffin
+'15184011000001100,Betamethasone valerate 0.1% ointment 25% in White soft paraffin (Special Order)
+'15184211000001105,Betamethasone valerate 0.1% ointment 25% in White soft paraffin (Special Order)
+'15220711000001100,Betamethasone valerate 0.1% cream 30% in Aqueous cream
+'15184911000001101,Betamethasone valerate 0.1% cream 30% in Aqueous cream
+'15185011000001101,Betamethasone valerate 0.1% cream 30% in Aqueous cream (Special Order)
+'15185211000001106,Betamethasone valerate 0.1% cream 30% in Aqueous cream (Special Order)
+'15220811000001108,Betamethasone valerate 0.1% ointment 30% in White soft paraffin
+'15186611000001103,Betamethasone valerate 0.1% ointment 30% in White soft paraffin
+'15186711000001107,Betamethasone valerate 0.1% ointment 30% in White soft paraffin (Special Order)
+'15186811000001104,Betamethasone valerate 0.1% ointment 30% in White soft paraffin (Special Order)
+'15220911000001103,Betamethasone valerate 0.1% cream 5% in Aqueous cream
+'15187211000001103,Betamethasone valerate 0.1% cream 5% in Aqueous cream
+'15188611000001102,Betamethasone valerate 0.1% cream 5% in Aqueous cream (Special Order)
+'15188711000001106,Betamethasone valerate 0.1% cream 5% in Aqueous cream (Special Order)
+'15221011000001106,Betamethasone valerate 0.1% ointment 5% in White soft paraffin
+'15189011000001104,Betamethasone valerate 0.1% ointment 5% in White soft paraffin
+'15189111000001103,Betamethasone valerate 0.1% ointment 5% in White soft paraffin (Special Order)
+'15189311000001101,Betamethasone valerate 0.1% ointment 5% in White soft paraffin (Special Order)
+'15226211000001109,Betamethasone valerate 0.1% cream 50% in Buffered cream
+'15189611000001106,Betamethasone valerate 0.1% cream 50% in Buffered cream
+'15189711000001102,Betamethasone valerate 0.1% cream 50% in Buffered cream (Special Order)
+'15189811000001105,Betamethasone valerate 0.1% cream 50% in Buffered cream (Special Order)
+'15221111000001107,Betamethasone valerate 0.1% ointment 50% in Emulsifying ointment
+'15190711000001105,Betamethasone valerate 0.1% ointment 50% in Emulsifying ointment
+'15190911000001107,Betamethasone valerate 0.1% ointment 50% in Emulsifying ointment (Special Order)
+'15191011000001104,Betamethasone valerate 0.1% ointment 50% in Emulsifying ointment (Special Order)
+'15221211000001101,Betamethasone valerate 0.1% ointment 50% in Hydrous ointment
+'15191411000001108,Betamethasone valerate 0.1% ointment 50% in Hydrous ointment
+'15191611000001106,Betamethasone valerate 0.1% ointment 50% in Hydrous ointment (Special Order)
+'15191811000001105,Betamethasone valerate 0.1% ointment 50% in Hydrous ointment (Special Order)
+'15221311000001109,Betamethasone valerate 0.1% ointment 50% in White soft paraffin
+'15192011000001107,Betamethasone valerate 0.1% ointment 50% in White soft paraffin
+'22708711000001100,Betamethasone valerate 0.1% ointment 50% in White soft paraffin
+'15192111000001108,Betamethasone valerate 0.1% ointment 50% in White soft paraffin (Special Order)
+'15192311000001105,Betamethasone valerate 0.1% ointment 50% in White soft paraffin (Special Order)
+'22708811000001108,Betamethasone valerate 0.1% ointment 50% in White soft paraffin (Special Order)
+'15221411000001102,Betamethasone valerate 0.1% cream 75% in Aqueous cream
+'15192511000001104,Betamethasone valerate 0.1% cream 75% in Aqueous cream
+'15192711000001109,Betamethasone valerate 0.1% cream 75% in Aqueous cream (Special Order)
+'15192811000001101,Betamethasone valerate 0.1% cream 75% in Aqueous cream (Special Order)
+'15222111000001102,Coal tar solution 10% in Betamethasone valerate 0.1% ointment
+'15196011000001106,Coal tar solution 10% in Betamethasone valerate 0.1% ointment
+'15196111000001107,Coal tar solution 10% in Betamethasone valerate 0.1% ointment (Special Order)
+'15196311000001109,Coal tar solution 10% in Betamethasone valerate 0.1% ointment (Special Order)
+'15223311000001105,Coal tar solution 5% in Betamethasone valerate 0.1% ointment
+'15205311000001104,Coal tar solution 5% in Betamethasone valerate 0.1% ointment
+'20928911000001106,Coal tar solution 5% in Betamethasone valerate 0.1% ointment
+'15205511000001105,Coal tar solution 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'15205711000001100,Coal tar solution 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'20929111000001101,Coal tar solution 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'15226811000001105,Coal tar solution 6% in Betamethasone valerate 0.1% ointment
+'15207211000001104,Coal tar solution 6% in Betamethasone valerate 0.1% ointment
+'15207311000001107,Coal tar solution 6% in Betamethasone valerate 0.1% ointment (Special Order)
+'15207411000001100,Coal tar solution 6% in Betamethasone valerate 0.1% ointment (Special Order)
+'15451511000001103,Betamethasone valerate 0.1% ointment 33% in White soft paraffin
+'15446811000001107,Betamethasone valerate 0.1% ointment 33% in White soft paraffin
+'15447011000001103,Betamethasone valerate 0.1% ointment 33% in White soft paraffin (Special Order)
+'15447111000001102,Betamethasone valerate 0.1% ointment 33% in White soft paraffin (Special Order)
+'16072611000001102,Beclometasone 0.025% in Aqueous cream
+'16047611000001100,Beclometasone 0.025% in Aqueous cream
+'16047711000001109,Beclometasone 0.025% in Aqueous cream (Special Order)
+'16047811000001101,Beclometasone 0.025% in Aqueous cream (Special Order)
+'16072711000001106,Betamethasone valerate 0.1% ointment 20% in White soft paraffin
+'16072111000001105,Betamethasone valerate 0.1% ointment 20% in White soft paraffin
+'16072211000001104,Betamethasone valerate 0.1% ointment 20% in White soft paraffin (Special Order)
+'16072311000001107,Betamethasone valerate 0.1% ointment 20% in White soft paraffin (Special Order)
+'18495911000001108,Betamethasone valerate 0.1% ointment 40% in White soft paraffin
+'18471711000001101,Betamethasone valerate 0.1% ointment 40% in White soft paraffin
+'18471811000001109,Betamethasone valerate 0.1% ointment 40% in White soft paraffin (Special Order)
+'18471911000001104,Betamethasone valerate 0.1% ointment 40% in White soft paraffin (Special Order)
+'18525411000001101,Mometasone 0.1% ointment 50% in White soft paraffin
+'18524411000001102,Mometasone 0.1% ointment 50% in White soft paraffin
+'18524511000001103,Mometasone 0.1% ointment 50% in White soft paraffin (Special Order)
+'18524611000001104,Mometasone 0.1% ointment 50% in White soft paraffin (Special Order)
+'18650411000001103,Betamethasone valerate 0.1% ointment 50% in Yellow soft paraffin
+'18649911000001103,Betamethasone valerate 0.1% ointment 50% in Yellow soft paraffin
+'18650011000001107,Betamethasone valerate 0.1% ointment 50% in Yellow soft paraffin (Special Order)
+'18650111000001108,Betamethasone valerate 0.1% ointment 50% in Yellow soft paraffin (Special Order)
+'20121811000001105,Beclometasone 0.0025% in White soft paraffin
+'20116111000001100,Beclometasone 0.0025% in White soft paraffin
+'21665411000001107,Beclometasone 0.0025% in White soft paraffin
+'20116211000001106,Beclometasone 0.0025% in White soft paraffin (Special Order)
+'20116311000001103,Beclometasone 0.0025% in White soft paraffin (Special Order)
+'21665511000001106,Beclometasone 0.0025% in White soft paraffin (Special Order)
+'22053511000001109,Beclometasone 0.025% in White soft paraffin
+'22002211000001107,Beclometasone 0.025% in White soft paraffin
+'22002311000001104,Beclometasone 0.025% in White soft paraffin (Special Order)
+'22002411000001106,Beclometasone 0.025% in White soft paraffin (Special Order)
+'22364711000001105,Betamethasone valerate 0.1% ointment 25% in Coal tar paste
+'22364811000001102,Betamethasone valerate 0.1% ointment 25% in Coal tar paste
+'22364911000001107,Betamethasone valerate 0.1% ointment 25% in Coal tar paste
+'22365111000001108,Betamethasone valerate 0.1% ointment 25% in Coal tar paste (Special Order)
+'22365211000001102,Betamethasone valerate 0.1% ointment 25% in Coal tar paste (Special Order)
+'22365311000001105,Betamethasone valerate 0.1% ointment 25% in Coal tar paste (Special Order)
+'22382311000001102,Betamethasone dipropionate 0.05% ointment 25% / Propylene glycol 10% in Generic Unguentum M cream
+'22382411000001109,Betamethasone dipropionate 0.05% ointment 25% / Propylene glycol 10% in Generic Unguentum M cream
+'22382511000001108,Betamethasone dipropionate 0.05% ointment 25% / Propylene glycol 10% in Generic Unguentum M cream
+'22383011000001109,Betamethasone dipropionate 0.05% ointment 25% / Coal tar solution strong 3% / Salicylic acid 2% in Generic Unguentum M cream
+'22383111000001105,Betamethasone dipropionate 0.05% ointment 25% / Coal tar solution strong 3% / Salicylic acid 2% in Generic Unguentum M cream
+'22383211000001104,Betamethasone dipropionate 0.05% ointment 25% / Coal tar solution strong 3% / Salicylic acid 2% in Generic Unguentum M cream
+'23308211000001100,Betamethasone valerate 0.1% cream 25% / Coal tar solution 5% in Generic Unguentum M cream
+'23308311000001108,Betamethasone valerate 0.1% cream 25% / Coal tar solution 5% in Generic Unguentum M cream
+'23308411000001101,Betamethasone valerate 0.1% cream 25% / Coal tar solution 5% in Generic Unguentum M cream
+'23308511000001102,Betamethasone valerate 0.1% cream 25% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'23308611000001103,Betamethasone valerate 0.1% cream 25% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'23308711000001107,Betamethasone valerate 0.1% cream 25% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'24509311000001102,Coal tar solution 8% / Salicylic acid 2% in Betamethasone valerate 0.1% ointment
+'24499211000001104,Coal tar solution 8% / Salicylic acid 2% in Betamethasone valerate 0.1% ointment
+'24499311000001107,Coal tar solution 8% / Salicylic acid 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'24499411000001100,Coal tar solution 8% / Salicylic acid 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'24856711000001104,Salicylic acid 5% in Betamethasone valerate 0.1% ointment
+'24783911000001104,Salicylic acid 5% in Betamethasone valerate 0.1% ointment
+'24784011000001101,Salicylic acid 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'24784111000001100,Salicylic acid 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'29731511000001103,Beclometasone 0.025% ointment 10% in White soft paraffin
+'29729711000001105,Beclometasone 0.025% ointment 10% in White soft paraffin
+'29729811000001102,Beclometasone 0.025% ointment 10% in White soft paraffin (Special Order)
+'29729911000001107,Beclometasone 0.025% ointment 10% in White soft paraffin (Special Order)
+'29731611000001104,Coal tar solution 10% / Salicylic acid 2% in Betamethasone valerate 0.1% ointment
+'29730011000001102,Coal tar solution 10% / Salicylic acid 2% in Betamethasone valerate 0.1% ointment
+'29730111000001101,Coal tar solution 10% / Salicylic acid 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'29730211000001107,Coal tar solution 10% / Salicylic acid 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'29731711000001108,Coal tar solution 10% / Salicylic acid 5% in Betamethasone valerate 0.1% ointment
+'29730311000001104,Coal tar solution 10% / Salicylic acid 5% in Betamethasone valerate 0.1% ointment
+'29730411000001106,Coal tar solution 10% / Salicylic acid 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'29730511000001105,Coal tar solution 10% / Salicylic acid 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'29767611000001104,Betamethasone valerate 0.1% cream 30% in Cetomacrogol cream (Formula A)
+'29764611000001105,Betamethasone valerate 0.1% cream 30% in Cetomacrogol cream (Formula A)
+'29764811000001109,Betamethasone valerate 0.1% cream 30% in Cetomacrogol cream (Formula A) (Special Order)
+'29764911000001104,Betamethasone valerate 0.1% cream 30% in Cetomacrogol cream (Formula A) (Special Order)
+'29767411000001102,Betamethasone dipropionate 0.05% ointment 5% in White soft paraffin
+'29765511000001107,Betamethasone dipropionate 0.05% ointment 5% in White soft paraffin
+'29765611000001106,Betamethasone dipropionate 0.05% ointment 5% in White soft paraffin (Special Order)
+'29765711000001102,Betamethasone dipropionate 0.05% ointment 5% in White soft paraffin (Special Order)
+'29767511000001103,Betamethasone dipropionate 0.05% ointment 50% in White soft paraffin
+'29765911000001100,Betamethasone dipropionate 0.05% ointment 50% in White soft paraffin
+'29766011000001108,Betamethasone dipropionate 0.05% ointment 50% in White soft paraffin (Special Order)
+'29766111000001109,Betamethasone dipropionate 0.05% ointment 50% in White soft paraffin (Special Order)
+'29767711000001108,Coal tar 2% in Betamethasone dipropionate 0.05% ointment
+'29766211000001103,Coal tar 2% in Betamethasone dipropionate 0.05% ointment
+'29766311000001106,Coal tar 2% in Betamethasone dipropionate 0.05% ointment (Special Order)
+'29766411000001104,Coal tar 2% in Betamethasone dipropionate 0.05% ointment (Special Order)
+'29826511000001107,Betamethasone valerate 0.1% cream 10% in White soft paraffin
+'29791311000001101,Betamethasone valerate 0.1% cream 10% in White soft paraffin
+'29791411000001108,Betamethasone valerate 0.1% cream 10% in White soft paraffin (Special Order)
+'29791611000001106,Betamethasone valerate 0.1% cream 10% in White soft paraffin (Special Order)
+'29862411000001102,Betamethasone valerate 0.1% ointment 50% in Coal tar paste
+'29845811000001100,Betamethasone valerate 0.1% ointment 50% in Coal tar paste
+'29845911000001105,Betamethasone valerate 0.1% ointment 50% in Coal tar paste (Special Order)
+'29846011000001102,Betamethasone valerate 0.1% ointment 50% in Coal tar paste (Special Order)
+'30798511000001100,Betamethasone valerate 0.1% cream 50% in Coal tar paste
+'30792411000001101,Betamethasone valerate 0.1% cream 50% in Coal tar paste
+'30792511000001102,Betamethasone valerate 0.1% cream 50% in Coal tar paste (Special Order)
+'30792611000001103,Betamethasone valerate 0.1% cream 50% in Coal tar paste (Special Order)
+'30798411000001104,Betamethasone valerate 0.1% cream 10% in Generic Unguentum M cream
+'30792711000001107,Betamethasone valerate 0.1% cream 10% in Generic Unguentum M cream
+'30792811000001104,Betamethasone valerate 0.1% cream 10% in Unguentum M cream (Special Order)
+'30792911000001109,Betamethasone valerate 0.1% cream 10% in Unguentum M cream (Special Order)
+'30798711000001105,Betamethasone valerate 0.1% ointment 25% / Ichthammol 1% in Yellow soft paraffin
+'30796011000001109,Betamethasone valerate 0.1% ointment 25% / Ichthammol 1% in Yellow soft paraffin
+'30796111000001105,Betamethasone valerate 0.1% ointment 25% / Ichthammol 1% in Yellow soft paraffin (Special Order)
+'30796211000001104,Betamethasone valerate 0.1% ointment 25% / Ichthammol 1% in Yellow soft paraffin (Special Order)
+'30798611000001101,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 6% in White soft paraffin
+'30796311000001107,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 6% in White soft paraffin
+'30796411000001100,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 6% in White soft paraffin (Special Order)
+'30796511000001101,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 6% in White soft paraffin (Special Order)
+'31140311000001104,Betamethasone valerate 0.1% cream 25% in Coal tar paste
+'31089511000001103,Betamethasone valerate 0.1% cream 25% in Coal tar paste
+'31089611000001104,Betamethasone valerate 0.1% cream 25% in Coal tar paste (Special Order)
+'31089711000001108,Betamethasone valerate 0.1% cream 25% in Coal tar paste (Special Order)
+'31140911000001103,Coal tar 5% in Betamethasone dipropionate 0.05% ointment
+'31089811000001100,Coal tar 5% in Betamethasone dipropionate 0.05% ointment
+'31089911000001105,Coal tar 5% in Betamethasone dipropionate 0.05% ointment (Special Order)
+'31090011000001102,Coal tar 5% in Betamethasone dipropionate 0.05% ointment (Special Order)
+'31141011000001106,Coal tar solution 10% in Betamethasone valerate 0.1% cream
+'31090711000001100,Coal tar solution 10% in Betamethasone valerate 0.1% cream
+'31090911000001103,Coal tar solution 10% in Betamethasone valerate 0.1% cream (Special Order)
+'31091111000001107,Coal tar solution 10% in Betamethasone valerate 0.1% cream (Special Order)
+'31141111000001107,Coal tar solution 2% / Salicylic acid 3% in Betamethasone valerate 0.1% cream
+'31091711000001108,Coal tar solution 2% / Salicylic acid 3% in Betamethasone valerate 0.1% cream
+'31091811000001100,Coal tar solution 2% / Salicylic acid 3% in Betamethasone valerate 0.1% cream (Special Order)
+'31092011000001103,Coal tar solution 2% / Salicylic acid 3% in Betamethasone valerate 0.1% cream (Special Order)
+'31140411000001106,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% in White soft paraffin
+'31128411000001106,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% in White soft paraffin
+'31128711000001100,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% in White soft paraffin (Special Order)
+'31128811000001108,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% in White soft paraffin (Special Order)
+'31148411000001109,Coal tar solution 3.3% / Propylene glycol 20% in Fluocinolone acetonide 0.025% gel
+'31148511000001108,Coal tar solution 3.3% / Propylene glycol 20% in Fluocinolone acetonide 0.025% gel
+'35022311000001106,Coal tar solution 3.3% / Propylene glycol 20% in Fluocinolone acetonide 0.025% gel
+'31148611000001107,Coal tar solution 3.3% / Propylene glycol 20% in Fluocinolone acetonide 0.025% gel (Special Order)
+'31148711000001103,Coal tar solution 3.3% / Propylene glycol 20% in Fluocinolone acetonide 0.025% gel (Special Order)
+'35022411000001104,Coal tar solution 3.3% / Propylene glycol 20% in Fluocinolone acetonide 0.025% gel (Special Order)
+'31411211000001105,Betamethasone valerate 0.1% ointment 20% in Generic Unguentum M cream
+'31323111000001103,Betamethasone valerate 0.1% ointment 20% in Generic Unguentum M cream
+'31323211000001109,Betamethasone valerate 0.1% ointment 20% in Unguentum M cream (Special Order)
+'31323311000001101,Betamethasone valerate 0.1% ointment 20% in Unguentum M cream (Special Order)
+'31411111000001104,Betamethasone valerate 0.1% cream 50% in Generic Unguentum M cream
+'31324611000001109,Betamethasone valerate 0.1% cream 50% in Generic Unguentum M cream
+'31324811000001108,Betamethasone valerate 0.1% cream 50% in Unguentum M cream (Special Order)
+'31324911000001103,Betamethasone valerate 0.1% cream 50% in Unguentum M cream (Special Order)
+'31931511000001100,Coal tar 5% in Betamethasone valerate 0.1% ointment
+'31929211000001100,Coal tar 5% in Betamethasone valerate 0.1% ointment
+'31929411000001101,Coal tar 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'31929511000001102,Coal tar 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'31948911000001104,Coal tar solution 5% / Salicylic acid 5% in Betamethasone valerate 0.1% ointment
+'31935111000001106,Coal tar solution 5% / Salicylic acid 5% in Betamethasone valerate 0.1% ointment
+'31935311000001108,Coal tar solution 5% / Salicylic acid 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'31935511000001102,Coal tar solution 5% / Salicylic acid 5% in Betamethasone valerate 0.1% ointment (Special Order)
+'32637411000001109,Hydrocortisone butyrate 0.1% ointment 10% in Hydrous ointment
+'32625211000001100,Hydrocortisone butyrate 0.1% ointment 10% in Hydrous ointment
+'32625311000001108,Hydrocortisone butyrate 0.1% ointment 10% in Hydrous ointment (Special Order)
+'32625411000001101,Hydrocortisone butyrate 0.1% ointment 10% in Hydrous ointment (Special Order)
+'32653711000001107,Betamethasone valerate 0.1% ointment 50% in Generic Unguentum M cream
+'32646611000001106,Betamethasone valerate 0.1% ointment 50% in Generic Unguentum M cream
+'32646711000001102,Betamethasone valerate 0.1% ointment 50% in Unguentum M cream (Special Order)
+'32646811000001105,Betamethasone valerate 0.1% ointment 50% in Unguentum M cream (Special Order)
+'32695711000001104,Mometasone 0.1% ointment 10% in White soft paraffin
+'32680611000001104,Mometasone 0.1% ointment 10% in White soft paraffin
+'32680711000001108,Mometasone 0.1% ointment 10% in White soft paraffin (Special Order)
+'32680811000001100,Mometasone 0.1% ointment 10% in White soft paraffin (Special Order)
+'32695811000001107,Mometasone 0.1% ointment 25% in White soft paraffin
+'32680911000001105,Mometasone 0.1% ointment 25% in White soft paraffin
+'32681011000001102,Mometasone 0.1% ointment 25% in White soft paraffin (Special Order)
+'32681111000001101,Mometasone 0.1% ointment 25% in White soft paraffin (Special Order)
+'32748411000001104,Coal tar 2% in Betamethasone valerate 0.1% cream
+'32704711000001107,Coal tar 2% in Betamethasone valerate 0.1% cream
+'32704811000001104,Coal tar 2% in Betamethasone valerate 0.1% cream (Special Order)
+'32704911000001109,Coal tar 2% in Betamethasone valerate 0.1% cream (Special Order)
+'32748511000001100,Coal tar 2% in Betamethasone valerate 0.1% ointment
+'32705911000001108,Coal tar 2% in Betamethasone valerate 0.1% ointment
+'32706011000001100,Coal tar 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'32706111000001104,Coal tar 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'32748711000001105,Coal tar solution 20% in Betamethasone valerate 0.1% cream
+'32706811000001106,Coal tar solution 20% in Betamethasone valerate 0.1% cream
+'32706911000001101,Coal tar solution 20% in Betamethasone valerate 0.1% cream (Special Order)
+'32707011000001102,Coal tar solution 20% in Betamethasone valerate 0.1% cream (Special Order)
+'32747911000001106,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% in Generic Unguentum M cream
+'32728111000001107,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% in Generic Unguentum M cream
+'32728311000001109,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'32728411000001102,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% in Unguentum M cream (Special Order)
+'32750611000001101,Salicylic acid 2% in Betamethasone valerate 0.1% ointment
+'32741511000001105,Salicylic acid 2% in Betamethasone valerate 0.1% ointment
+'32741611000001109,Salicylic acid 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'32741711000001100,Salicylic acid 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'32875911000001103,Coal tar solution 2% in Betamethasone valerate 0.1% ointment
+'32860011000001102,Coal tar solution 2% in Betamethasone valerate 0.1% ointment
+'32860111000001101,Coal tar solution 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'32860211000001107,Coal tar solution 2% in Betamethasone valerate 0.1% ointment (Special Order)
+'32875711000001100,Betamethasone valerate 0.1% ointment 25% in Emulsifying ointment
+'32873211000001108,Betamethasone valerate 0.1% ointment 25% in Emulsifying ointment
+'32873311000001100,Betamethasone valerate 0.1% ointment 25% in Emulsifying ointment (Special Order)
+'32873411000001107,Betamethasone valerate 0.1% ointment 25% in Emulsifying ointment (Special Order)
+'33678511000001102,Betamethasone valerate 0.1% cream 50% in Aqueous cream
+'33672611000001100,Betamethasone valerate 0.1% cream 50% in Aqueous cream
+'33672711000001109,Betamethasone valerate 0.1% cream 50% in Aqueous cream (Special Order)
+'33672811000001101,Betamethasone valerate 0.1% cream 50% in Aqueous cream (Special Order)
+'34682411000001108,Betamethasone dipropionate 0.05% ointment 25% in White soft paraffin
+'34678211000001103,Betamethasone dipropionate 0.05% ointment 25% in White soft paraffin
+'34678411000001104,Betamethasone dipropionate 0.05% ointment 25% in White soft paraffin (Special Order)
+'34678511000001100,Betamethasone dipropionate 0.05% ointment 25% in White soft paraffin (Special Order)
+'34769111000001101,Betamethasone valerate 0.1% ointment 30% / Coal tar solution 5% in Yellow soft paraffin
+'34763311000001102,Betamethasone valerate 0.1% ointment 30% / Coal tar solution 5% in Yellow soft paraffin
+'34763411000001109,Betamethasone valerate 0.1% ointment 30% / Coal tar solution 5% in Yellow soft paraffin (Special Order)
+'34763511000001108,Betamethasone valerate 0.1% ointment 30% / Coal tar solution 5% in Yellow soft paraffin (Special Order)
+'34818311000001106,Betamethasone valerate 0.1% ointment 25% in Generic Unguentum M cream
+'34810311000001109,Betamethasone valerate 0.1% ointment 25% in Generic Unguentum M cream
+'34810411000001102,Betamethasone valerate 0.1% ointment 25% in Unguentum M cream (Special Order)
+'34810511000001103,Betamethasone valerate 0.1% ointment 25% in Unguentum M cream (Special Order)
+'34854611000001103,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% / Salicylic acid 3% in Emulsifying ointment
+'34854811000001104,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% / Salicylic acid 3% in Emulsifying ointment
+'34854911000001109,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% / Salicylic acid 3% in Emulsifying ointment
+'34854711000001107,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% / Salicylic acid 3% in Emulsifying ointment (Special Order)
+'34855011000001109,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% / Salicylic acid 3% in Emulsifying ointment (Special Order)
+'34855111000001105,Betamethasone valerate 0.1% ointment 25% / Coal tar solution 5% / Salicylic acid 3% in Emulsifying ointment (Special Order)
+'34877911000001101,Betamethasone valerate 0.1% cream 25% / Coal tar solution 10% in Generic Unguentum M cream
+'34875911000001106,Betamethasone valerate 0.1% cream 25% / Coal tar solution 10% in Generic Unguentum M cream
+'34876011000001103,Betamethasone valerate 0.1% cream 25% / Coal tar solution 10% in Unguentum M cream (Special Order)
+'34876111000001102,Betamethasone valerate 0.1% cream 25% / Coal tar solution 10% in Unguentum M cream (Special Order)
+'34878011000001104,Coal tar solution 25% in Betamethasone valerate 0.1% ointment
+'34877111000001104,Coal tar solution 25% in Betamethasone valerate 0.1% ointment
+'34877211000001105,Coal tar solution 25% in Betamethasone valerate 0.1% ointment (Special Order)
+'34877311000001102,Coal tar solution 25% in Betamethasone valerate 0.1% ointment (Special Order)
+'35147811000001106,Betamethasone valerate 0.1% cream 25% in Yellow soft paraffin
+'35131111000001105,Betamethasone valerate 0.1% cream 25% in Yellow soft paraffin
+'35131311000001107,Betamethasone valerate 0.1% cream 25% in Yellow soft paraffin (Special Order)
+'35131411000001100,Betamethasone valerate 0.1% cream 25% in Yellow soft paraffin (Special Order)
+'35147911000001101,Betamethasone valerate 0.1% ointment 12.5% in White soft paraffin
+'35132311000001103,Betamethasone valerate 0.1% ointment 12.5% in White soft paraffin
+'35132411000001105,Betamethasone valerate 0.1% ointment 12.5% in White soft paraffin (Special Order)
+'35132511000001109,Betamethasone valerate 0.1% ointment 12.5% in White soft paraffin (Special Order)
+'36458211000001106,Betamethasone valerate 0.1% ointment 50% in Aqueous cream
+'36455611000001102,Betamethasone valerate 0.1% ointment 50% in Aqueous cream
+'36455711000001106,Betamethasone valerate 0.1% ointment 50% in Aqueous cream (Special Order)
+'36455811000001103,Betamethasone valerate 0.1% ointment 50% in Aqueous cream (Special Order)

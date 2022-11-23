@@ -1,0 +1,441 @@
+SNOMEDCode,description
+'346992009,Hydrocortisone 1% cream
+'959811000001103,Hydrocortisone 1% cream
+'1156211000001105,Hydrocortisone 1% cream
+'1186711000001109,Hydrocortisone 1% cream
+'18746111000001102,Hydrocortisone 1% cream
+'623911000001105,Hydrocortisone 1% cream (A A H Pharmaceuticals Ltd)
+'1551811000001106,Hydrocortisone 1% cream (A A H Pharmaceuticals Ltd)
+'1552011000001108,Hydrocortisone 1% cream (A A H Pharmaceuticals Ltd)
+'1552211000001103,Hydrocortisone 1% cream (A A H Pharmaceuticals Ltd)
+'723111000001100,Hydrocortisone 1% cream (Actavis UK Ltd)
+'1552811000001102,Hydrocortisone 1% cream (Actavis UK Ltd)
+'1552911000001107,Hydrocortisone 1% cream (Actavis UK Ltd)
+'1553011000001104,Hydrocortisone 1% cream (Actavis UK Ltd)
+'561211000001104,Hydrocortisone 1% cream (Kent Pharmaceuticals Ltd)
+'1555911000001104,Hydrocortisone 1% cream (Kent Pharmaceuticals Ltd)
+'1556111000001108,Hydrocortisone 1% cream (Kent Pharmaceuticals Ltd)
+'1556211000001102,Hydrocortisone 1% cream (Kent Pharmaceuticals Ltd)
+'131211000001103,Hydrocortisone 1% cream (Alliance Healthcare (Distribution) Ltd)
+'1556311000001105,Hydrocortisone 1% cream (Alliance Healthcare (Distribution) Ltd)
+'1556411000001103,Hydrocortisone 1% cream (Alliance Healthcare (Distribution) Ltd)
+'1556511000001104,Hydrocortisone 1% cream (Alliance Healthcare (Distribution) Ltd)
+'745111000001101,Hydrocortisone 1% cream (Vantage)
+'1615711000001102,Hydrocortisone 1% cream (Vantage)
+'4193211000001104,Hydrocortisone 1% cream (Teva UK Ltd)
+'4193311000001107,Hydrocortisone 1% cream (Teva UK Ltd)
+'4193411000001100,Hydrocortisone 1% cream (Teva UK Ltd)
+'4193511000001101,Hydrocortisone 1% cream (Teva UK Ltd)
+'4774211000001104,Mildison Lipocream 1% cream (LEO Pharma)
+'4774311000001107,Mildison Lipocream 1% cream (LEO Pharma)
+'5437511000001106,Exe-Cort Hydrocortisone 1% cream (Nucare Plc)
+'5437611000001105,Exe-Cort Hydrocortisone 1% cream (Nucare Plc)
+'7932411000001105,Hydrocortisone 1% cream (Lloyds Pharmacy Ltd)
+'7932711000001104,Hydrocortisone 1% cream (Lloyds Pharmacy Ltd)
+'13623011000001104,Hydrocortisone 1% cream (Pinewood Healthcare)
+'13623111000001103,Hydrocortisone 1% cream (Pinewood Healthcare)
+'17012011000001102,Hydrocortisone 1% cream (Pinewood Healthcare)
+'18954711000001104,Hydrocortisone 1% cream (Pinewood Healthcare)
+'18954511000001109,Hydrocortisone 1% cream (Pinewood Healthcare)
+'13662511000001108,Hydrocortisone 1% cream (Numark Ltd)
+'13662611000001107,Hydrocortisone 1% cream (Numark Ltd)
+'14943511000001108,Hydrocortisone 1% cream (Essential Generics Ltd)
+'14943611000001107,Hydrocortisone 1% cream (Essential Generics Ltd)
+'14943711000001103,Hydrocortisone 1% cream (Essential Generics Ltd)
+'14943811000001106,Hydrocortisone 1% cream (Essential Generics Ltd)
+'17200011000001107,Hydrocortisone 1% cream (Sovereign Medical Ltd)
+'17200211000001102,Hydrocortisone 1% cream (Sovereign Medical Ltd)
+'17200411000001103,Hydrocortisone 1% cream (Sovereign Medical Ltd)
+'17200611000001100,Hydrocortisone 1% cream (Sovereign Medical Ltd)
+'17921811000001100,Hydrocortisone 1% cream (Phoenix Healthcare Distribution Ltd)
+'17922111000001102,Hydrocortisone 1% cream (Phoenix Healthcare Distribution Ltd)
+'17922311000001100,Hydrocortisone 1% cream (Phoenix Healthcare Distribution Ltd)
+'17922511000001106,Hydrocortisone 1% cream (Phoenix Healthcare Distribution Ltd)
+'18282711000001102,Hydrocortisone 1% cream (Strides Pharma UK Ltd)
+'18282811000001105,Hydrocortisone 1% cream (Strides Pharma UK Ltd)
+'18412711000001101,Derma Care Hydrocortisone 1% cream (The Boots Company Plc)
+'18412811000001109,Derma Care Hydrocortisone 1% cream (The Boots Company Plc)
+'18746311000001100,Hydrocortisone Bite and Sting Relief 1% cream (Galpharm International Ltd)
+'18746411000001107,Hydrocortisone Bite and Sting Relief 1% cream (Galpharm International Ltd)
+'20324211000001100,Hydrocortisone 1% cream (Genesis Pharmaceuticals Ltd)
+'20324311000001108,Hydrocortisone 1% cream (Genesis Pharmaceuticals Ltd)
+'22454211000001100,Hydrocortisone 1% cream (Waymade Healthcare Plc)
+'22454311000001108,Hydrocortisone 1% cream (Waymade Healthcare Plc)
+'23596611000001103,Hydrocortisone 1% cream (Waymade Healthcare Plc)
+'23596711000001107,Hydrocortisone 1% cream (Waymade Healthcare Plc)
+'24150511000001101,Hydrocortisone 1% cream (DE Pharmaceuticals)
+'24150711000001106,Hydrocortisone 1% cream (DE Pharmaceuticals)
+'24150911000001108,Hydrocortisone 1% cream (DE Pharmaceuticals)
+'24151211000001105,Hydrocortisone 1% cream (DE Pharmaceuticals)
+'29872011000001102,Hydrocortisone 1% cream (Sigma Pharmaceuticals Plc)
+'29872211000001107,Hydrocortisone 1% cream (Sigma Pharmaceuticals Plc)
+'29872311000001104,Hydrocortisone 1% cream (Sigma Pharmaceuticals Plc)
+'29872111000001101,Hydrocortisone 1% cream (Sigma Pharmaceuticals Plc)
+'30206711000001104,Hydrocortisone 1% cream (Mawdsley-Brooks & Company Ltd)
+'30206811000001107,Hydrocortisone 1% cream (Mawdsley-Brooks & Company Ltd)
+'30206911000001102,Hydrocortisone 1% cream (Mawdsley-Brooks & Company Ltd)
+'30209311000001105,Hydrocortisone 1% cream (Mawdsley-Brooks & Company Ltd)
+'331746003,Hydrocortisone 1% / Clotrimazole 1% cream
+'1045911000001100,Hydrocortisone 1% / Clotrimazole 1% cream
+'952511000001105,Hydrocortisone 1% / Clotrimazole 1% cream
+'507311000001100,Canesten Hydrocortisone cream (Bayer Plc)
+'1557311000001108,Canesten Hydrocortisone cream (Bayer Plc)
+'125711000001105,Canesten HC cream (Bayer Plc)
+'1557611000001103,Canesten HC cream (Bayer Plc)
+'18630311000001109,Canesten HC cream (Mawdsley-Brooks & Company Ltd)
+'18630511000001103,Canesten HC cream (Mawdsley-Brooks & Company Ltd)
+'19540211000001105,Canesten HC cream (DE Pharmaceuticals)
+'19540311000001102,Canesten HC cream (DE Pharmaceuticals)
+'21865811000001102,Canesten HC cream (Waymade Healthcare Plc)
+'21865911000001107,Canesten HC cream (Waymade Healthcare Plc)
+'30266211000001107,Canesten HC cream (Lexon (UK) Ltd)
+'30266311000001104,Canesten HC cream (Lexon (UK) Ltd)
+'346990001,Hydrocortisone 0.5% cream
+'1215911000001103,Hydrocortisone 0.5% cream
+'943411000001104,Hydrocortisone 0.5% cream
+'300411000001105,Hydrocortisone 0.5% cream (A A H Pharmaceuticals Ltd)
+'1558011000001106,Hydrocortisone 0.5% cream (A A H Pharmaceuticals Ltd)
+'14731811000001102,Hydrocortisone 0.5% cream (A A H Pharmaceuticals Ltd)
+'424011000001105,Hydrocortisone 0.5% cream (Actavis UK Ltd)
+'1558311000001109,Hydrocortisone 0.5% cream (Actavis UK Ltd)
+'912211000001103,Hydrocortisone 0.5% cream (The Boots Company Plc)
+'1558511000001103,Hydrocortisone 0.5% cream (The Boots Company Plc)
+'279511000001103,Hydrocortisone 0.5% cream (Kent Pharmaceuticals Ltd)
+'1558711000001108,Hydrocortisone 0.5% cream (Kent Pharmaceuticals Ltd)
+'882311000001100,Hydrocortisone 0.5% cream (Alliance Healthcare (Distribution) Ltd)
+'1558811000001100,Hydrocortisone 0.5% cream (Alliance Healthcare (Distribution) Ltd)
+'15248111000001102,Hydrocortisone 0.5% cream (Alliance Healthcare (Distribution) Ltd)
+'4193011000001109,Hydrocortisone 0.5% cream (Teva UK Ltd)
+'4193111000001105,Hydrocortisone 0.5% cream (Teva UK Ltd)
+'14943211000001105,Hydrocortisone 0.5% cream (Essential Generics Ltd)
+'14943311000001102,Hydrocortisone 0.5% cream (Essential Generics Ltd)
+'14943411000001109,Hydrocortisone 0.5% cream (Essential Generics Ltd)
+'17921511000001103,Hydrocortisone 0.5% cream (Phoenix Healthcare Distribution Ltd)
+'17921711000001108,Hydrocortisone 0.5% cream (Phoenix Healthcare Distribution Ltd)
+'22043111000001103,Hydrocortisone 0.5% cream (Waymade Healthcare Plc)
+'22043211000001109,Hydrocortisone 0.5% cream (Waymade Healthcare Plc)
+'24150111000001105,Hydrocortisone 0.5% cream (DE Pharmaceuticals)
+'24150211000001104,Hydrocortisone 0.5% cream (DE Pharmaceuticals)
+'29871611000001103,Hydrocortisone 0.5% cream (Sigma Pharmaceuticals Plc)
+'29871711000001107,Hydrocortisone 0.5% cream (Sigma Pharmaceuticals Plc)
+'331661006,Hydrocortisone 2.5% cream
+'1130811000001105,Hydrocortisone 2.5% cream
+'1157411000001106,Hydrocortisone 2.5% cream
+'112311000001108,Hydrocortisone 2.5% cream (A A H Pharmaceuticals Ltd)
+'1564211000001102,Hydrocortisone 2.5% cream (A A H Pharmaceuticals Ltd)
+'14732511000001108,Hydrocortisone 2.5% cream (A A H Pharmaceuticals Ltd)
+'253211000001100,Hydrocortisone 2.5% cream (Kent Pharmaceuticals Ltd)
+'1564711000001109,Hydrocortisone 2.5% cream (Kent Pharmaceuticals Ltd)
+'886611000001106,Hydrocortisone 2.5% cream (Alliance Healthcare (Distribution) Ltd)
+'1565011000001106,Hydrocortisone 2.5% cream (Alliance Healthcare (Distribution) Ltd)
+'15248211000001108,Hydrocortisone 2.5% cream (Alliance Healthcare (Distribution) Ltd)
+'4193611000001102,Hydrocortisone 2.5% cream (Teva UK Ltd)
+'4193711000001106,Hydrocortisone 2.5% cream (Teva UK Ltd)
+'14943911000001101,Hydrocortisone 2.5% cream (Essential Generics Ltd)
+'14944011000001103,Hydrocortisone 2.5% cream (Essential Generics Ltd)
+'14944111000001102,Hydrocortisone 2.5% cream (Essential Generics Ltd)
+'17922711000001101,Hydrocortisone 2.5% cream (Phoenix Healthcare Distribution Ltd)
+'17922911000001104,Hydrocortisone 2.5% cream (Phoenix Healthcare Distribution Ltd)
+'17923111000001108,Hydrocortisone 2.5% cream (Phoenix Healthcare Distribution Ltd)
+'22043311000001101,Hydrocortisone 2.5% cream (Waymade Healthcare Plc)
+'22043411000001108,Hydrocortisone 2.5% cream (Waymade Healthcare Plc)
+'24151411000001109,Hydrocortisone 2.5% cream (DE Pharmaceuticals)
+'24151611000001107,Hydrocortisone 2.5% cream (DE Pharmaceuticals)
+'29872711000001100,Hydrocortisone 2.5% cream (Sigma Pharmaceuticals Plc)
+'29872811000001108,Hydrocortisone 2.5% cream (Sigma Pharmaceuticals Plc)
+'30209411000001103,Hydrocortisone 2.5% cream (Mawdsley-Brooks & Company Ltd)
+'30209711000001109,Hydrocortisone 2.5% cream (Mawdsley-Brooks & Company Ltd)
+'331680008,Hydrocortisone 0.1% cream
+'975811000001104,Hydrocortisone 0.1% cream
+'1102711000001109,Hydrocortisone 0.1% cream
+'645811000001104,Dioderm 0.1% cream (Dermal Laboratories Ltd)
+'1567111000001103,Dioderm 0.1% cream (Dermal Laboratories Ltd)
+'157311000001104,Dermacort hydrocortisone 0.1% cream (Marlborough Pharmaceuticals Ltd)
+'1567211000001109,Dermacort hydrocortisone 0.1% cream (Marlborough Pharmaceuticals Ltd)
+'26708711000001101,Dermacort hydrocortisone 0.1% cream (Waymade Healthcare Plc)
+'26708811000001109,Dermacort hydrocortisone 0.1% cream (Waymade Healthcare Plc)
+'331744000,Hydrocortisone 1% / Miconazole 2% ointment
+'1110811000001100,Hydrocortisone 1% / Miconazole 2% ointment
+'278911000001102,Daktacort ointment (Janssen-Cilag Ltd)
+'2062411000001109,Daktacort ointment (Janssen-Cilag Ltd)
+'11103311000001104,Daktacort ointment (Waymade Healthcare Plc)
+'11103511000001105,Daktacort ointment (Waymade Healthcare Plc)
+'331745004,Hydrocortisone 1% / Miconazole 2% cream
+'1205311000001101,Hydrocortisone 1% / Miconazole 2% cream
+'1103811000001109,Hydrocortisone 1% / Miconazole 2% cream
+'859911000001101,Daktacort 2%/1% cream (Janssen-Cilag Ltd)
+'2065911000001109,Daktacort 2%/1% cream (Janssen-Cilag Ltd)
+'301011000001105,Daktacort Hydrocortisone cream (McNeil Products Ltd)
+'2067411000001107,Daktacort Hydrocortisone cream (McNeil Products Ltd)
+'10833711000001106,Daktacort Hydrocortisone cream (Waymade Healthcare Plc)
+'10833811000001103,Daktacort Hydrocortisone cream (Waymade Healthcare Plc)
+'11103011000001102,Daktacort 2%/1% cream (Waymade Healthcare Plc)
+'11103111000001101,Daktacort 2%/1% cream (Waymade Healthcare Plc)
+'13861411000001106,Daktacort Hydrocortisone cream (DE Pharmaceuticals)
+'13861511000001105,Daktacort Hydrocortisone cream (DE Pharmaceuticals)
+'14214211000001102,Daktacort 2%/1% cream (Sigma Pharmaceuticals Plc)
+'14214411000001103,Daktacort 2%/1% cream (Sigma Pharmaceuticals Plc)
+'14214611000001100,Daktacort Hydrocortisone cream (Sigma Pharmaceuticals Plc)
+'14214811000001101,Daktacort Hydrocortisone cream (Sigma Pharmaceuticals Plc)
+'3556711000001102,Generic Timodine cream
+'1267111000001106,Generic Timodine cream
+'93111000001108,Timodine cream (Alliance Pharmaceuticals Ltd)
+'2223011000001105,Timodine cream (Alliance Pharmaceuticals Ltd)
+'11131611000001100,Timodine cream (Waymade Healthcare Plc)
+'11131711000001109,Timodine cream (Waymade Healthcare Plc)
+'331720002,Hydrocortisone 0.25% / Crotamiton 10% cream
+'1028111000001106,Hydrocortisone 0.25% / Crotamiton 10% cream
+'1155711000001106,Hydrocortisone 0.25% / Crotamiton 10% cream
+'646411000001105,Eurax Hydrocortisone cream (Novartis Consumer Health UK Ltd)
+'2247011000001102,Eurax Hydrocortisone cream (Novartis Consumer Health UK Ltd)
+'331743006,Econazole 1% / Hydrocortisone 1% cream
+'1196011000001108,Econazole 1% / Hydrocortisone 1% cream
+'674411000001103,Econacort cream (Bristol-Myers Squibb Pharmaceuticals Ltd)
+'2637511000001106,Econacort cream (Bristol-Myers Squibb Pharmaceuticals Ltd)
+'331735001,Hydrocortisone 1% / Clioquinol 3% ointment
+'1188611000001104,Hydrocortisone 1% / Clioquinol 3% ointment
+'875811000001105,Vioform-Hydrocortisone ointment (Novartis Consumer Health UK Ltd)
+'2677711000001103,Vioform-Hydrocortisone ointment (Novartis Consumer Health UK Ltd)
+'331736000,Clioquinol 3% / Hydrocortisone 1% cream
+'1000611000001109,Clioquinol 3% / Hydrocortisone 1% cream
+'595711000001105,Vioform-Hydrocortisone cream (Novartis Consumer Health UK Ltd)
+'2677811000001106,Vioform-Hydrocortisone cream (Novartis Consumer Health UK Ltd)
+'3335111000001108,Cinchocaine 0.5% / Hydrocortisone 0.5% ointment
+'957411000001109,Cinchocaine 0.5% / Hydrocortisone 0.5% ointment
+'331742001,Hydrocortisone acetate 1% / Fusidic acid 2% cream
+'2903311000001104,Hydrocortisone acetate 1% / Fusidic acid 2% cream
+'2903411000001106,Hydrocortisone acetate 1% / Fusidic acid 2% cream
+'2903711000001100,Fucidin H cream (LEO Pharma)
+'2903911000001103,Fucidin H cream (LEO Pharma)
+'2904011000001100,Fucidin H cream (LEO Pharma)
+'331740009,Hydrocortisone acetate 1% / Sodium fusidate 2% ointment
+'2904511000001108,Hydrocortisone acetate 1% / Sodium fusidate 2% ointment
+'2904711000001103,Hydrocortisone acetate 1% / Sodium fusidate 2% ointment
+'2905011000001101,Fucidin H ointment (LEO Pharma)
+'2905211000001106,Fucidin H ointment (LEO Pharma)
+'2905411000001105,Fucidin H ointment (LEO Pharma)
+'353223001,Hydrocortisone 0.5% ointment
+'2927211000001105,Hydrocortisone 0.5% ointment
+'2927411000001109,Hydrocortisone 0.5% ointment
+'2927511000001108,Hydrocortisone 0.5% ointment (A A H Pharmaceuticals Ltd)
+'2927611000001107,Hydrocortisone 0.5% ointment (A A H Pharmaceuticals Ltd)
+'14733011000001109,Hydrocortisone 0.5% ointment (A A H Pharmaceuticals Ltd)
+'3304711000001101,Hydrocortisone 0.5% ointment (Actavis UK Ltd)
+'2927811000001106,Hydrocortisone 0.5% ointment (Actavis UK Ltd)
+'3306711000001105,Hydrocortisone 0.5% ointment (The Boots Company Plc)
+'2928211000001109,Hydrocortisone 0.5% ointment (The Boots Company Plc)
+'3302011000001109,Hydrocortisone 0.5% ointment (Kent Pharmaceuticals Ltd)
+'2928711000001102,Hydrocortisone 0.5% ointment (Kent Pharmaceuticals Ltd)
+'3305911000001100,Hydrocortisone 0.5% ointment (Alliance Healthcare (Distribution) Ltd)
+'2929011000001109,Hydrocortisone 0.5% ointment (Alliance Healthcare (Distribution) Ltd)
+'15248311000001100,Hydrocortisone 0.5% ointment (Alliance Healthcare (Distribution) Ltd)
+'4193811000001103,Hydrocortisone 0.5% ointment (Teva UK Ltd)
+'4193911000001108,Hydrocortisone 0.5% ointment (Teva UK Ltd)
+'14944211000001108,Hydrocortisone 0.5% ointment (Essential Generics Ltd)
+'14944311000001100,Hydrocortisone 0.5% ointment (Essential Generics Ltd)
+'14944411000001107,Hydrocortisone 0.5% ointment (Essential Generics Ltd)
+'17923211000001102,Hydrocortisone 0.5% ointment (Phoenix Healthcare Distribution Ltd)
+'17923311000001105,Hydrocortisone 0.5% ointment (Phoenix Healthcare Distribution Ltd)
+'22043511000001107,Hydrocortisone 0.5% ointment (Waymade Healthcare Plc)
+'22043611000001106,Hydrocortisone 0.5% ointment (Waymade Healthcare Plc)
+'24152011000001108,Hydrocortisone 0.5% ointment (DE Pharmaceuticals)
+'24152111000001109,Hydrocortisone 0.5% ointment (DE Pharmaceuticals)
+'29871811000001104,Hydrocortisone 0.5% ointment (Sigma Pharmaceuticals Plc)
+'29871911000001109,Hydrocortisone 0.5% ointment (Sigma Pharmaceuticals Plc)
+'30210011000001101,Hydrocortisone 0.5% ointment (Mawdsley-Brooks & Company Ltd)
+'30210211000001106,Hydrocortisone 0.5% ointment (Mawdsley-Brooks & Company Ltd)
+'347949006,Hydrocortisone 1% ointment
+'2929411000001100,Hydrocortisone 1% ointment
+'2929711000001106,Hydrocortisone 1% ointment
+'2929811000001103,Hydrocortisone 1% ointment
+'2930011000001103,Hydrocortisone 1% ointment (A A H Pharmaceuticals Ltd)
+'2930311000001100,Hydrocortisone 1% ointment (A A H Pharmaceuticals Ltd)
+'2930411000001107,Hydrocortisone 1% ointment (A A H Pharmaceuticals Ltd)
+'2930611000001105,Hydrocortisone 1% ointment (A A H Pharmaceuticals Ltd)
+'3305811000001105,Hydrocortisone 1% ointment (Actavis UK Ltd)
+'2930711000001101,Hydrocortisone 1% ointment (Actavis UK Ltd)
+'2930811000001109,Hydrocortisone 1% ointment (Actavis UK Ltd)
+'2930911000001104,Hydrocortisone 1% ointment (Actavis UK Ltd)
+'3301911000001102,Hydrocortisone 1% ointment (Kent Pharmaceuticals Ltd)
+'2931411000001103,Hydrocortisone 1% ointment (Kent Pharmaceuticals Ltd)
+'2931511000001104,Hydrocortisone 1% ointment (Kent Pharmaceuticals Ltd)
+'2931611000001100,Hydrocortisone 1% ointment (Kent Pharmaceuticals Ltd)
+'3302311000001107,Hydrocortisone 1% ointment (Alliance Healthcare (Distribution) Ltd)
+'2931711000001109,Hydrocortisone 1% ointment (Alliance Healthcare (Distribution) Ltd)
+'2931811000001101,Hydrocortisone 1% ointment (Alliance Healthcare (Distribution) Ltd)
+'2931911000001106,Hydrocortisone 1% ointment (Alliance Healthcare (Distribution) Ltd)
+'4194011000001106,Hydrocortisone 1% ointment (Teva UK Ltd)
+'4194111000001107,Hydrocortisone 1% ointment (Teva UK Ltd)
+'4194211000001101,Hydrocortisone 1% ointment (Teva UK Ltd)
+'4194311000001109,Hydrocortisone 1% ointment (Teva UK Ltd)
+'9746411000001106,Hydrocortisone 1% ointment (The Boots Company Plc)
+'9746511000001105,Hydrocortisone 1% ointment (The Boots Company Plc)
+'14944511000001106,Hydrocortisone 1% ointment (Essential Generics Ltd)
+'14944611000001105,Hydrocortisone 1% ointment (Essential Generics Ltd)
+'14944711000001101,Hydrocortisone 1% ointment (Essential Generics Ltd)
+'14944811000001109,Hydrocortisone 1% ointment (Essential Generics Ltd)
+'16373311000001101,Hydrocortisone 1% ointment (Pinewood Healthcare)
+'16373511000001107,Hydrocortisone 1% ointment (Pinewood Healthcare)
+'16548011000001105,Hydrocortisone 1% ointment (Pinewood Healthcare)
+'17012111000001101,Hydrocortisone 1% ointment (Pinewood Healthcare)
+'17200711000001109,Hydrocortisone 1% ointment (Sovereign Medical Ltd)
+'17200811000001101,Hydrocortisone 1% ointment (Sovereign Medical Ltd)
+'17200911000001106,Hydrocortisone 1% ointment (Sovereign Medical Ltd)
+'17201011000001103,Hydrocortisone 1% ointment (Sovereign Medical Ltd)
+'17923411000001103,Hydrocortisone 1% ointment (Phoenix Healthcare Distribution Ltd)
+'17923511000001104,Hydrocortisone 1% ointment (Phoenix Healthcare Distribution Ltd)
+'17923611000001100,Hydrocortisone 1% ointment (Phoenix Healthcare Distribution Ltd)
+'17923711000001109,Hydrocortisone 1% ointment (Phoenix Healthcare Distribution Ltd)
+'18282911000001100,Hydrocortisone 1% ointment (Strides Pharma UK Ltd)
+'18283011000001108,Hydrocortisone 1% ointment (Strides Pharma UK Ltd)
+'22043711000001102,Hydrocortisone 1% ointment (Waymade Healthcare Plc)
+'22043811000001105,Hydrocortisone 1% ointment (Waymade Healthcare Plc)
+'23596811000001104,Hydrocortisone 1% ointment (Waymade Healthcare Plc)
+'23596911000001109,Hydrocortisone 1% ointment (Waymade Healthcare Plc)
+'24152211000001103,Hydrocortisone 1% ointment (DE Pharmaceuticals)
+'24152311000001106,Hydrocortisone 1% ointment (DE Pharmaceuticals)
+'24152411000001104,Hydrocortisone 1% ointment (DE Pharmaceuticals)
+'24152911000001107,Hydrocortisone 1% ointment (DE Pharmaceuticals)
+'29873511000001103,Hydrocortisone 1% ointment (Sigma Pharmaceuticals Plc)
+'29873611000001104,Hydrocortisone 1% ointment (Sigma Pharmaceuticals Plc)
+'29873711000001108,Hydrocortisone 1% ointment (Sigma Pharmaceuticals Plc)
+'29873811000001100,Hydrocortisone 1% ointment (Sigma Pharmaceuticals Plc)
+'30210611000001108,Hydrocortisone 1% ointment (Mawdsley-Brooks & Company Ltd)
+'30210711000001104,Hydrocortisone 1% ointment (Mawdsley-Brooks & Company Ltd)
+'30210811000001107,Hydrocortisone 1% ointment (Mawdsley-Brooks & Company Ltd)
+'30993511000001103,Boots Derma Care Hydrocortisone 1% ointment (The Boots Company Plc)
+'30993611000001104,Boots Derma Care Hydrocortisone 1% ointment (The Boots Company Plc)
+'331695005,Hydrocortisone 2.5% ointment
+'2932011000001104,Hydrocortisone 2.5% ointment
+'2932111000001103,Hydrocortisone 2.5% ointment
+'2932211000001109,Hydrocortisone 2.5% ointment (A A H Pharmaceuticals Ltd)
+'2932311000001101,Hydrocortisone 2.5% ointment (A A H Pharmaceuticals Ltd)
+'14733111000001105,Hydrocortisone 2.5% ointment (A A H Pharmaceuticals Ltd)
+'3303511000001108,Hydrocortisone 2.5% ointment (Kent Pharmaceuticals Ltd)
+'2933011000001108,Hydrocortisone 2.5% ointment (Kent Pharmaceuticals Ltd)
+'3306011000001108,Hydrocortisone 2.5% ointment (Alliance Healthcare (Distribution) Ltd)
+'2933111000001109,Hydrocortisone 2.5% ointment (Alliance Healthcare (Distribution) Ltd)
+'15248411000001107,Hydrocortisone 2.5% ointment (Alliance Healthcare (Distribution) Ltd)
+'4194411000001102,Hydrocortisone 2.5% ointment (Teva UK Ltd)
+'4194511000001103,Hydrocortisone 2.5% ointment (Teva UK Ltd)
+'14944911000001104,Hydrocortisone 2.5% ointment (Essential Generics Ltd)
+'14945011000001104,Hydrocortisone 2.5% ointment (Essential Generics Ltd)
+'14945111000001103,Hydrocortisone 2.5% ointment (Essential Generics Ltd)
+'17923811000001101,Hydrocortisone 2.5% ointment (Phoenix Healthcare Distribution Ltd)
+'17923911000001106,Hydrocortisone 2.5% ointment (Phoenix Healthcare Distribution Ltd)
+'17924011000001109,Hydrocortisone 2.5% ointment (Phoenix Healthcare Distribution Ltd)
+'22043911000001100,Hydrocortisone 2.5% ointment (Waymade Healthcare Plc)
+'22044011000001102,Hydrocortisone 2.5% ointment (Waymade Healthcare Plc)
+'24153311000001101,Hydrocortisone 2.5% ointment (DE Pharmaceuticals)
+'24153511000001107,Hydrocortisone 2.5% ointment (DE Pharmaceuticals)
+'29874011000001108,Hydrocortisone 2.5% ointment (Sigma Pharmaceuticals Plc)
+'29874111000001109,Hydrocortisone 2.5% ointment (Sigma Pharmaceuticals Plc)
+'30210911000001102,Hydrocortisone 2.5% ointment (Mawdsley-Brooks & Company Ltd)
+'30211011000001105,Hydrocortisone 2.5% ointment (Mawdsley-Brooks & Company Ltd)
+'3549911000001106,"Nystatin 100,000units/g / Chlorhexidine hydrochloride 1% / Hydrocortisone 0.5% cream"
+'3087711000001108,"Nystatin 100,000units/g / Chlorhexidine hydrochloride 1% / Hydrocortisone 0.5% cream"
+'33337711000001100,"Nystatin 100,000units/g / Chlorhexidine hydrochloride 1% / Hydrocortisone 0.5% cream (Typharm Ltd)"
+'33337811000001108,"Nystatin 100,000units/g / Chlorhexidine hydrochloride 1% / Hydrocortisone 0.5% cream (Typharm Ltd)"
+'34838411000001106,"Nystatin 100,000units/g / Chlorhexidine hydrochloride 1% / Hydrocortisone 0.5% cream (Alliance Healthcare (Distribution) Ltd)"
+'34838511000001105,"Nystatin 100,000units/g / Chlorhexidine hydrochloride 1% / Hydrocortisone 0.5% cream (Alliance Healthcare (Distribution) Ltd)"
+'34895211000001109,"Nystatin 100,000units/g / Chlorhexidine hydrochloride 1% / Hydrocortisone 0.5% cream (A A H Pharmaceuticals Ltd)"
+'34895311000001101,"Nystatin 100,000units/g / Chlorhexidine hydrochloride 1% / Hydrocortisone 0.5% cream (A A H Pharmaceuticals Ltd)"
+'331738004,Oxytetracycline 3% / Hydrocortisone 1% ointment
+'3143311000001103,Oxytetracycline 3% / Hydrocortisone 1% ointment
+'3143411000001105,Oxytetracycline 3% / Hydrocortisone 1% ointment
+'3143811000001107,Terra-Cortril ointment (Pfizer Ltd)
+'3143911000001102,Terra-Cortril ointment (Pfizer Ltd)
+'3144111000001103,Terra-Cortril ointment (Pfizer Ltd)
+'21116111000001108,Terra-Cortril ointment (Intrapharm Laboratories Ltd)
+'21116211000001102,Terra-Cortril ointment (Intrapharm Laboratories Ltd)
+'331941002,Fluocinolone acetonide 0.0025% cream
+'3679311000001100,Fluocinolone acetonide 0.0025% cream
+'3679711000001101,Synalar 1 in 10 Dilution 0.0025% cream (Reig Jofre UK Ltd)
+'3680811000001109,Synalar 1 in 10 Dilution 0.0025% cream (Reig Jofre UK Ltd)
+'3701111000001101,"Nystatin 100,000units/g / Chlorhexidine acetate 1% / Hydrocortisone 1% ointment"
+'3692411000001107,"Nystatin 100,000units/g / Chlorhexidine acetate 1% / Hydrocortisone 1% ointment"
+'33338311000001103,"Nystatin 100,000units/g / Chlorhexidine acetate 1% / Hydrocortisone 1% ointment (Typharm Ltd)"
+'33338411000001105,"Nystatin 100,000units/g / Chlorhexidine acetate 1% / Hydrocortisone 1% ointment (Typharm Ltd)"
+'34838211000001107,"Nystatin 100,000units/g / Chlorhexidine acetate 1% / Hydrocortisone 1% ointment (Alliance Healthcare (Distribution) Ltd)"
+'34838311000001104,"Nystatin 100,000units/g / Chlorhexidine acetate 1% / Hydrocortisone 1% ointment (Alliance Healthcare (Distribution) Ltd)"
+'34895411000001108,"Nystatin 100,000units/g / Chlorhexidine acetate 1% / Hydrocortisone 1% ointment (A A H Pharmaceuticals Ltd)"
+'34895511000001107,"Nystatin 100,000units/g / Chlorhexidine acetate 1% / Hydrocortisone 1% ointment (A A H Pharmaceuticals Ltd)"
+'3701511000001105,Generic Terra-Cortril Nystatin cream
+'3693011000001107,Generic Terra-Cortril Nystatin cream
+'3693411000001103,Terra-Cortril Nystatin cream (Pfizer Ltd)
+'3693611000001100,Terra-Cortril Nystatin cream (Pfizer Ltd)
+'331771000,Hydrocortisone 1% / Neomycin 0.5% cream
+'4194611000001104,Hydrocortisone 1% / Neomycin 0.5% cream
+'4194711000001108,Hydrocortisone 1% / Neomycin 0.5% cream (Approved Prescription Services Ltd)
+'4194811000001100,Hydrocortisone 1% / Neomycin 0.5% cream (Approved Prescription Services Ltd)
+'4873211000001104,Hydrocortisone 1% / Neomycin 0.5% cream (A A H Pharmaceuticals Ltd)
+'4873311000001107,Hydrocortisone 1% / Neomycin 0.5% cream (A A H Pharmaceuticals Ltd)
+'332041002,Hydrocortisone acetate 1% cream
+'4927911000001109,Hydrocortisone acetate 1% cream
+'20551711000001107,Hydrocortisone acetate 1% cream
+'4928211000001101,Hc45 Hydrocortisone 1% cream (Reckitt Benckiser Healthcare (UK) Ltd)
+'4928311000001109,Hc45 Hydrocortisone 1% cream (Reckitt Benckiser Healthcare (UK) Ltd)
+'20551811000001104,Boots Bite and Sting Relief Hydrocortisone 1% cream (The Boots Company Plc)
+'20551911000001109,Boots Bite and Sting Relief Hydrocortisone 1% cream (The Boots Company Plc)
+'331700003,Hydrocortisone acetate 1% ointment
+'4965011000001105,Hydrocortisone acetate 1% ointment
+'4981411000001102,Hydrocortisone 1% / Potassium hydroxyquinoline sulfate 0.5% cream
+'4979611000001109,Hydrocortisone 1% / Potassium hydroxyquinoline sulfate 0.5% cream
+'15437011000001102,Ichthammol 2% in Hydrocortisone 1% ointment
+'15431711000001109,Ichthammol 2% in Hydrocortisone 1% ointment
+'15431811000001101,Ichthammol 2% in Hydrocortisone 1% ointment (Special Order)
+'15431911000001106,Ichthammol 2% in Hydrocortisone 1% ointment (Special Order)
+'15437111000001101,Ichthammol 5% in Hydrocortisone 1% ointment
+'15432011000001104,Ichthammol 5% in Hydrocortisone 1% ointment
+'15432111000001103,Ichthammol 5% in Hydrocortisone 1% ointment (Special Order)
+'15432211000001109,Ichthammol 5% in Hydrocortisone 1% ointment (Special Order)
+'375446003,Hydrocortisone 1% lotion
+'18043011000001109,Hydrocortisone 1% lotion
+'18043111000001105,Hydrocortisone 1% lotion (Special Order)
+'18043211000001104,Hydrocortisone 1% lotion (Special Order)
+'18153711000001104,Hydrocortisone 2% lotion
+'18150511000001103,Hydrocortisone 2% lotion
+'18150611000001104,Hydrocortisone 2% lotion (Special Order)
+'18150711000001108,Hydrocortisone 2% lotion (Special Order)
+'22213811000001108,Clindamycin 2% / Hydrocortisone 1% in Aqueous cream
+'22192711000001105,Clindamycin 2% / Hydrocortisone 1% in Aqueous cream
+'22192811000001102,Clindamycin 2% / Hydrocortisone 1% in Aqueous cream (Special Order)
+'22192911000001107,Clindamycin 2% / Hydrocortisone 1% in Aqueous cream (Special Order)
+'29732111000001102,Menthol 1% in Hydrocortisone 1% cream
+'29720311000001102,Menthol 1% in Hydrocortisone 1% cream
+'29720411000001109,Menthol 1% in Hydrocortisone 1% cream (Special Order)
+'29720511000001108,Menthol 1% in Hydrocortisone 1% cream (Special Order)
+'30780711000001107,Hydrocortisone 0.5% ointment 50% in White soft paraffin
+'30770511000001105,Hydrocortisone 0.5% ointment 50% in White soft paraffin
+'30770611000001109,Hydrocortisone 0.5% ointment 50% in White soft paraffin (Special Order)
+'30770711000001100,Hydrocortisone 0.5% ointment 50% in White soft paraffin (Special Order)
+'30780911000001109,Ichthammol 1% / Clioquinol 3% in Hydrocortisone 1% ointment
+'30770811000001108,Ichthammol 1% / Clioquinol 3% in Hydrocortisone 1% ointment
+'30770911000001103,Ichthammol 1% / Clioquinol 3% in Hydrocortisone 1% ointment (Special Order)
+'30771011000001106,Ichthammol 1% / Clioquinol 3% in Hydrocortisone 1% ointment (Special Order)
+'30780811000001104,Hydrocortisone 2.5% in White soft paraffin
+'30774011000001109,Hydrocortisone 2.5% in White soft paraffin
+'30774111000001105,Hydrocortisone 2.5% in White soft paraffin (Special Order)
+'30774211000001104,Hydrocortisone 2.5% in White soft paraffin (Special Order)
+'32392311000001100,Hydrocortisone 1% cream 50% in Aqueous cream
+'32251111000001108,Hydrocortisone 1% cream 50% in Aqueous cream
+'32251411000001103,Hydrocortisone 1% cream 50% in Aqueous cream (Special Order)
+'32251511000001104,Hydrocortisone 1% cream 50% in Aqueous cream (Special Order)
+'32499511000001109,Hydrocortisone 2% in White soft paraffin
+'32477511000001107,Hydrocortisone 2% in White soft paraffin
+'32477611000001106,Hydrocortisone 2% in White soft paraffin (Special Order)
+'32477711000001102,Hydrocortisone 2% in White soft paraffin (Special Order)
+'32499411000001105,Hydrocortisone 1% in White soft paraffin
+'32477811000001105,Hydrocortisone 1% in White soft paraffin
+'32477911000001100,Hydrocortisone 1% in White soft paraffin (Special Order)
+'32478011000001103,Hydrocortisone 1% in White soft paraffin (Special Order)
+'35148111000001103,Coal tar 10% in Hydrocortisone 1% cream
+'35131711000001106,Coal tar 10% in Hydrocortisone 1% cream
+'35131811000001103,Coal tar 10% in Hydrocortisone 1% cream (Special Order)
+'35131911000001108,Coal tar 10% in Hydrocortisone 1% cream (Special Order)
+'35344311000001100,Hydrocortisone 1% / Hydroquinone 4% in Aqueous cream
+'35344511000001106,Hydrocortisone 1% / Hydroquinone 4% in Aqueous cream
+'35344611000001105,Hydrocortisone 1% / Hydroquinone 4% in Aqueous cream
+'35344411000001107,Hydrocortisone 1% / Hydroquinone 4% in Aqueous cream (Special Order)
+'35344711000001101,Hydrocortisone 1% / Hydroquinone 4% in Aqueous cream (Special Order)
+'35344811000001109,Hydrocortisone 1% / Hydroquinone 4% in Aqueous cream (Special Order)
