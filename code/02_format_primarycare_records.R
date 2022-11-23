@@ -45,32 +45,6 @@ if(file.exists(paste0(datapath, "cohort_data/linkage_ids.txt"))==FALSE){
   f.eid <- readr::read_delim(paste0(datapath, "cohort_data/linkage_ids.txt"), delim = "\t")
 }
 
-
-
-# extract Eczema prodcodes from gp_script  ---------------------------------------
-eczRx_mapped$cprd_name_search <- stringr::str_remove_all(eczRx_mapped$cprd_name, "[^[:alnum:]]")
-gp_script$drug_text <- stringr::str_to_lower(stringr::str_remove_all(gp_script$drug_name, "[^[:alnum:]]"))
-
-data_match <- gp_script[drug_text %in% eczRx_mapped$cprd_name_search]
-
-data_2rows <- data_match[, .SD[c(1, 2)], by = eid] #get first two rows per patid
-
-data_out <- data_2rows %>% 
-  dplyr::select(f.eid = eid, data_provider, issue_date, read_2, bnf_code, dmd_code, drug_name) %>% 
-  filter(!is.na(issue_date)) %>% 
-  mutate(issue_date = as.Date(issue_date, format = "%d/%m/%Y")) %>% 
-  group_by(f.eid, issue_date) %>% 
-  mutate(prescription_gp = 1:n()) %>%
-  slice(1) %>% 
-  ungroup()
-
-data_out <- data_out %>% 
-  group_by(f.eid) %>% 
-  mutate(prescription_gp = 1:n()) %>%
-  ungroup()
-saveRDS(data_out, paste0(datapath, "primarycare_data/eczema_treatments_ukb.rds"))
-
-
 # extract medcodes/READ diagnoses -----------------------------------------
 fn_extract_medcodes <- function(data, codelist, outname = "null"){
   read_3_list <- codelist %>% dplyr::select(readv3_code) %>% pull() %>% unique()
@@ -108,6 +82,38 @@ psoriasis_extract <- fn_extract_medcodes(data = gp_clinical, codelist = psoriasi
 anxiety_extract <- fn_extract_medcodes(data = gp_clinical, codelist = anxiety_mapped, outname = "anxiety_extract")
 depression_extract <- fn_extract_medcodes(data = gp_clinical, codelist = depression_mapped, outname = "depression_extract")
 
+# extract Eczema prodcodes from gp_script  ---------------------------------------
+eczRx_mapped$cprd_name_search <- stringr::str_remove_all(eczRx_mapped$cprd_name, "[^[:alnum:]]")
+gp_script$drug_text <- stringr::str_to_lower(stringr::str_remove_all(gp_script$drug_name, "[^[:alnum:]]"))
+
+## data.table of every eczema treatment code in the linked UKB data (multiple rows per patid)
+data_match <- gp_script[drug_text %in% eczRx_mapped$cprd_name_search]
+
+## Need to get rid of duplicates
+data_out <- data_match %>% 
+  dplyr::select(f.eid = eid, data_provider, issue_date, read_2, bnf_code, dmd_code, drug_name) %>% 
+  filter(!is.na(issue_date)) %>% 
+  mutate(issue_date = as.Date(issue_date, format = "%d/%m/%Y")) %>% 
+  group_by(f.eid, issue_date) %>% 
+  mutate(prescription_gp = 1:n()) %>%
+  slice(1) %>% 
+  ungroup()
+
+## append the phototherapy medcodes data (considered as a treatment in the algorithm)
+data_allRX <- data_out %>% 
+  dplyr::select(f.eid, data_provider, event_dt = issue_date, desc = drug_name) %>% 
+  bind_rows(
+    dplyr::select(eczema_medRx_extract,
+                  f.eid, data_provider, event_dt, desc)
+  ) %>% 
+  mutate(data_gp = 1)
+
+## People need 2 Rx codes to match our algorithm so pick the first two  
+setDT(data_allRX)
+saveRDS(data_allRX, paste0(datapath, "primarycare_data/all_eczema_Rx_in_ukb.rds"))
+
+
+# some outputs for assessment of readcodes --------------------------------
 # table of code prevalence in data
 read2_tab <- eczema_extract %>% 
   count(read_2, sort = T) %>% 
