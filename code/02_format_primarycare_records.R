@@ -49,9 +49,9 @@ if(file.exists(paste0(datapath, "cohort_data/linkage_ids.txt"))==FALSE){
 
 # extract Eczema prodcodes from gp_script  ---------------------------------------
 eczRx_mapped$cprd_name_search <- stringr::str_remove_all(eczRx_mapped$cprd_name, "[^[:alnum:]]")
-data$drug_text <- stringr::str_to_lower(stringr::str_remove_all(data$drug_name, "[^[:alnum:]]"))
+gp_script$drug_text <- stringr::str_to_lower(stringr::str_remove_all(gp_script$drug_name, "[^[:alnum:]]"))
 
-data_match <- data[drug_text %in% eczRx_mapped$cprd_name_search]
+data_match <- gp_script[drug_text %in% eczRx_mapped$cprd_name_search]
 
 data_2rows <- data_match[, .SD[c(1, 2)], by = eid] #get first two rows per patid
 

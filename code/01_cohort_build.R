@@ -11,7 +11,6 @@ library(gtsummary)
 
 dir.create(path = here::here("out"), showWarnings = F)
 dir.create(path = here::here("out/tables"), showWarnings = F)
-
 source(here::here("file_paths.R"))
 source(here::here("functions/fn_twoXtwo.R"))
                

@@ -62,10 +62,9 @@ run_comparison_regressions <- function(.x, .y){
   ggplot(results, aes(y = model, x = estimate, xmin = conf.low, xmax = conf.high, colour = term, fill = term)) +
     geom_errorbar() +
     geom_point() +
-    labs(title = glue::glue("{.x} ~ {.y}")) +
+    labs(title = glue::glue("{.y} ~ {.x}")) +
     geom_vline(xintercept = 1, lty = 2) +
-    xlim(0, NA) +
-    theme_ali()
+    xlim(0, NA)
 }
 p1 <- run_comparison_regressions("eczema_alg", "depression")
 p2 <- run_comparison_regressions("eczema_alg", "anxiety")

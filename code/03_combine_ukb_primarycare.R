@@ -6,6 +6,7 @@ require("ggVennDiagram")
 source(here::here("file_paths.R"))
 source(here::here("functions/fn_twoXtwo.R"))
 
+library(janitor)
 library(tidyverse)
 
 # load UKB baseline data (compiled in "cohort_build.R" --------------------

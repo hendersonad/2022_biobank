@@ -7,7 +7,6 @@ library(summarytools)
 library(cowplot)
 
 dir.create(path = here::here("out"), showWarnings = F)
-datapath <- "/Volumes/EHR Group/GPRD_GOLD/Ali/2022_biobank/"
 
 ukb <- read_rds(paste0(datapath, "ukb669156.rds"))
 my_ukb_key <- ukb_df_field("ukb669156", path = datapath)
@@ -55,7 +54,6 @@ ukb_n_sex <- ukb_descriptive %>%
 dfSummary(ukb_descriptive)
 
 theme_ukb <- function(){
-  theme_ali() +
     theme(legend.position = "none", 
           axis.title = element_text(face = "bold"), 
           panel.grid = element_blank())
