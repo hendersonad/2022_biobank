@@ -60,7 +60,7 @@ match_ukb_gp <- function(condition = "eczema"){
   ## cross_match UKB and GP
   data_combine <- ukb_base_linked %>% 
     left_join(gp_data, by = "f.eid") %>% 
-    dplyr::select(f.eid, study_entry, year_entry, age_at_recruit, sex, ethnicity, hh_inc, qualifications, age_cat, bmi, mod_exercise, vig_exercise, met_score, alcohol, insomnia, sleep_duration, smoking, socsup_visits,
+    dplyr::select(f.eid, study_entry, year_entry, age_at_recruit, age_at_assess, sex, ethnicity, hh_inc, qualifications, age_cat, bmi, mod_exercise, vig_exercise, met_score, alcohol, insomnia, sleep_duration, smoking, socsup_visits,
                   date_mh_survey, ever_anxious_worried, ever_depressed_sad, ever_soughthelp, happy,
                   contains(condition), event_dt_gp = event_dt, desc, data_gp) %>% 
     mutate(dob = as.Date(paste(year_entry-age_at_recruit, "07", "01", sep = "-"))) %>% 

@@ -61,6 +61,7 @@ run_comparison_regressions <- function(.x, .y){
   results$model <- factor(1:3, levels = 1:3, labels = c("UKB only", "Linked GP only", "x(GP)~y(GP|UKB)"))
   results$x <- glue("{.x}")
   results$y <- glue("{.y}")
+  results
 }
 res1 <- run_comparison_regressions("eczema_alg", "depression")
 res2 <- run_comparison_regressions("eczema_alg", "anxiety")
