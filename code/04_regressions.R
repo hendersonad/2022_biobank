@@ -106,4 +106,11 @@ twoXtwo(ukb_gp, "eczema_alg_union", "depression")
 twoXtwo(ukb_gp, "eczema_alg_union", "depression_gp")
 twoXtwo(ukb_gp, "eczema_alg_union", "ever_depressed_sad")
 
+twoXtwo(ukb_gp, "psoriasis_union", "anxiety")
+twoXtwo(ukb_gp, "psoriasis_union", "anxiety_gp")
+twoXtwo(ukb_gp, "psoriasis_union", "ever_anxious_worried")
+
+twoXtwo(ukb_gp, "psoriasis_union", "depression")
+twoXtwo(ukb_gp, "psoriasis_union", "depression_gp")
+twoXtwo(ukb_gp, "psoriasis_union", "ever_depressed_sad")
 glimpse(ukb_gp)
