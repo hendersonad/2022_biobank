@@ -93,12 +93,17 @@ forest_plot_grid <- ggplot(results, aes(y = model, x = estimate, xmin = conf.low
                                  y = c(anxiety="Outcome: Anxiety", depression="Outcome: Depression")))
 forest_plot_grid
 
-pdf(here::here("out/OR_comparison_v2.pdf"), 10, 5)
+pdf(here::here("out/OR_comparison_v2.pdf"), 8, 4)
 forest_plot_grid
 dev.off()
 
+names(ukb_gp)
 twoXtwo(ukb_gp, "eczema_alg_union", "anxiety")
 twoXtwo(ukb_gp, "eczema_alg_union", "anxiety_gp")
 twoXtwo(ukb_gp, "eczema_alg_union", "ever_anxious_worried")
+
+twoXtwo(ukb_gp, "eczema_alg_union", "depression")
+twoXtwo(ukb_gp, "eczema_alg_union", "depression_gp")
+twoXtwo(ukb_gp, "eczema_alg_union", "ever_depressed_sad")
 
 glimpse(ukb_gp)
