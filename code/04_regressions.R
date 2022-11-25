@@ -71,16 +71,30 @@ res4 <- run_comparison_regressions("psoriasis", "anxiety")
 results <- res1 %>% 
   bind_rows(res2) %>% 
   bind_rows(res3) %>% 
-  bind_rows(res4) 
+  bind_rows(res4) %>% 
+  mutate(across(c(x,y), as.character))
 
-ggplot(results, aes(y = model, x = estimate, xmin = conf.low, xmax = conf.high, colour = term, fill = term)) +
+write_csv(results, "out/OR_results.csv")
+
+forest_plot_grid <- ggplot(results, aes(y = model, x = estimate, xmin = conf.low, xmax = conf.high)) +
   geom_errorbar() +
   geom_point() +
-  labs(title = glue::glue("{.y} ~ {.x}")) +
+  #labs(title = glue::glue("{.y} ~ {.x}")) +
   geom_vline(xintercept = 1, lty = 2) +
-  xlim(0, NA)
-pdf(here::here("out/OR_comparison_v2.pdf"), 10, 10)
-  cowplot::plot_grid(p1, p2, p3, p4, ncol = 1, labels = "AUTO")
+  xlim(1, NA) +
+  xlab("Odds ratio (with 95% confidence interval)") +
+  ylab("Outcome defined in") +
+  scale_y_discrete(labels=c("UKB only"="UKB interview",
+                            "Linked GP only"="linked GP records",
+                            "x(GP)~y(GP|UKB)"="either data source")) +
+  theme_bw() +
+  facet_grid(rows = vars(x), cols = vars(y),
+             labeller = labeller(x = c(eczema_alg="Exposure: Eczema", psoriasis="Exposure: Psoriasis"),
+                                 y = c(anxiety="Outcome: Anxiety", depression="Outcome: Depression")))
+forest_plot_grid
+
+pdf(here::here("out/OR_comparison_v2.pdf"), 10, 5)
+forest_plot_grid
 dev.off()
 
 twoXtwo(ukb_gp, "eczema_alg_union", "anxiety")
