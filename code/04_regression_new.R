@@ -123,13 +123,13 @@ results_regression %>%
   filter(timepoint=="initial interview",
          str_detect(exposure, "union")) %>% 
   plot_forest_grid()
-ggsave("out/forest_plot_initial.png")
+ggsave("out/forest_plot_initial.png", , width = 8, height = 4)
 
 results_regression %>% 
   filter(timepoint=="follow-up survey",
          str_detect(exposure, "union")) %>% 
   plot_forest_grid()
-ggsave("out/forest_plot_follow_up.png")
+ggsave("out/forest_plot_follow_up.png", width = 8, height = 4)
 
 
 
