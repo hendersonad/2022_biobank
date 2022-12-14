@@ -5,6 +5,7 @@ library(tidyverse)
 library(here)
 library(arrow)
 library(glue)
+library(gtsummary)
 
 source(here::here("file_paths.R"))
 source(here::here("functions/fn_twoXtwo.R"))
@@ -55,7 +56,7 @@ ukb_gp$anxiety_union[ukb_gp$anxiety_union==2] <- 1
 # Run regression ----------------------------------------------------------
 
 #All combinations of exposures and outcomes
-comb <- expand_grid(
+comb1 <- expand_grid(
   exposure=c("eczema_alg", "eczema_alg_gp", "eczema_alg_union",
              "psoriasis", "psoriasis_gp", "psoriasis_union"),
   outcome=c("depression","depression_gp", 
@@ -132,33 +133,68 @@ ggsave("out/forest_plot_follow_up.png")
 
 
 
-# Two x Two tables --------------------------------------------------------
+# Two x Two tables -------------------------------------------------------
+tbl_cross_pct <- function(...) {tbl_cross(..., percent = "row", missing = "no")}
 
-#Eczema
-##Anxiety
-twoXtwo(ukb_gp, "eczema_alg_union", "anxiety")
-twoXtwo(ukb_gp, "eczema_alg_union", "anxiety_gp")
+#2006
+##Eczema
+###Anxiety
+ukb_gp[!is.na(ukb_gp$anxiety),] %>% 
+  tbl_cross_pct("eczema_alg_union", "anxiety")
+ukb_gp[!is.na(ukb_gp$anxiety),] %>% 
+  tbl_cross_pct("eczema_alg_union", "anxiety_gp")
 
-twoXtwo(ukb_gp, "eczema_alg_pre16_union", "ever_anxious_worried")
-twoXtwo(ukb_gp, "eczema_alg_pre16_union", "anxiety_gp_pre16")
-##Depression
-twoXtwo(ukb_gp, "eczema_alg_union", "depression")
-twoXtwo(ukb_gp, "eczema_alg_union", "depression_gp")
+###Depression
+ukb_gp[!is.na(ukb_gp$depression),] %>% 
+  tbl_cross_pct("eczema_alg_union", "depression")
+ukb_gp[!is.na(ukb_gp$depression),] %>% 
+  tbl_cross_pct("eczema_alg_union", "depression_gp")
 
-twoXtwo(ukb_gp, "eczema_alg_pre16_union", "ever_depressed_sad")
-twoXtwo(ukb_gp, "eczema_alg_pre16_union", "depression_gp_pre16")
+##Psoriasis
+###Anxiety
+ukb_gp[!is.na(ukb_gp$anxiety),] %>% 
+  tbl_cross_pct("psoriasis_union", "anxiety")
+ukb_gp[!is.na(ukb_gp$anxiety),] %>% 
+  tbl_cross_pct("psoriasis_union", "anxiety_gp")
 
-#Psoriasis
-##Anxiety
-twoXtwo(ukb_gp, "psoriasis_union", "anxiety")
-twoXtwo(ukb_gp, "psoriasis_union", "anxiety_gp")
+###Depression
+ukb_gp[!is.na(ukb_gp$depression),] %>% 
+  tbl_cross_pct("psoriasis_union", "depression")
+ukb_gp[!is.na(ukb_gp$depression),] %>% 
+  tbl_cross_pct("psoriasis_union", "depression_gp")
 
-twoXtwo(ukb_gp, "psoriasis_union", "ever_anxious_worried")
-twoXtwo(ukb_gp, "psoriasis_union", "anxiety_gp_pre16")
-##Depression
-twoXtwo(ukb_gp, "psoriasis_union", "depression")
-twoXtwo(ukb_gp, "psoriasis_union", "depression_gp")
 
-twoXtwo(ukb_gp, "psoriasis_union", "ever_depressed_sad")
-twoXtwo(ukb_gp, "psoriasis_union", "depression_gp_pre16")
 
+
+
+#2016
+##Eczema
+###Anxiety
+ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>% 
+  tbl_cross_pct("eczema_alg_pre16_union", "ever_anxious_worried")
+
+ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>% 
+  tbl_cross_pct("eczema_alg_pre16_union", "anxiety_gp_pre16")
+
+###Depression
+ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
+  tbl_cross_pct("eczema_alg_pre16_union", "ever_depressed_sad")
+
+ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
+  tbl_cross_pct("eczema_alg_pre16_union", "depression_gp_pre16")
+
+
+##Psoriasis
+###Anxiety
+ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>% 
+  tbl_cross_pct("psoriasis_union", "ever_anxious_worried")
+
+ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>% 
+  tbl_cross_pct("psoriasis_union", "anxiety_gp_pre16")
+
+###Depression
+ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
+  tbl_cross_pct("psoriasis_union", "ever_depressed_sad")
+
+ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
+  tbl_cross_pct("psoriasis_union", "depression_gp_pre16")
