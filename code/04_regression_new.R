@@ -104,7 +104,7 @@ write_csv(results_regression, "out/results_regression.csv")
 
 
 
-# Plot --------------------------------------------------------------------
+# Forest Plot --------------------------------------------------------------------
 
 #Function to plot a grid of forest plots
 xlims <- c(0.5,3)
@@ -118,18 +118,19 @@ plot_forest_grid <- function(x) {ggplot(x, aes(y = outcome_defined_in, x = estim
     theme_bw() +
     facet_grid(rows = vars(exposure_group), cols = vars(outcome_group))}
 
-
+#2008
 results_regression %>% 
   filter(timepoint=="initial interview",
          str_detect(exposure, "union")) %>% 
   plot_forest_grid()
-ggsave("out/forest_plot_initial.png", , width = 8, height = 4)
+ggsave("out/forest_plot_initial.png", width = 8, height = 2.5)
 
+#2016
 results_regression %>% 
   filter(timepoint=="follow-up survey",
          str_detect(exposure, "union")) %>% 
   plot_forest_grid()
-ggsave("out/forest_plot_follow_up.png", width = 8, height = 4)
+ggsave("out/forest_plot_follow_up.png", width = 8, height = 2.5)
 
 
 
