@@ -127,10 +127,11 @@ ggsave("out/forest_plot_initial.png", width = 8, height = 2.5)
 
 #2016
 results_regression %>% 
-  filter(timepoint=="follow-up survey",
+  filter(outcome_defined_in == "UK Biobank",
+    timepoint=="follow-up survey",
          str_detect(exposure, "union")) %>% 
   plot_forest_grid()
-ggsave("out/forest_plot_follow_up.png", width = 8, height = 2.5)
+ggsave("out/forest_plot_follow_up.png", width = 8, height = 1.25)
 
 
 
