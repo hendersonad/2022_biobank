@@ -107,7 +107,7 @@ write_csv(results_regression, "out/results_regression.csv")
 # Forest Plot --------------------------------------------------------------------
 
 #Function to plot a grid of forest plots
-xlims <- c(0.5,3)
+xlims <- c(0.5,2)
 plot_forest_grid <- function(x) {ggplot(x, aes(y = outcome_defined_in, x = estimate, xmin = conf.low, xmax = conf.high)) +
     geom_errorbar() +
     geom_point() +
@@ -131,7 +131,7 @@ results_regression %>%
     timepoint=="follow-up survey",
          str_detect(exposure, "union")) %>% 
   plot_forest_grid()
-ggsave("out/forest_plot_follow_up.png", width = 8, height = 1.25)
+ggsave("out/forest_plot_follow_up.png", width = 8, height = 2)
 
 
 
