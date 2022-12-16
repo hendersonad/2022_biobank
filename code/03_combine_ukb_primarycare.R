@@ -105,7 +105,7 @@ anxiety_combine <- match_ukb_gp("anxiety")
 depression_combine <- match_ukb_gp("depression")
 
   
-analysis_fn <- function(dataset, interviewvar){
+analysis_fn <- function(dataset, interviewvar, label){
   twoXtwo(dataset, interviewvar, "data_gp")
   x = list(
     dataset$f.eid[dataset[,interviewvar]==1],
@@ -114,18 +114,21 @@ analysis_fn <- function(dataset, interviewvar){
   
   ggVennDiagram(x, category.names = c("Interview", "Linked GP data")) +
     scale_color_brewer(palette = "Paired") +
-    labs(fill = stringr::str_to_title(interviewvar)) +
+    labs(fill = stringr::str_to_title(label)) +
     theme(legend.position = "left")
 }
 
-p1 <- analysis_fn(eczema_combine$data, "eczema")
-p2 <- analysis_fn(psoriasis_combine$data, "psoriasis")
-p3 <- analysis_fn(anxiety_combine$data, "anxiety")
-p4 <- analysis_fn(depression_combine$data, "depression")
-p5 <- analysis_fn(eczema_alg_combine$data, "eczema_alg")
+p1 <- analysis_fn(eczema_combine$data, "eczema", "Eczema (non algorithm)")
+p2 <- analysis_fn(psoriasis_combine$data, "psoriasis", "Psoriasis")
+p3 <- analysis_fn(anxiety_combine$data, "anxiety", "Anxiety")
+p4 <- analysis_fn(depression_combine$data, "depression", "Depression")
+p5 <- analysis_fn(eczema_alg_combine$data, "eczema_alg", "Eczema")
 
 pdf(here::here("out/venn_diagrams.pdf"), 8,8)
-  cowplot::plot_grid(p1, p5, p2, p3, p4, labels = "AUTO", ncol = 2)
+  cowplot::plot_grid(p5, p2, p3, p4, labels = "AUTO", ncol = 2)
+dev.off()
+png(here::here("out/venn_diagrams.png"), 800,800)
+cowplot::plot_grid(p5, p2, p3, p4, labels = "AUTO", ncol = 2)
 dev.off()
 
 
