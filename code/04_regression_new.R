@@ -15,13 +15,20 @@ ukb_gp <- arrow::read_parquet(file = paste0(datapath, "cohort_data/ukb_gp_linked
 
 #PHQ-9 GAD-7
 levels(ukb_gp$phq9_appetite)
+levels(ukb_gp$gad7_irritability)
 
 ukb_gp <- ukb_gp %>% 
-  mutate(across(starts_with(c("phq9", "gad7")),
+  mutate(across(starts_with(c("phq9")),
                 ~ fct_recode(.x, NULL="Prefer not to answer") %>% #Recode "Prefer not to answer to NULL"
-                  as.numeric),
+                  as.numeric-1),
+         across(starts_with(c("gad7")),
+                ~ fct_recode(.x, NULL="Prefer not to answer") %>% #Recode "Prefer not to answer to NULL"
+                  as.numeric-1),
          phq9=rowSums(across(starts_with("phq9"))),
-         gad7=rowSums(across(starts_with("gad7"))))
+         gad7=rowSums(across(starts_with("gad7"))),
+         phq9_greater_9=ifelse(phq9>9, TRUE, FALSE),
+         gad7_greater_9=ifelse(gad7>9, TRUE, FALSE))
+         
 
 
 
@@ -70,17 +77,20 @@ ukb_gp$anxiety_union[ukb_gp$anxiety_union==2] <- 1
 
 #All combinations of exposures and outcomes
 comb1 <- expand_grid(
-  exposure=c("eczema_alg", "eczema_alg_gp", "eczema_alg_union",
-             "psoriasis", "psoriasis_gp", "psoriasis_union"),
+  exposure=c("eczema_alg_union", #"eczema_alg", "eczema_alg_gp", 
+             "psoriasis_union" #, "psoriasis", "psoriasis_gp", 
+             ),
   outcome=c("depression","depression_gp", 
             "anxiety", "anxiety_gp")
 )
 
 comb2 <- expand_grid(
-  exposure=c("eczema_alg", "eczema_alg_gp_pre16", "eczema_alg_pre16_union", 
-             "psoriasis", "psoriasis_gp_pre16", "psoriasis_pre16_union"),
+  exposure=c("eczema_alg_pre16_union", #"eczema_alg", "eczema_alg_gp_pre16", 
+             "psoriasis_pre16_union" #,"psoriasis", "psoriasis_gp_pre16", 
+             ),
   outcome=c("ever_depressed_sad", "depression_gp_pre16", 
-            "ever_anxious_worried", "anxiety_gp_pre16")
+            "ever_anxious_worried", "anxiety_gp_pre16",
+            "phq9_greater_9", "gad7_greater_9")
 )
 grid <- rbind(comb1, comb2)
 
@@ -94,7 +104,9 @@ runreg <- function(.outcome, .exposure) {
 }
 
 #Map regression function to all combinations of exposure and outcome
-results_regression <- map2_df(grid$outcome, grid$exposure, runreg)
+library(furrr)
+plan(multisession, workers = 8)
+results_regression <- furrr::future_map2_dfr(grid$outcome, grid$exposure, runreg)
 
 #Add group labels
 results_regression <- results_regression %>% 
@@ -103,26 +115,42 @@ results_regression <- results_regression %>%
       str_detect(exposure, "eczema") ~ "eczema",
       str_detect(exposure, "psoriasis") ~ "psoriasis"),
     outcome_group=case_when(
-      str_detect(outcome, "dep") ~ "depression",
-      str_detect(outcome, "anx") ~ "anxiety"),
+      str_detect(outcome, "dep|phq9") ~ "depression",
+      str_detect(outcome, "anx|gad7") ~ "anxiety"),
     outcome_defined_in=case_when(
       str_detect(outcome, "gp") ~ "linked GP data",
       !str_detect(outcome, "gp") ~ "UK Biobank"),
     timepoint=case_when(
-      str_detect(outcome, "ever|pre16") ~ "follow-up survey",
+      str_detect(outcome, "ever|pre16|phq9|gad7") ~ "follow-up survey",
       !str_detect(outcome, "ever|pre16") ~ "initial interview",
     ))
 write_csv(results_regression, "out/results_regression.csv")
 #results_regression <- read_csv("out/results_regression.csv")
 
-#Linear regression
-lm(phq9 ~ eczema_alg_pre16_union, data = ukb_gp) %>% 
-  broom::tidy(exponentiate=TRUE, conf.int=TRUE)
+
+
+#Linear regression ---------------------------------------------------------------
+
+#Function to run regressions
+runlinreg <- function(.outcome, .exposure) {
+  lm(glue("{.outcome} ~ {.exposure} + age_at_assess + sex + deprivation + ethnicity2"),
+      data = ukb_gp) %>% 
+    broom::tidy(exponentiate = T, conf.int = T) %>% 
+    mutate(exposure=.exposure, outcome=.outcome) %>% 
+    filter(str_detect(term, eval(.exposure))) 
+}
+
+results_linear_regression <- rbind(
+  runlinreg("phq9", "eczema_pre16_union"),
+  runlinreg("gad7", "eczema_pre16_union")
+)
+write_csv(results_linear_regression, "out/results_linear_regression.csv")
+
 
 # Forest Plot --------------------------------------------------------------------
 
 #Function to plot a grid of forest plots
-xlims <- c(0.5,2)
+xlims <- c(0.5,3)
 plot_forest_grid <- function(x) {ggplot(x, aes(y = outcome_defined_in, x = estimate, xmin = conf.low, xmax = conf.high)) +
     geom_errorbar() +
     geom_point() +
@@ -140,14 +168,31 @@ results_regression %>%
   plot_forest_grid()
 ggsave("out/forest_plot_initial.png", width = 8, height = 2.5)
 
-#2016
+#2016: ever depressed/anxious
 results_regression %>% 
   filter(outcome_defined_in == "UK Biobank",
-    timepoint=="follow-up survey",
-         str_detect(exposure, "union")) %>% 
+         timepoint=="follow-up survey",
+         str_detect(exposure, "union"),
+         str_detect(outcome, "ever")) %>% 
   plot_forest_grid()
-ggsave("out/forest_plot_follow_up.png", width = 8, height = 2)
+ggsave("out/forest_plot_follow_up_ever.png", width = 8, height = 2)
 
+#2016: PHQ9, GAD7
+results_regression %>% 
+  filter(outcome_defined_in == "UK Biobank",
+         timepoint=="follow-up survey",
+         str_detect(exposure, "union"),
+         str_detect(outcome, "phq9|gad7")) %>% 
+  plot_forest_grid()
+ggsave("out/forest_plot_follow_up_score.png", width = 8, height = 2)
+
+#2016: PHQ9, GAD7 with comparison
+results_regression %>% 
+  filter(timepoint=="follow-up survey",
+         str_detect(exposure, "union"),
+         !str_detect(outcome, "ever")) %>% 
+  plot_forest_grid()
+ggsave("out/forest_plot_follow_up_score_comparison.png", width = 8, height = 2.5)
 
 
 # Two x Two tables -------------------------------------------------------
@@ -193,6 +238,9 @@ ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>%
 ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>% 
   tbl_cross_pct("eczema_alg_pre16_union", "anxiety_gp_pre16")
 
+ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>% 
+  tbl_cross_pct("eczema_alg_pre16_union", "gad7_greater_9")
+
 ###Depression
 ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
   tbl_cross_pct("eczema_alg_pre16_union", "ever_depressed_sad")
@@ -200,6 +248,8 @@ ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>%
 ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
   tbl_cross_pct("eczema_alg_pre16_union", "depression_gp_pre16")
 
+ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
+  tbl_cross_pct("eczema_alg_pre16_union", "phq9_greater_9")
 
 ##Psoriasis
 ###Anxiety
@@ -209,9 +259,15 @@ ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>%
 ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>% 
   tbl_cross_pct("psoriasis_union", "anxiety_gp_pre16")
 
+ukb_gp[!is.na(ukb_gp$ever_anxious_worried),] %>% 
+  tbl_cross_pct("psoriasis_union", "gad7_greater_9")
+
 ###Depression
 ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
   tbl_cross_pct("psoriasis_union", "ever_depressed_sad")
 
 ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
   tbl_cross_pct("psoriasis_union", "depression_gp_pre16")
+
+ukb_gp[!is.na(ukb_gp$ever_depressed_sad),] %>% 
+  tbl_cross_pct("psoriasis_union", "phq9_greater_9")
