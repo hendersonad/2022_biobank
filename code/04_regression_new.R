@@ -13,6 +13,19 @@ source(here::here("functions/fn_twoXtwo.R"))
 
 ukb_gp <- arrow::read_parquet(file = paste0(datapath, "cohort_data/ukb_gp_linked.parquet"))
 
+#PHQ-9 GAD-7
+levels(ukb_gp$phq9_appetite)
+
+ukb_gp <- ukb_gp %>% 
+  mutate(across(starts_with(c("phq9", "gad7")),
+                ~ fct_recode(.x, NULL="Prefer not to answer") %>% #Recode "Prefer not to answer to NULL"
+                  as.numeric),
+         phq9=rowSums(across(starts_with("phq9"))),
+         gad7=rowSums(across(starts_with("gad7"))))
+
+
+
+
 ukb_gp$ethnicity2 <- as.character(ukb_gp$ethnicity) %>% stringr::str_to_lower() %>% factor()
 levels(ukb_gp$ethnicity2) <- c(
   "black/black british/caribbean", "asian/asian british", "black/black british/caribbean", "mixed/other", "white/british/irish", "asian/asian british", "asian/asian british", 
@@ -102,7 +115,9 @@ results_regression <- results_regression %>%
 write_csv(results_regression, "out/results_regression.csv")
 #results_regression <- read_csv("out/results_regression.csv")
 
-
+#Linear regression
+lm(phq9 ~ eczema_alg_pre16_union, data = ukb_gp) %>% 
+  broom::tidy(exponentiate=TRUE, conf.int=TRUE)
 
 # Forest Plot --------------------------------------------------------------------
 
