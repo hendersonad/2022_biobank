@@ -15,7 +15,7 @@ twoXtwo <- function(df, exp, out){
   df1 <- df %>% 
     ungroup() %>% 
     dplyr::select(exp = {{ exp }}, out = {{ out }})
-  tab <- table(df1$exp, df1$out, useNA = "always")
+  tab <- table(df1$exp, df1$out)
   tab_p <- prop.table(tab,1)
   tibble(
     exposure = exp,

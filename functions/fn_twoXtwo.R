@@ -4,7 +4,7 @@ twoXtwo <- function(df, exp, out){
   df1 <- df %>% 
     ungroup() %>% 
     dplyr::select(exp = {{ exp }}, out = {{ out }})
-  tab <- table(df1$exp, df1$out, useNA = "ifany")
+  tab <- table(df1$exp, df1$out)
   tab_p <- prop.table(tab,1) %>% 
     as.data.frame.matrix() %>% 
     janitor::clean_names() %>% 
@@ -33,3 +33,4 @@ twoXtwo <- function(df, exp, out){
   get(paste0("gt", no_outcomes+1)) %>% 
     tab_spanner(columns = 3:(no_outcomes+2), label = eval(out))
 }
+

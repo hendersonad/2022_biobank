@@ -274,7 +274,27 @@ ukb_mhealth <- ukb %>%
          ever_anxious_worried = f.20421.0.0,
          ever_depressed_sad = f.20446.0.0,
          ever_soughthelp = f.20499.0.0,
-         happy = f.20458.0.0
+         happy = f.20458.0.0,
+         # The following variables ask: "Over the last 2 weeks, how often have you been bothered by any of the following problems? [depressive symptoms] 
+         # [depression symptoms] (PHQ-9)
+         phq9_interest = f.20514.0.0, #Little interest or pleasure in doing things
+         phq9_depressed = f.20510.0.0, #Feeling down, depressed, or hopeless
+         phq9_sleep = f.20517.0.0, #Trouble falling or staying asleep, or sleeping too much
+         phq9_tired = f.20519.0.0, #Feeling tired or having little energy
+         phq9_appetite = f.20511.0.0, #Poor appetite or overeating
+         phq9_feeling = f.20507.0.0 , #Feeling bad about yourself or that you are a failure or have let yourself or your family down
+         phq9_concentration = f.20508.0.0, #Trouble concentrating on things, such as reading the newspaper or watching television
+         phq9_speed = f.20518.0.0, #Moving or speaking so slowly that other people could have noticed? Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual
+         phq9_suicidal = f.20513.0.0, #Thoughts that you would be better off dead or of hurting yourself in some way
+         # [anxiety symptoms] (GAD-7)
+         gad7_irritability = f.20505.0.0, #Becoming easily annoyed or irritable
+         gad7_foreboding = f.20512.0.0, #Feeling afraid as if something awful might happen
+         gad7_anxiety = f.20506.0.0, #Feeling nervous, anxious or on edge
+         gad7_control_worrying =f.20509.0.0,  #Not being able to stop or control worrying
+         gad7_restlessness = f.20516.0.0, #Being so restless that it is hard to sit still
+         gad7_relaxing = f.20515.0.0, #Trouble relaxing
+         gad7_worrying_different_things = f.20520.0.0 #Worrying too much about different things
+         
   ) %>% 
   filter(!is.na(date_mh_survey))
 ukb_mhealth %>% dim
