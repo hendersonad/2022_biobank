@@ -13,22 +13,19 @@ source(here::here("functions/fn_twoXtwo.R"))
 
 ukb_gp <- arrow::read_parquet(file = paste0(datapath, "cohort_data/ukb_gp_linked.parquet"))
 
-#PHQ-9 GAD-7
-levels(ukb_gp$phq9_appetite)
-levels(ukb_gp$gad7_irritability)
-
+#2016 make binary outcomes
 ukb_gp <- ukb_gp %>% 
-  mutate(across(starts_with(c("phq9")),
-                ~ fct_recode(.x, NULL="Prefer not to answer") %>% #Recode "Prefer not to answer to NULL"
-                  as.numeric-1),
-         across(starts_with(c("gad7")),
-                ~ fct_recode(.x, NULL="Prefer not to answer") %>% #Recode "Prefer not to answer to NULL"
+  mutate(across(starts_with(c("phq9", "gad7", "ever_depressed_sad", "ever_anxious_worried")),
+                ~ fct_recode(.x, NULL="Prefer not to answer", NULL="Do not know") %>% #Recode "Prefer not to answer to NULL"
                   as.numeric-1),
          phq9=rowSums(across(starts_with("phq9"))),
          gad7=rowSums(across(starts_with("gad7"))),
          phq9_greater_9=ifelse(phq9>9, TRUE, FALSE),
-         gad7_greater_9=ifelse(gad7>9, TRUE, FALSE))
-         
+         gad7_greater_9=ifelse(gad7>9, TRUE, FALSE),
+         across(c("ever_depressed_sad", "ever_anxious_worried"), as.logical))
+#Remove values for linked GP data where any of the mental health survey values are  missing
+ukb_gp$depression_gp_pre16[is.na(ukb_gp$ever_depressed_sad) | is.na(ukb_gp$ever_anxious_worried) | is.na(ukb_gp$phq9) | is.na(ukb_gp$gad7)] <- NA
+ukb_gp$anxiety_gp_pre16[is.na(ukb_gp$ever_depressed_sad) | is.na(ukb_gp$ever_anxious_worried) | is.na(ukb_gp$phq9) | is.na(ukb_gp$gad7)] <- NA
 
 
 
@@ -73,20 +70,21 @@ ukb_gp$anxiety_intersect <- ifelse(ukb_gp$anxiety_union==2, 1, 0)
 ukb_gp$anxiety_union[ukb_gp$anxiety_union==2] <- 1
 
 
+
 # Run regression ----------------------------------------------------------
 
 #All combinations of exposures and outcomes
 comb1 <- expand_grid(
-  exposure=c("eczema_alg_union", "eczema_alg", "eczema_alg_gp", 
-             "psoriasis_union" , "psoriasis", "psoriasis_gp"
+  exposure=c("eczema_alg_union", #"eczema_alg", "eczema_alg_gp", 
+             "psoriasis_union" #, "psoriasis", "psoriasis_gp"
              ),
   outcome=c("depression","depression_gp", 
             "anxiety", "anxiety_gp")
 )
 
 comb2 <- expand_grid(
-  exposure=c("eczema_alg_pre16_union", "eczema_alg", "eczema_alg_gp_pre16", 
-             "psoriasis_pre16_union","psoriasis", "psoriasis_gp_pre16"
+  exposure=c("eczema_alg_pre16_union", #"eczema_alg", "eczema_alg_gp_pre16", 
+             "psoriasis_pre16_union" #,"psoriasis", "psoriasis_gp_pre16"
              ),
   outcome=c("ever_depressed_sad", "depression_gp_pre16", 
             "ever_anxious_worried", "anxiety_gp_pre16",
@@ -96,10 +94,12 @@ grid <- rbind(comb1, comb2)
 
 #Function to run regressions
 runreg <- function(.outcome, .exposure) {
-  glm(glue("{.outcome} ~ {.exposure} + age_at_assess + sex + deprivation + ethnicity2"),
-      data = ukb_gp , family = "binomial") %>% 
+  mod <- glm(glue("{.outcome} ~ {.exposure} + age_at_assess + sex + deprivation + ethnicity2"),
+      data = ukb_gp , family = "binomial") 
+  glanced <- broom::glance(mod)
+  mod %>%
     broom::tidy(exponentiate = T, conf.int = T) %>% 
-    mutate(exposure=.exposure, outcome=.outcome) %>% 
+    mutate(exposure=.exposure, outcome=.outcome, nobs=glanced$nobs) %>% 
     filter(str_detect(term, eval(.exposure))) 
 }
 
