@@ -77,16 +77,16 @@ ukb_gp$anxiety_union[ukb_gp$anxiety_union==2] <- 1
 
 #All combinations of exposures and outcomes
 comb1 <- expand_grid(
-  exposure=c("eczema_alg_union", #"eczema_alg", "eczema_alg_gp", 
-             "psoriasis_union" #, "psoriasis", "psoriasis_gp", 
+  exposure=c("eczema_alg_union", "eczema_alg", "eczema_alg_gp", 
+             "psoriasis_union" , "psoriasis", "psoriasis_gp"
              ),
   outcome=c("depression","depression_gp", 
             "anxiety", "anxiety_gp")
 )
 
 comb2 <- expand_grid(
-  exposure=c("eczema_alg_pre16_union", #"eczema_alg", "eczema_alg_gp_pre16", 
-             "psoriasis_pre16_union" #,"psoriasis", "psoriasis_gp_pre16", 
+  exposure=c("eczema_alg_pre16_union", "eczema_alg", "eczema_alg_gp_pre16", 
+             "psoriasis_pre16_union","psoriasis", "psoriasis_gp_pre16"
              ),
   outcome=c("ever_depressed_sad", "depression_gp_pre16", 
             "ever_anxious_worried", "anxiety_gp_pre16",
