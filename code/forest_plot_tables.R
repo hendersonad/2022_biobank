@@ -41,7 +41,7 @@ fptable <- function(data) {
 
 footnote_or <- "Odds ratios (95% confidence intervals) estimated from logistic regression for having a mental illness (adjusted for age, sex, deprivation and ethnicity) comparing people with the respective skin disease to people without the respective skin disease"
 footnote_nobs <- 'Number of observations that went into the model. Observations with missing values were dropped. "Prefer not to answer" and "Do not know" were treated as missing values. For the follow-up survey timepoint, only used GP data where all of the questions of the mental health follow-up survey were answered'
-footnote_mental_health_survey <- "At the Initial interview timepoint, outcomes are defined as a previous doctors diagnosis reported at the UKB interview, or at least 1 diagnosis code in linked GP data prior to interview. At the 2016 meantal health follow-up survey (70,878 responded), outcomes are defined either as a score of ≥10 in the PHQ-9 score for depression/the GAD-7 score for anxiety, which take into account symptoms in the 2 weeks prior to the survey, or at least 1 diagnosis code in linked GP data prior to the follow-up survey"
+footnote_mental_health_survey <- "At the Initial interview timepoint, outcomes are defined either as a self-reported previous doctor's diagnosis, or at least 1 diagnosis code in linked GP data prior to the interview. At the 2016 mental health follow-up survey (70,878 responded), outcomes are defined either as a score of ≥10 in the PHQ-9 score for depression/the GAD-7 score for anxiety, which take into account symptoms in the 2 weeks prior to the survey, or at least 1 diagnosis code in linked GP data prior to the follow-up survey"
 
 #2016: PHQ9, GAD7 with comparison
 fptable <- results_regression %>% 
@@ -88,6 +88,6 @@ fptable <- results_regression %>%
   )
 
 fptable
-#gtsave(fptable_2016, "out/fptable_2016.png", vwidth=900)
+gtsave(fptable, "out/fptable.png", vwidth=1250)
 gtsave(fptable, "out/fptable.html")
 
