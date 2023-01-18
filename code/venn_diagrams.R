@@ -26,3 +26,12 @@ make_venn_diagram("Depression", list(UKB = 1:13320, GP = 3733:44187))
 )
 dev.off()
 
+svg(here::here("out/venn_diagrams.svg"), 8,8)
+cowplot::plot_grid(
+  make_venn_diagram("Eczema", list(UKB = 1:5605, GP = 4070:15079)),
+  make_venn_diagram("Psoriasis", list(UKB = 1:2557, GP = 700:7886)),
+  make_venn_diagram("Anxiety", list(UKB = 1:3241, GP = 1401:27229)),
+  make_venn_diagram("Depression", list(UKB = 1:13320, GP = 3733:44187))
+)
+dev.off()
+
