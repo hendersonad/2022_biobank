@@ -82,6 +82,34 @@ psoriasis_extract <- fn_extract_medcodes(data = gp_clinical, codelist = psoriasi
 anxiety_extract <- fn_extract_medcodes(data = gp_clinical, codelist = anxiety_mapped, outname = "anxiety_extract")
 depression_extract <- fn_extract_medcodes(data = gp_clinical, codelist = depression_mapped, outname = "depression_extract")
 
+
+# most prevalent codes by disease ---------------------------------------
+top_codes_fn <- function(data_in){
+  string_name <- deparse(substitute(data_in))
+
+  setDT(data_in)
+  data_in[, little_desc:=stringr::str_to_lower(desc)]
+  top_codes <- data_in[, .N, by = little_desc]
+  top10 <- as_tibble(top_codes) %>% 
+    mutate(pc = (N/sum(N))*100) %>% 
+    arrange(-N) %>% 
+    slice(1:5) %>% 
+    dplyr::rename("medcode" = little_desc)
+  
+  top10
+}
+# cahnged to 5 codes only but coudn't be bothered to rename all the objects
+top10_eczema <- top_codes_fn(eczema_extract) %>% mutate(var = "eczema")
+top10_psoriasis <- top_codes_fn(psoriasis_extract) %>% mutate(var = "psoriasis")
+top10_anxiety <- top_codes_fn(anxiety_extract) %>% mutate(var = "anxiety")
+top10_depression <- top_codes_fn(depression_extract) %>% mutate(var = "depression")
+final_top10 <- top10_eczema %>% 
+  bind_rows(top10_psoriasis) %>% 
+  bind_rows(top10_anxiety) %>% 
+  bind_rows(top10_depression) 
+
+write_csv(final_top10, here::here("out/tables/top10_codes_linkedata.csv"))
+
 # extract Eczema prodcodes from gp_script  ---------------------------------------
 eczRx_mapped$cprd_name_search <- stringr::str_remove_all(eczRx_mapped$cprd_name, "[^[:alnum:]]")
 gp_script$drug_text <- stringr::str_to_lower(stringr::str_remove_all(gp_script$drug_name, "[^[:alnum:]]"))
