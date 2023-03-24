@@ -2,7 +2,10 @@
 
 Julian Matthewman, Kathryn E. Mansfield, Joseph F. Hayes, Amy R. Mulick, Elizabeth I. Adesanya, Catherine H. Smith, Rohini Mathur, Amanda Roberts, Sinéad M. Langan, Alasdair D. Henderson
 
-Publication link -> to be addeed. 
+Publication link -> to be added 
+
+[![DOI](https://zenodo.org/badge/530572975.svg)](https://zenodo.org/badge/latestdoi/530572975)
+
 
 # Contents
 Analysis code and codelists used to analyse linked UK Biobank and UK primary care data for the association betweenm inflammatory skin conditions and common mental health burdens.
